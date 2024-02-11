@@ -1,16 +1,71 @@
+# Window
 window:
   dimensions:
     columns: 135
     lines: 40
 
+# Scrolling
 scrolling:
   multiplier: 5
 
+# Font configuration
+font:
+  normal:
+    family: JetBrains Mono Nerd Font
+    style: Regular
+  bold:
+    family: JetBrains Mono Nerd Font
+    style: Bold
+  italic:
+    family: JetBrains Mono Nerd Font
+    style: Italic
+  bold_italic:
+    family: JetBrains Mono Nerd Font
+    style: Bold Italic
+  size: 12.0
+draw_bold_text_with_bright_colors: true
+
+# Cyber Punk Neon
+# https://github.com/alacritty/alacritty-theme/blob/yaml/themes/cyber_punk_neon.yaml
+# removed cursor color
+colors:
+  primary:
+    background: "0x000b1e"
+    foreground: "0x0abdc6"
+  normal:
+    black:   "0x123e7c"
+    red:     "0xff0000"
+    green:   "0xd300c4"
+    yellow:  "0xf57800"
+    blue:    "0x123e7c"
+    magenta: "0x711c91"
+    cyan:    "0x0abdc6"
+    white:   "0xd7d7d5"
+  bright:
+    black:   "0x1c61c2"
+    red:     "0xff0000"
+    green:   "0xd300c4"
+    yellow:  "0xf57800"
+    blue:    "0x00ff00"
+    magenta: "0x711c91"
+    cyan:    "0x0abdc6"
+    white:   "0xd7d7d5"
+
+# Selection
+selection:
+  # Copy selected text to clipboard
+  save_to_clipboard: true
+  
+# Curser
 cursor:
   style:
-    blinking: On
+    blinking: Always
   blink_interval: 1000
-  blink_timeout: 30
+  blink_timeout: 90
 
-selection:
-  save_to_clipboard: true
+# Key Bindings
+key_bindings:
+  - { key: F,              mods: Control,        mode: ~Search,    action: SearchBackward }
+  - { key: V,              mods: Control,        mode: ~Search,    action: Paste          }
+  - { key: Space,          mods: Control,        mode: ~Search,    action: ToggleViMode   }
+
