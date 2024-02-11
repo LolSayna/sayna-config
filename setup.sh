@@ -1,4 +1,6 @@
 #!/bin/bash
+# Sayna linux setup install script - 11.02.2024
+# check https://github.com/LolSayna/sayna-config#prerequisites
 
 # Install fonts - JetBrainsMono Nerd Font
 if test -f ~/.local/share/fonts/JetBrainsMonoNerdFont-Regular.ttf; then
@@ -12,8 +14,8 @@ else
 fi
 
 
-# Create dir and copy config
+# Setup alacrity terminal
 mkdir -p ~/.config/alacritty
 cp -a ~/sayna-config/alacritty.yml ~/.config/alacritty/alacritty.yml
 
-echo "Done :)"
+echo "Done :)."

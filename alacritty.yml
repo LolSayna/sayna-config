@@ -1,3 +1,6 @@
+# Sayna alacritty config - 11.02.2024
+# check /usr/share/doc/alacritty/examples/alacritty for options
+
 # Window
 window:
   dimensions:
