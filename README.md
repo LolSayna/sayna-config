@@ -14,7 +14,7 @@ sudo apt update -y && sudo apt upgrade -y
 # Install core utils
 sudo apt install -y build-essential git micro
 # Install more utils
-sudo apt install -y wget tmux htop tree hwinfo firefox keepass2
+sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 
 # Install terminal setup
 sudo apt install -y alacritty zsh neovim neofetch  
 
@@ -27,10 +27,18 @@ sudo apt install -y openssh-server
 
 
 
-
+# Shortcuts
+## Alacritty
+`CTRL SHIT C` - Copy (or mark with mouse)\
+`CTRL SHIT V` - Paste\
+`CTRL L` - Clear screen\
+`CTRL +` - Zoom in\
+`CTRL -` - Zoom out
+> Title is controled by zsh. Change Keybindings to Use CTRL C, V, X, F not CTRL SHIFT.
 
 # Remarks
 * Choose keepass2 vs keepassxc, keepass2 not newest version.
+* Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
 * Add [VScode](https://code.visualstudio.com/docs/setup/linux) installation if needed.
 * Add Google Drive Sync for productivity with Windows system.
 * Add PDF support by choosing program, also PDF manipulation tools.
