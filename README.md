@@ -5,10 +5,8 @@ Linux .config folder and Terminal setup.
 - [x] alacritty - Terminal Emulator
 - [ ] zsh - shell
 - [ ] tmux - terminal multiplexer
+- [ ] neovim - text editor
 
-- [ ] remote desktop/ ssh setup?
-- [ ] installion?
-- [ ] System maintenance/General recommendations (arch wiki)?
 
 # Prerequisites
 
@@ -59,14 +57,13 @@ git clone https://github.com/LolSayna/sayna-config.git
 `CTRL R` - Search previous commands\
 `CTRL L` - Clear screen
 
-
 # Remarks
-## Versions
-* Choose keepass2 vs keepassxc, keepass2 not newest version.
+* keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
-## Programs
-* Add [VScode](https://code.visualstudio.com/docs/setup/linux) installation if needed.
-* Add Google Drive Sync for productivity with Windows system.
-* Add PDF support by choosing program, also PDF manipulation tools.
-## TODO
+
+# Further Features
+* Automated installion (E.g. Vscode, Google Drive, PDf support)
+* Remote desktop and ssh setup
+* System maintenance/General recommendations (arch wiki)?
 * Title is controled by zsh.
+
