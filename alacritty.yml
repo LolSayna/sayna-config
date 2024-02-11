@@ -1,0 +1,16 @@
+window:
+  dimensions:
+    columns: 135
+    lines: 40
+
+scrolling:
+  multiplier: 5
+
+cursor:
+  style:
+    blinking: On
+  blink_interval: 1000
+  blink_timeout: 30
+
+selection:
+  save_to_clipboard: true
