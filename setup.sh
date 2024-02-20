@@ -18,4 +18,9 @@ fi
 mkdir -p ~/.config/alacritty
 cp -a ~/sayna-config/alacritty.yml ~/.config/alacritty/alacritty.yml
 
+# Install p10k + zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+cp ~/sayna-config/.zshrc ~/.zshrc
+cp ~/sayna-config/.p10k.zsh ~/.p10k.zsh
+
 echo "Done :)."
