@@ -19,7 +19,7 @@ sudo apt install -y build-essential git micro
 # Install more utils
 sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 fzf tldr
 # Install terminal setup
-sudo apt install -y alacritty zsh neovim neofetch  
+sudo apt install -y alacritty zsh neofetch  
 
 # Install ssh
 sudo apt install -y openssh-server
