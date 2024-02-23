@@ -1,5 +1,5 @@
 #!/bin/bash
-# Sayna linux setup install script - 11.02.2024
+# Sayna linux setup install script
 
 # Install fonts - JetBrainsMono Nerd Font
 if test -f ~/.local/share/fonts/JetBrainsMonoNerdFont-Regular.ttf; then
@@ -24,12 +24,13 @@ if test -d ~/powerlevel10k; then
 else
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 fi
-# Config zsh + p10k
+# Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
 cp ~/sayna-config/.zshrc ~/.zshrc
+# p10k
 cp ~/sayna-config/.p10k.zsh ~/.p10k.zsh
 
 
-# Neovim 0.9, since apt includes older version. Alias in .zshrc is used to call "nvim". 
+# Install Neovim 0.9, since apt includes older version. Alias in .zshrc is used to call "nvim". 
 if test -d ~/neovim; then
 	echo "0.9 nvim already installed."
 else
@@ -38,11 +39,12 @@ else
 	chmod u+x ~/neovim/nvim.appimage
 	~/neovim/nvim.appimage --appimage-extract
 fi
-# NvChad
+# Install NvChad
 if test -d ~/.config/nvim; then
 	echo "NvChard already installed."
 else
 	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
+
 
 echo "Done installing config :)."

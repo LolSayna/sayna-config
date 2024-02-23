@@ -2,8 +2,8 @@
 Linux .config folder and Terminal setup.
 
 - [x] alacritty - Terminal Emulator
-- [x] zsh - Shell
-- [x] neovim - Text Editor
+- [x] zsh - Shell (p10k)
+- [x] neovim - Text Editor (NvChad)
 - [ ] tmux - Terminal Multiplexer
 
 
@@ -43,6 +43,27 @@ git clone https://github.com/LolSayna/sayna-config.git
 
 # Shortcuts
 ## Neovim
+`h - j - k - l` - Movement\
+`100G gg G` - Move to 100, to start, to end\
+`/ - n - N` - Search, Next, Next backwards\
+`w - e - $` - Until next word, End of word, End of line
+
+`i` - Insert text\
+`x` - Delete char\
+`dd` - Delete line
+
+`u - CTRL R` - Undo, Redo\
+`v` - mark text\
+`y - yw - yy` - Copy marked text, Copy word, Copy line\
+`p` - paste text
+
+### NvChad
+`Tab - SHIFT Tab` - Switch Buffers\
+`SPACE x` - Close buffer\
+
+`SPACE ff` - Find files\
+`CTRL n` - Filetree\
+`SPACE th` - Set Theme\
 
 
 ## ZSH
@@ -78,23 +99,26 @@ git clone https://github.com/LolSayna/sayna-config.git
 * Neofetch - create custom config.
 * Stow - symlink farm manager.
 * Instructions how to setup git ssh.
+* Sync Vscode settings and extensions.
 
 
 # Inspirations
 * DevOps Toolbox - https://github.com/omerxx/dotfiles/tree/master
   * [Tmux setup](https://www.youtube.com/watch?v=GH3kpsbbERo&list=PLmcTCfaoOo_huhLl9_i6IOjiqURVDgEFB&index=21) + [more features](https://www.youtube.com/watch?v=_hnuEdrM-a0)
 * Typecraft - https://github.com/cpow/cpow-dotfiles/tree/master
-  * [tmux](https://www.youtube.com/watch?v=H70lULWJeig&list=WL&index=8)
-  * [oh my zsh](https://www.youtube.com/watch?v=wNQpDWLs4To&list=PLsz00TDipIfct4F3pHv6_uI9OyjphQEGZ)
+  * [Tmux](https://www.youtube.com/watch?v=H70lULWJeig&list=WL&index=8)
+  * [Oh my zsh](https://www.youtube.com/watch?v=wNQpDWLs4To&list=PLsz00TDipIfct4F3pHv6_uI9OyjphQEGZ)
   * [2024 version, with starship](https://www.youtube.com/watch?v=ZDV4edcaXSY)
 * DreamsofCode https://github.com/dreamsofcode-io/tmux
-  * [tmux config](https://www.youtube.com/watch?v=DzNmUNvnB04&list=WL&index=7&t=668s) 
-  * [c++ neovim](https://www.youtube.com/watch?v=lsFoZIg-oDs&list=WL&index=6&t=52s)
-  * [nv chad](https://www.youtube.com/watch?v=Mtgo-nP_r8Y&list=WL&index=5&t=53s)
+  * [Tmux config](https://www.youtube.com/watch?v=DzNmUNvnB04&list=WL&index=7&t=668s) 
+  * [C++ neovim](https://www.youtube.com/watch?v=lsFoZIg-oDs&list=WL&index=6&t=52s)
+  * [NvChad](https://www.youtube.com/watch?v=Mtgo-nP_r8Y&list=WL&index=5&t=53s)
 * Pixegami - https://github.com/pixegami/terminal-profile
-  * [show terminal](https://www.youtube.com/watch?v=UvY5aFHNoEw)
+  * [Show terminal](https://www.youtube.com/watch?v=UvY5aFHNoEw)
 * The Linux Cast
-  * [zsh p10k install example](https://www.youtube.com/watch?v=oR8v9uOCq0E)
+  * [Zsh p10k install example](https://www.youtube.com/watch?v=oR8v9uOCq0E)
+* Mental Outlaw
+  * [NvChad](https://www.youtube.com/watch?v=yW3ovyQCwpw)
 * Vim
   * [Tutorial](https://vimschool.netlify.app/introduction/vimtutor/)
   * [Blog](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)

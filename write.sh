@@ -2,8 +2,12 @@
 # Save current dotfile configuration to this repository - 23.02.2024
 
 # alacritty
-cp ~/.config/alacritty.yml ~/sayna-config/alacritty/alacritty.yml
+cp ~/.config/alacritty/alacritty.yml ~/sayna-config/alacritty.yml
 
-# zsh + p10k
+# zsh
 cp ~/.zshrc ~/sayna-config/.zshrc
+
+# p10k
 cp ~/.p10k.zsh ~/sayna-config/.p10k.zsh
+
+echo "Done writing config, dont forget to upload :)."
