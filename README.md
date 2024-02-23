@@ -1,15 +1,14 @@
 # My custom Linux config
-
 Linux .config folder and Terminal setup.
 
 - [x] alacritty - Terminal Emulator
-- [x] zsh - shell
-- [ ] neovim - text editor
+- [x] zsh - Shell
+- [x] neovim - Text Editor
+- [ ] tmux - Terminal Multiplexer
 
 
 # Prerequisites
-
-Only tested for Debian/Ubuntu 23.04, last edited on 20.02.2024.
+Only tested for Debian/Ubuntu 23.04, last edited on 23.02.2024.
 ```bash
 # Update software repositories
 sudo apt update -y && sudo apt upgrade -y
@@ -23,6 +22,9 @@ sudo apt install -y alacritty zsh neofetch
 
 # Install ssh
 sudo apt install -y openssh-server
+
+# Make zsh default shell
+chsh -s $(which zsh)
 ```
 
 
@@ -34,9 +36,21 @@ git clone https://github.com/LolSayna/sayna-config.git
 # Execute script (chmod +x setup.sh)
 ./sayna-config/setup.sh
 ```
-
+```bash
+# Save current dotfiles to local repository (chmod +x setup.sh)
+./sayna-config/write.sh
+```
 
 # Shortcuts
+## Neovim
+
+
+## ZSH
+`CTRL C` - Interrupt\
+`CTRL D` - Exit\
+`CTRL R` - Search previous commands\
+`CTRL L` - Clear screen
+
 ## Alacritty
 `CTRL +` - Zoom in\
 `CTRL -` - Zoom out\
@@ -52,23 +66,18 @@ git clone https://github.com/LolSayna/sayna-config.git
 `Shift v` - Select Line\
 `CTRL v` - Select Block
 
-## ZSH
-`CTRL R` - Search previous commands\
-`CTRL L` - Clear screen
-
 
 # Remarks
 * keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
-* Stow - symlink farm manager, not used and only currently only uses install script.
-* Config file location for zsh, currently in home folder.
 
-# Further Features
-* Automated installion (E.g. Vscode, Google Drive, Pdf support)
-* Remote desktop and ssh setup
-* Customize my Neofetch.
-* Full custom zsh config (many steps!).
-* [ ] Tmux!
+
+# Future Features
+* Full custom zsh config (also file location to .config).
+* Better nvim setup: [C++ example](https://youtu.be/lsFoZIg-oDs)
+* Neofetch - create custom config.
+* Stow - symlink farm manager.
+* Instructions how to setup git ssh.
 
 
 # Inspirations
@@ -86,4 +95,6 @@ git clone https://github.com/LolSayna/sayna-config.git
   * [show terminal](https://www.youtube.com/watch?v=UvY5aFHNoEw)
 * The Linux Cast
   * [zsh p10k install example](https://www.youtube.com/watch?v=oR8v9uOCq0E)
-
+* Vim
+  * [Tutorial](https://vimschool.netlify.app/introduction/vimtutor/)
+  * [Blog](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
