@@ -44,7 +44,7 @@ git clone https://github.com/LolSayna/sayna-config.git
 # Shortcuts
 ## Neovim
 `h - j - k - l` - Movement\
-`100G gg G` - Move to 100, to start, to end\
+`100G - gg - G` - Move to 100, to start, to end\
 `/ - n - N` - Search, Next, Next backwards\
 `w - e - $` - Until next word, End of word, End of line
 
