@@ -8,6 +8,7 @@ else
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip -O ~/Downloads/JetBrainsMono.zip
 	unzip ~/Downloads/JetBrainsMono.zip -d ~/Downloads/JetBrainsMono
 	mkdir -p ~/.local/share/fonts
+	cp ~/Downloads/JetBrainsMono/JetBrainsMonoNerdFont{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} ~/.local/share/fonts
 	cp ~/Downloads/JetBrainsMono/JetBrainsMonoNLNerdFontMono{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} ~/.local/share/fonts
 	rm -dr ~/Downloads/JetBrainsMono*
 fi
@@ -45,6 +46,10 @@ if test -d ~/.config/nvim; then
 else
 	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
+
+# VsCode
+mkdir -p ~/.config/Code/User/
+cp -a ~/sayna-config/vscode-settings.json ~/.config/Code/User/settings.json
 
 
 echo "Done installing config :)."

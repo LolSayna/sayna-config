@@ -1,0 +1,7 @@
+{
+    "terminal.integrated.gpuAcceleration": "off",
+    "window.zoomLevel": 1,
+    "cpplint.cpplintPath": "/usr/bin/cpplint",
+    "makefile.makefilePath": "test-stream",
+    "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font Mono'",
+}

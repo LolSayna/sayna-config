@@ -10,4 +10,7 @@ cp ~/.zshrc ~/sayna-config/.zshrc
 # p10k
 cp ~/.p10k.zsh ~/sayna-config/.p10k.zsh
 
+# VsCode
+cp ~/.config/Code/User/settings.json ~/sayna-config/vscode-settings.json
+
 echo "Done writing config, dont forget to upload :)."
