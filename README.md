@@ -27,6 +27,14 @@ sudo apt install -y openssh-server
 chsh -s $(which zsh)
 ```
 
+Get ssh terminal compatibility / fix missing terminal \
+ON HOST:
+`infocmp alacritty > alacritty.terminfo`
+ON TARGET
+`tic -x ~/sayna-config/alacritty.terminfo`
+
+
+
 
 # Install
 ```bash
