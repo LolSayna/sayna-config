@@ -25,6 +25,12 @@ if test -d ~/powerlevel10k; then
 else
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 fi
+# Install zsh-autosuggestions
+if test -d ~/.zsh/zsh-autosuggestions; then
+	echo "zsh-autosuggestions already installed."
+else
+	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+fi
 # Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
 cp ~/sayna-config/.zshrc ~/.zshrc
 # p10k
