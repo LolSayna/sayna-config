@@ -108,6 +108,7 @@ git clone https://github.com/LolSayna/sayna-config.git
 * Stow - symlink farm manager.
 * Instructions how to setup git ssh.
 * Sync Vscode settings and extensions.
+* gtop - maybe sudo apt install npm | sudo npm install gtop -g
 
 
 # Inspirations
