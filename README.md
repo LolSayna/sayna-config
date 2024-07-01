@@ -8,7 +8,12 @@ Linux .config folder and Terminal setup.
 
 
 # Prerequisites
-Only tested for Debian/Ubuntu 23.04, last edited on 23.02.2024.
+
+## General Setup
+Networking + Firefox->Sign In -> Github
+
+Only tested for Debian/Ubuntu 23.04, last edited on 22.04 Ubuntu Budgie 01.07.24.
+
 ```bash
 # Update software repositories
 sudo apt update -y && sudo apt upgrade -y
@@ -18,7 +23,21 @@ sudo apt install -y build-essential git micro
 # Install more utils
 sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 fzf tldr
 # Install terminal setup
-sudo apt install -y alacritty zsh neofetch  
+# Alacritty ppa
+sudo add-apt-repository ppa:aslatter/ppa -y
+sudo apt install -y alacritty zsh codium neofetch neovim
+#Vscode
+sudo apt-get install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
+
+
 
 # Install ssh
 sudo apt install -y openssh-server
