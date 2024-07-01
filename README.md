@@ -125,6 +125,7 @@ git clone https://github.com/LolSayna/sayna-config.git
 # Remarks
 * keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
+* neovim install doenst work, installs file in wrong dir, script needs to be called from home. Doesnt find nvchad config
 
 
 # Future Features
