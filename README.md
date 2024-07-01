@@ -11,6 +11,13 @@ Linux .config folder and Terminal setup.
 
 ## General Setup
 Networking + Firefox->Sign In -> Github
+```bash
+# Github
+git config --global user.email "mareike.burg@web.de"
+git config --global user.name "Mareike Burg"
+ssh-keygen -t ed25519
+```
+
 
 Only tested for Debian/Ubuntu 23.04, last edited on 22.04 Ubuntu Budgie 01.07.24.
 
