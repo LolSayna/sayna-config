@@ -158,3 +158,5 @@ git clone https://github.com/LolSayna/sayna-config.git
 * Vim
   * [Tutorial](https://vimschool.netlify.app/introduction/vimtutor/)
   * [Blog](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+
+[nice config](https://youtu.be/ud7YxC33Z3w?si=qkZo4V6Iu0uvEXoc)
