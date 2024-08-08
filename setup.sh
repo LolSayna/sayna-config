@@ -51,7 +51,7 @@ fi
 if test -d ~/.config/nvim; then
 	echo "NvChard already installed."
 else
-	git clone https://github.com/NvChad/starter ~/.config/nvim
+	git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
 
 # VsCode

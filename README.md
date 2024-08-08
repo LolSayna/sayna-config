@@ -77,6 +77,13 @@ git clone https://github.com/LolSayna/sayna-config.git
 ```bash
 # Install Rust
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+
+# TODO get config folder via Github
+# ...
+
+# Inside nvim run
+:MasonInstallALL
+
 ```
 
 # Shortcuts
@@ -93,7 +100,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `dd` - Delete line
 
 `u - CTRL R` - Undo, Redo\
-`v` - mark text\
+`v` - Visual Mode/ Mark text\
 `y - yw - yy` - Copy marked text, Copy word, Copy line\
 `p` - paste text
 
@@ -103,6 +110,8 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 `SPACE ff` - Find files (used to open Buffers)\
 `CTRL n` - Filetree\
+    `a` - add File\
+`CTRL h/l` - Move into/out Filetree\
 `SPACE th` - Set Theme\
 
 
