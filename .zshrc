@@ -3962,5 +3962,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias nvim="~/neovim/squashfs-root/usr/bin/nvim"
+alias vim=nvim
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

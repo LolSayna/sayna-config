@@ -81,12 +81,14 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 # Shortcuts
 ## Neovim
+`:q - :q! - :wq` - Exit, Exit without saving, Exit Saving\
 `h - j - k - l` - Movement\
 `100G - gg - G` - Move to 100, to start, to end\
 `/ - n - N` - Search, Next, Next backwards\
 `w - e - $` - Until next word, End of word, End of line
 
-`i` - Insert text\
+`i` - Enter Text Mode (insert)\
+`ESC` - Leave Mode (normal)\
 `x` - Delete char\
 `dd` - Delete line
 
@@ -99,7 +101,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `Tab - SHIFT Tab` - Switch Buffers\
 `SPACE x` - Close buffer\
 
-`SPACE ff` - Find files\
+`SPACE ff` - Find files (used to open Buffers)\
 `CTRL n` - Filetree\
 `SPACE th` - Set Theme\
 
@@ -129,7 +131,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 # Remarks
 * keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
-* neovim install doenst work, installs file in wrong dir, script needs to be called from home. Doesnt find nvchad config
+* SHOULD BE FIXED!:neovim install doenst work, installs file in wrong dir, script needs to be called from home. Doesnt find nvchad config
 
 
 # Future Features
