@@ -45,12 +45,13 @@ else
 	wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O ~/neovim/nvim.appimage
 	chmod u+x ~/neovim/nvim.appimage
 	~/neovim/nvim.appimage --appimage-extract
+	mv squashfs-root ~/neovim
 fi
 # Install NvChad
 if test -d ~/.config/nvim; then
 	echo "NvChard already installed."
 else
-	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+	git clone https://github.com/NvChad/starter ~/.config/nvim
 fi
 
 # VsCode

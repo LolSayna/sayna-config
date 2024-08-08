@@ -74,6 +74,10 @@ git clone https://github.com/LolSayna/sayna-config.git
 # Save current dotfiles to local repository (chmod +x setup.sh)
 ./sayna-config/write.sh
 ```
+```bash
+# Install Rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+```
 
 # Shortcuts
 ## Neovim
