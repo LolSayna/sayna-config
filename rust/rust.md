@@ -40,3 +40,19 @@ tupel [any types, can be unpacked or .0 .1] | arrays [same typ, fixed length]
 - **Expressions** evaluate to a resultant value.
 
 In function implicite return the last expression, no ; needed.
+
+### Stack vs Heap
+Fixed size + fast access vs slower but bigger
+Default copy vs default move (copy explicit)
+
+## Ownership
+- each value exact 1 owner, automatically drop when scope left
+- Drop function, clone function, Copy trait (Stack only)
+
+String literal (fixed Size) vs String Type (Variable length)
+Function calls pass ownership
+
+## Referenze
+&Name to not pass ownership, instead point to it. No drop at the end + immutable.
+Exactly 1 &mut reference possible, but then not even read references (its okay if references are not used after &mut is created)
+Functions should not return references, instead the object (because it is dropped otherwise)
