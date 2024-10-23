@@ -15,6 +15,7 @@ Networking + Firefox->Sign In -> Github
 # Github
 git config --global user.email "mareike.burg@web.de"
 git config --global user.name "Mareike Burg"
+git config --global core.editor "nvim"
 ssh-keygen -t ed25519
 ```
 
