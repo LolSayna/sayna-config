@@ -29,7 +29,7 @@ sudo apt update -y && sudo apt upgrade -y
 # Install core utils
 sudo apt install -y build-essential git micro
 # Install more utils
-sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 fzf tldr
+sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard
 # Install terminal setup
 # Alacritty ppa
 sudo add-apt-repository ppa:aslatter/ppa -y
