@@ -4,4 +4,12 @@
     "cpplint.cpplintPath": "/usr/bin/cpplint",
     "makefile.makefilePath": "test-stream",
     "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font Mono'",
+    "mesonbuild.downloadLanguageServer": true,
+    "rust-analyzer.check.allTargets": false,
+    "rust-analyzer.cargo.target": "build/i686-rstubs-kernel.json",
+    "workbench.colorTheme": "Default Dark+",
+    "git.confirmSync": false,
+    "editor.minimap.enabled": false,
+    "RainbowBrackets.depreciation-notice": false,
+
 }

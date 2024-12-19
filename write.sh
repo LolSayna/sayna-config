@@ -6,6 +6,7 @@ cp ~/.config/alacritty/alacritty.yml ~/sayna-config/alacritty.yml
 
 # zsh
 cp ~/.zshrc ~/sayna-config/.zshrc
+cp ~/.zshrc.local ~/sayna-config/.zshrc.local
 
 # p10k
 cp ~/.p10k.zsh ~/sayna-config/.p10k.zsh

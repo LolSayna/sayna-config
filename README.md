@@ -8,20 +8,11 @@ Linux .config folder and Terminal setup.
 
 
 # Prerequisites
+## Initial Setup
+Networking + Firefox -> Sign In
 
 ## General Setup
-Networking + Firefox->Sign In -> Github
-```bash
-# Github
-git config --global user.email "mareike.burg@web.de"
-git config --global user.name "Mareike Burg"
-git config --global core.editor "nvim"
-ssh-keygen -t ed25519
-```
-
-
 Only tested for Debian/Ubuntu 23.04, last edited on 22.04 Ubuntu Budgie 01.07.24.
-
 ```bash
 # Update software repositories
 sudo apt update -y && sudo apt upgrade -y
@@ -45,8 +36,6 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
 
-
-
 # Install ssh
 sudo apt install -y openssh-server
 
@@ -54,6 +43,16 @@ sudo apt install -y openssh-server
 chsh -s $(which zsh)
 ```
 
+## Github
+```bash
+# Github
+git config --global user.email "mareike.burg@web.de"
+git config --global user.name "Mareike Burg"
+git config --global core.editor "nvim"
+ssh-keygen -t ed25519
+```
+
+## Fix remote Terminal issue
 Get ssh terminal compatibility / fix missing terminal \
 ON HOST:
 `infocmp alacritty > alacritty.terminfo`
@@ -63,7 +62,7 @@ ON TARGET
 
 
 
-# Install
+# My setup installation
 ```bash
 # Copy repository
 git clone https://github.com/LolSayna/sayna-config.git
@@ -137,12 +136,14 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `Shift v` - Select Line\
 `CTRL v` - Select Block
 
+## Tmux
+
 
 # Remarks
 * keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
 * SHOULD BE FIXED!:neovim install doenst work, installs file in wrong dir, script needs to be called from home. Doesnt find nvchad config
-
+* check $XDG_CONFIG_HOME and $EDITOR and sudoedit -> why does it take nano?
 
 # Future Features
 * Full custom zsh config (also file location to .config).

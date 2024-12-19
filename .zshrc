@@ -3955,13 +3955,3 @@ unfunction grml_status_feature
 # Local variables:
 # mode: sh
 # End:
-neofetch
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-alias nvim="~/neovim/squashfs-root/usr/bin/nvim"
-alias vim=nvim
-
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
