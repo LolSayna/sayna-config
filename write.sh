@@ -14,4 +14,7 @@ cp ~/.p10k.zsh ~/sayna-config/.p10k.zsh
 # VsCode
 cp ~/.config/Code/User/settings.json ~/sayna-config/vscode-settings.json
 
+# Tmux
+cp ~/.config/tmux/tmux.conf ~/sayna-config/tmux.conf
+
 echo "Done writing config, dont forget to upload :)."

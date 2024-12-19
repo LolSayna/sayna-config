@@ -137,6 +137,8 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `CTRL v` - Select Block
 
 ## Tmux
+`CTRL B` - Prefix
+`Prefix r` - Reload config
 
 
 # Remarks
