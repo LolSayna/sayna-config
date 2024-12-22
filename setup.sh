@@ -2,61 +2,56 @@
 # Sayna linux setup install script
 
 # Install fonts - JetBrainsMono Nerd Font
-if test -f ~/.local/share/fonts/JetBrainsMonoNerdFont-Regular.ttf; then
-	echo "Fonts already installed."
+if test -f ~/.local/share/fonts/RobotoMonoNerdFont-Regular.ttf; then
+  echo "Fonts already installed."
 else
-	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip -O ~/Downloads/JetBrainsMono.zip
-	unzip ~/Downloads/JetBrainsMono.zip -d ~/Downloads/JetBrainsMono
-	mkdir -p ~/.local/share/fonts
-	cp ~/Downloads/JetBrainsMono/JetBrainsMonoNerdFont{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} ~/.local/share/fonts
-	cp ~/Downloads/JetBrainsMono/JetBrainsMonoNLNerdFontMono{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} ~/.local/share/fonts
-	rm -dr ~/Downloads/JetBrainsMono*
+  wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/RobotoMono.zip -O ~/Downloads/RobotoMono.zip
+  unzip ~/Downloads/RobotoMono.zip -d ~/Downloads/RobotoMono
+  mkdir -p ~/.local/share/fonts
+  cp ~/Downloads/RobotoMono/RobotoMonoNerdFont{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} ~/.local/share/fonts
+  rm -dr ~/Downloads/RobotoMono*
 fi
-
 
 # Config alacritty
 mkdir -p ~/.config/alacritty
-cp -a ~/sayna-config/alacritty.yml ~/.config/alacritty/alacritty.yml
-
+cp -a ~/sayna-config/alacritty.toml ~/.config/alacritty/alacritty.toml
 
 # Install p10k
 if test -d ~/powerlevel10k; then
-	echo "Powerlevel10k already installed."
+  echo "Powerlevel10k already installed."
 else
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 fi
 # Install zsh-autosuggestions
 if test -d ~/.zsh/zsh-autosuggestions; then
-	echo "zsh-autosuggestions already installed."
+  echo "zsh-autosuggestions already installed."
 else
-	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 fi
 # Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
 cp ~/sayna-config/.zshrc ~/.zshrc
 # p10k
 cp ~/sayna-config/.p10k.zsh ~/.p10k.zsh
 
-
-# Install Neovim 0.9, since apt includes older version. Alias in .zshrc is used to call "nvim". 
+# Install Neovim 0.9, since apt includes older version. Alias in .zshrc is used to call "nvim".
 if test -d ~/neovim; then
-	echo "0.9 nvim already installed."
+  echo "0.9 nvim already installed."
 else
-	mkdir ~/neovim
-	wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O ~/neovim/nvim.appimage
-	chmod u+x ~/neovim/nvim.appimage
-	~/neovim/nvim.appimage --appimage-extract
-	mv squashfs-root ~/neovim
+  mkdir ~/neovim
+  wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O ~/neovim/nvim.appimage
+  chmod u+x ~/neovim/nvim.appimage
+  ~/neovim/nvim.appimage --appimage-extract
+  mv squashfs-root ~/neovim
 fi
 # Install NvChad
 if test -d ~/.config/nvim; then
-	echo "NvChard already installed."
+  echo "NvChard already installed."
 else
-	git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+  git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
 
 # VsCode
 mkdir -p ~/.config/Code/User/
 cp -a ~/sayna-config/vscode-settings.json ~/.config/Code/User/settings.json
-
 
 echo "Done installing config :)."
