@@ -137,20 +137,25 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `CTRL v` - Select Block
 
 ## Tmux
+### Starting
+`tmux ls` - list active\
+`tmux new -s NAME` - create Session\
+`tmux a -t NAME` - attach to Session\
+### General
 `CTRL B` - Prefix\
 `Prefix r` - Reload config\
 `Prefix I` - Install tpm plugins\
 ### Sessions
-`Prefix w` - Preview Sessions\
 `Prefix : 'new'` - New Session\
 `Prefix $` - Rename Session\
 `Prefix (/)` - Cycle Session\
+`Prefix d` - Detach Session\
 ### Windows
-`Prefix w` - Preview Windows\
+`Prefix w` - Preview Sessions + Windows\
 `Prefix c` - New Window\
 `Prefix ,` - Rename Window\
 `Prefix n/p` - Cycle Window\
-`Prefix &` - Close Window\
+`Prefix &` - Close Window (or use `CTRL - d`)\
 ### Panes
 `Prefix PgUp/PgDown` - Scroll\
 `Prefix %/"` - Split horizontal/vertical\

@@ -50,6 +50,7 @@ if test -d ~/.config/nvim; then
 else
   git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
+# TODO add lazyim + add tmux plugin there vim-tmux-navigator
 
 # VsCode
 mkdir -p ~/.config/Code/User/
