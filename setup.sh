@@ -15,6 +15,7 @@ fi
 # Config alacritty
 mkdir -p ~/.config/alacritty
 cp -a ~/sayna-config/alacritty.toml ~/.config/alacritty/alacritty.toml
+curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
 
 # Install p10k
 if test -d ~/powerlevel10k; then
