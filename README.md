@@ -159,8 +159,9 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ### Panes
 `Prefix PgUp/PgDown` - Scroll\
 `Prefix %/"` - Split horizontal/vertical\
-`Prefix up/down/left/right` - Move Pane\
-`Prefix 'hold' up/down/left/right` - Rezise Pane\
+`Prefix up/down/left/right` - Move Cursor\
+`CTRL h/j/k/l` - Move Cursor\
+`Prefix 'hold' up/down/left/right` - Resize Pane\
 `Prefix x` - Close Pane\
 `Prefix z` - Toogle Zoom\
 
