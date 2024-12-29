@@ -4,7 +4,16 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# [neovim]
 alias nvim="~/neovim/squashfs-root/usr/bin/nvim"
 alias vim=nvim
+
+# [fzf]
+# Set up fzf key bindings and fuzzy completion
+# this would only work in version 0.48 and up, current is 0.28
+# source <(fzf --zsh)
+# based on https://www.youtube.com/watch?v=oTNRvnQLLLs could replace cat with bat
+alias myf='fzf --preview="cat {}"'
+alias mye='nvim $(fzf --preview="cat {}")'
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

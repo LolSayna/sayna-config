@@ -165,6 +165,26 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `Prefix x` - Close Pane\
 `Prefix z` - Toogle Zoom\
 
+## Linux Basics
+### grep "SOME" PATH ///// cat *.txt | grep "SOME"
+`-r ` - Search through Directories
+`-v` - Invert
+`-i` - Case insensitve
+`-n ` - Show line number\
+`-C 3` - Print 3 lines before + after match\
+
+### find . -name "*.txt"
+`-exec grep -l "TEXT" {} +` - Find File by content 
+`-iname` - Case insensitve
+`-type f/d` - Files or Directories
+`-size +1G` - Files bigger then
+
+### fzf
+Search a file on system
+`-m` + `TAB` - Search multiple Files
+`myf` + `mye` - Custom Alias in my zshrc
+
+
 
 # Remarks
 * Fonts: Nerdfonts includes 6 variants. Monospaced/Proportional/Regular(Mixed) -> choose Monospaced to prevent terminal issues. NL Suffix is no ligatures, so special charactesr that combine to or more charaters -> choose NL
