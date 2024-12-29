@@ -1,7 +1,8 @@
 #!/bin/bash
 # Sayna linux setup install script
 
-# Install fonts - JetBrainsMono Nerd Font
+# [FONTS]
+# tried JetBrainsMono Nerd Font, now its RobotoMonoNerdFont
 if test -f ~/.local/share/fonts/RobotoMonoNerdFont-Regular.ttf; then
   echo "Fonts already installed."
 else
@@ -12,33 +13,59 @@ else
   rm -dr ~/Downloads/RobotoMono*
 fi
 
-# Config alacritty
+# [alacritty]
 mkdir -p ~/.config/alacritty
-cp -a ~/sayna-config/alacritty.toml ~/.config/alacritty/alacritty.toml
-curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
+if test -f ~/.config/alacritty/alacritty.toml; then
+  echo "alacritty config exists, not updated."
+else
+  cp -a ~/sayna-config/alacritty.toml ~/.config/alacritty/alacritty.toml
+  curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
+  echo "Added alacritty config."
+fi
 
-# Install p10k
+# [P10K]
 if test -d ~/powerlevel10k; then
   echo "Powerlevel10k already installed."
 else
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+  echo "Installed Powerlevel10k."
 fi
-# Install zsh-autosuggestions
+if test -f ~/.p10k.zsh; then
+  echo "p10k config exists, not updated."
+else
+  cp ~/sayna-config/.p10k.zsh ~/.p10k.zsh
+  echo "Added p10k config."
+fi
+
+# [ZSH]
 if test -d ~/.zsh/zsh-autosuggestions; then
   echo "zsh-autosuggestions already installed."
 else
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+  echo "Installed zsh-autosuggestions."
 fi
-# Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
-cp ~/sayna-config/.zshrc ~/.zshrc
-# p10k
-cp ~/sayna-config/.p10k.zsh ~/.p10k.zsh
+if test -f ~/.zshrc; then
+  echo "zshrc config exists, not updated."
+else
+  # Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
+  cp ~/sayna-config/.zshrc ~/.zshrc
+  echo "Added zshrc config."
+fi
+if test -f ~/.zshrc.local; then
+  echo "zshrc.local config exists, not updated."
+else
+  cp ~/sayna-config/.zshrc.local ~/.zshrc.local
+  echo "Added zshrc.local config."
+fi
 
+
+# [NEOVIM]
+# TODO needs cleanup + add lazyim + add tmux plugin there vim-tmux-navigator
 # Install Neovim 0.9, since apt includes older version. Alias in .zshrc is used to call "nvim".
 if test -d ~/neovim; then
   echo "0.9 nvim already installed."
 else
-  mkdir ~/neovim
+  mkdir -p ~/neovim
   wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage -O ~/neovim/nvim.appimage
   chmod u+x ~/neovim/nvim.appimage
   ~/neovim/nvim.appimage --appimage-extract
@@ -50,10 +77,24 @@ if test -d ~/.config/nvim; then
 else
   git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 fi
-# TODO add lazyim + add tmux plugin there vim-tmux-navigator
 
-# VsCode
+# [TMUX]
+mkdir -p ~/.config/tmux/tmux.conf
+if test -f ~/.config/tmux/tmux.conf; then
+  echo "Tmux config exists, not updated."
+else
+  cp ~/sayna-config/tmux.conf ~/.config/tmux/tmux.conf
+  echo "Added Tmux config."
+fi
+
+# [VSCODE]
 mkdir -p ~/.config/Code/User/
-cp -a ~/sayna-config/vscode-settings.json ~/.config/Code/User/settings.json
+if test -f ~/sayna-config/vscode-settings.json; then
+  echo "VsCode config exists, not updated."
+else
+  # -a maintains permission, not sure if needed
+  cp -a ~/sayna-config/vscode-settings.json ~/.config/Code/User/settings.json
+  echo "Added VsCode config."
+fi
 
-echo "Done installing config :)."
+echo "Done installing Sayna's config :)."
