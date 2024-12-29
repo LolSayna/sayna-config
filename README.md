@@ -180,6 +180,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `-size +1G` - Files bigger then
 
 ### fzf
+# ! does not find .* files
 Search a file on system
 `-m` + `TAB` - Search multiple Files
 `myf` + `mye` - Custom Alias in my zshrc
