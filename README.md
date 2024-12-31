@@ -4,7 +4,7 @@ Linux .config folder and Terminal setup.
 - [x] alacritty - Terminal Emulator
 - [x] zsh - Shell (p10k)
 - [x] neovim - Text Editor (NvChad)
-- [ ] tmux - Terminal Multiplexer
+- [x] tmux - Terminal Multiplexer
 
 
 # Prerequisites
@@ -88,23 +88,48 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 # Shortcuts
 ## Neovim
+### General
 `:q - :q! - :wq` - Exit, Exit without saving, Exit Saving\
-`h - j - k - l` - Movement\
-`100G - gg - G` - Move to 100, to start, to end\
-`/ - n - N` - Search, Next, Next backwards\
-`w - e - $` - Until next word, End of word, End of line
-
-`i` - Enter Text Mode (insert)\
-`ESC` - Leave Mode (normal)\
-`x` - Delete char\
-`dd` - Delete line
-
+`/ - n - N` - Search, Next / Next backwards\ 
 `u - CTRL R` - Undo, Redo\
-`v` - Visual Mode/ Mark text\
-`y - yw - yy` - Copy marked text, Copy word, Copy line\
-`p` - paste text
+`dd` - Copy and Delete line\
+`x` - Delete char\
+### Movement
+`h - j - k - l` - Movement\
+`100G - gg - G` - Move to 100, to start, to end\ 
+`w - e - 0 - $` - Until Beginning/End of next word, Start / End of line\
+### Modes
+`ESC` - Leave Mode (Normal)\
+`i - a` - Enter Text Mode (Insert) before/after cursor\
+`o - O` - Instert new line below/above and Insert Mode\
 
-### NvChad
+`v - V` - Visual Mode (Mark text) by char/line\
+`y - yw - yy` - Copy marked text, Copy word, Copy line\
+`p` - paste text\
+### Splits and Tabs
+
+
+
+### LazyVim
+# TODO add config files to .write
+#### Setup CMDs inside Neovim
+`MasonInstall lua-langauge-server`
+#### General
+`space` - Leader Key\
+`:` - Command Line\
+#### Movement
+`CTRL h/l` - Jump between open windows\
+`s` - Jump to a word\
+#### Filetree
+`Leader e` - Open/Close Filetree\
+  `A` / `a` - Add Folder / File\
+  `r` / `d` - Rename / Delete\
+  `Enter` - Open\ 
+  `m` / `c` - Move / Copy to\
+
+#### Lazy Git
+TODO `Leader gg` - Start Lazy Git
+### NvChad - only leagacy
 `Tab - SHIFT Tab` - Switch Buffers\
 `SPACE x` - Close buffer\
 
