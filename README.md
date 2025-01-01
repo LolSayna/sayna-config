@@ -100,6 +100,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `u - CTRL R` - Undo, Redo\
 `dd` - Copy and Delete line\
 `x` - Delete char\
+`daw` - Delete Word\
 ### Movement
 `h - j - k - l` - Movement\
 `100G - gg - G` - Move to 100, to start, to end\ 

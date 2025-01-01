@@ -11,9 +11,8 @@ cp ~/.p10k.zsh ~/sayna-config/.p10k.zsh
 cp ~/.zshrc ~/sayna-config/.zshrc
 cp ~/.zshrc.local ~/sayna-config/.zshrc.local
 
-# TODO
 # Neovim
-
+cp -r ~/.config/nvim/ ~/sayna-config/
 
 # Tmux
 cp ~/.config/tmux/tmux.conf ~/sayna-config/tmux.conf

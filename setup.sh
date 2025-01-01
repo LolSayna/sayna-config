@@ -58,9 +58,8 @@ else
   echo "Added zshrc.local config."
 fi
 
-
 # [NEOVIM]
-# TODO needs cleanup + add lazyim + add tmux plugin there vim-tmux-navigator
+# TODO add tmux plugin there vim-tmux-navigator
 # Install Neovim 0.9, since apt includes older version. Alias in .zshrc is used to call "nvim".
 if test -d ~/neovim; then
   echo "0.9 nvim already installed."
@@ -71,12 +70,20 @@ else
   ~/neovim/nvim.appimage --appimage-extract
   mv squashfs-root ~/neovim
 fi
-# Install NvChad
+# Install Lazyvim
 if test -d ~/.config/nvim; then
-  echo "NvChard already installed."
+  echo "Layzvim config exists, not updated."
 else
-  git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+  cp -r ~/sayna-config/nvim ~/.config/
+  echo "Installed Lazyvim config."
 fi
+
+# Install NvChad
+#if test -d ~/.config/nvim; then
+#  echo "NvChard already installed."
+#else
+#  git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+#fi
 
 # [TMUX]
 mkdir -p ~/.config/tmux/tmux.conf
