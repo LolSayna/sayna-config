@@ -41,6 +41,11 @@ sudo apt install -y openssh-server
 
 # Make zsh default shell
 chsh -s $(which zsh)
+# Install LazyGit
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit -D -t /usr/local/bin/
 ```
 
 ## Github
@@ -82,6 +87,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 # ...
 
 # Inside nvim run
+# old nvchad
 :MasonInstallALL
 
 ```
@@ -106,9 +112,6 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `v - V` - Visual Mode (Mark text) by char/line\
 `y - yw - yy` - Copy marked text, Copy word, Copy line\
 `p` - paste text\
-### Splits and Tabs
-
-
 
 ### LazyVim
 # TODO add config files to .write
@@ -117,8 +120,15 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 #### General
 `space` - Leader Key\
 `:` - Command Line\
+`Leader c m` - Open Meson\
+`Leader f f` - Find Files\
+`Leader s g` - Search over all Files\
+`CTRL n` - Cylce autocomplete\
 #### Movement
-`CTRL h/l` - Jump between open windows\
+`SHIFT h/l` - Jump between open Windows\
+`Leader - / | ` - Split Horizontal / Vertical\
+`CTRL h/j/k/l ` - Jump between Splits\
+`CTRL Arrowkeys` - Adjust Split size\
 `s` - Jump to a word\
 #### Filetree
 `Leader e` - Open/Close Filetree\
@@ -128,7 +138,9 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
   `m` / `c` - Move / Copy to\
 
 #### Lazy Git
-TODO `Leader gg` - Start Lazy Git
+TODO `Leader gg` - Start LazyGit
+
+
 ### NvChad - only leagacy
 `Tab - SHIFT Tab` - Switch Buffers\
 `SPACE x` - Close buffer\
