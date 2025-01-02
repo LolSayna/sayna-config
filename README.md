@@ -105,6 +105,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `h - j - k - l` - Movement\
 `100G - gg - G` - Move to 100, to start, to end\ 
 `w - e - 0 - $` - Until Beginning/End of next word, Start / End of line\
+`Page Up / Down` - Move one page\
 ### Modes
 `ESC` - Leave Mode (Normal)\
 `i - a` - Enter Text Mode (Insert) before/after cursor\
@@ -223,6 +224,13 @@ Search a file on system
 `-m` + `TAB` - Search multiple Files
 `myf` + `mye` - Custom Alias in my zshrc
 
+
+# Langauge Support
+LSP - Language Server Protocol
+- Code Autocompletion
+- Syntax Highlighting
+- Python
+  - Pylance basiert auf Pyright
 
 
 # Remarks
