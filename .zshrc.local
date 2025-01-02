@@ -8,6 +8,10 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias nvim="~/neovim/squashfs-root/usr/bin/nvim"
 alias vim=nvim
 
+# [nemo]
+# kann mir das nicht merken
+alias files=nemo
+
 # [fzf]
 # Set up fzf key bindings and fuzzy completion
 # this would only work in version 0.48 and up, current is 0.28
