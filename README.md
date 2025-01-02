@@ -21,6 +21,9 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install -y build-essential git micro
 # Install more utils
 sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard
+# Install npm 
+d
+sudo apt install nodejs npm
 # Install terminal setup
 # Alacritty ppa
 sudo add-apt-repository ppa:aslatter/ppa -y
@@ -126,6 +129,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `Leader f f` - Find Files\
 `Leader s g` - Search over all Files\
 `CTRL n` - Cylce autocomplete\
+`z a` - Fold Section\
 #### Movement
 `SHIFT h/l` - Jump between open Windows\
 `Leader - / | ` - Split Horizontal / Vertical\
@@ -138,7 +142,8 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
   `r` / `d` - Rename / Delete\
   `Enter` - Open\ 
   `m` / `c` - Move / Copy to\
-
+#### Neogen
+`Leader c n` - Generate Docstring via neogen\
 #### Lazy Git
 TODO `Leader gg` - Start LazyGit
 
