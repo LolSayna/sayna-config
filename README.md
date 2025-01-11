@@ -130,18 +130,22 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `Leader s g` - Search over all Files\
 `CTRL n` - Cylce autocomplete\
 `z a` - Fold Section\
+`K` - LSP Information about what is on cursor\
+`]/[ e/w/d` - Cycle Errors/Warnings/Diagnostics\
 #### Movement
 `SHIFT h/l` - Jump between open Windows\
 `Leader - / | ` - Split Horizontal / Vertical\
 `CTRL h/j/k/l ` - Jump between Splits\
 `CTRL Arrowkeys` - Adjust Split size\
 `s` - Jump to a word\
+`:split :vsplit` - Split editor into 2\
 #### Filetree
 `Leader e` - Open/Close Filetree\
   `A` / `a` - Add Folder / File\
   `r` / `d` - Rename / Delete\
   `Enter` - Open\ 
   `m` / `c` - Move / Copy to\
+`Backspace` - jump to parent dir\
 #### Neogen
 `Leader c n` - Generate Docstring via neogen\
 #### Lazy Git
