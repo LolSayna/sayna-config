@@ -13,6 +13,8 @@ Networking + Firefox -> Sign In
 
 ## General Setup
 Only tested for Debian/Ubuntu 23.04, last edited on 22.04 Ubuntu Budgie 01.07.24.
+- htop/btop - System overview/utilization
+- wavemon - Analyze wifi networks
 ```bash
 # Update software repositories
 sudo apt update -y && sudo apt upgrade -y
@@ -20,7 +22,7 @@ sudo apt update -y && sudo apt upgrade -y
 # Install core utils
 sudo apt install -y build-essential git micro
 # Install more utils
-sudo apt install -y wget tmux htop tree hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard
+sudo apt install -y wget tmux htop btop tree  wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard
 # Install npm 
 d
 sudo apt install nodejs npm
@@ -132,6 +134,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 `z a` - Fold Section\
 `K` - LSP Information about what is on cursor\
 `]/[ e/w/d` - Cycle Errors/Warnings/Diagnostics\
+`Leader u f` - Toogle format on save\
 #### Movement
 `SHIFT h/l` - Jump between open Windows\
 `Leader - / | ` - Split Horizontal / Vertical\
@@ -146,6 +149,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
   `Enter` - Open\ 
   `m` / `c` - Move / Copy to\
 `Backspace` - jump to parent dir\
+`H` - Toogle hidden files\
 #### Neogen
 `Leader c n` - Generate Docstring via neogen\
 #### Lazy Git
@@ -241,6 +245,12 @@ LSP - Language Server Protocol
 - Python
   - Pylance basiert auf Pyright
 
+
+# Youtube Download/Vod save
+## yt-dlp
+- [Repo Link](https://github.com/yt-dlp/yt-dlp)
+- usage: `yt-dlp FLAGS "URL"`
+- `-F` to show available formats
 
 # Remarks
 * Fonts: Nerdfonts includes 6 variants. Monospaced/Proportional/Regular(Mixed) -> choose Monospaced to prevent terminal issues. NL Suffix is no ligatures, so special charactesr that combine to or more charaters -> choose NL
