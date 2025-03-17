@@ -4,6 +4,9 @@
 # alacritty
 cp ~/.config/alacritty/alacritty.toml ~/sayna-config/alacritty.toml
 
+# gdb
+cp ~/.config/gdb/gdbinit ~/sayna-config/gdbinit
+
 # p10k
 cp ~/.p10k.zsh ~/sayna-config/.p10k.zsh
 
