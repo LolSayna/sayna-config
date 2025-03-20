@@ -20,4 +20,10 @@ alias files=nemo
 alias myf='fzf --preview="cat {}"'
 alias mye='nvim $(fzf --preview="cat {}")'
 
+# [for master thesis - ARA project]
+export CPATH="/usr/local/lib/python3.10/dist-packages/graph_tool/include"
+export PATH="$PATH:/home/sayna/go/bin"
+export GOBIN="/home/sayna/go/bin"
+
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
