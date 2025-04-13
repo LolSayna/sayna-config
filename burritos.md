@@ -1,8 +1,8 @@
-# Burritos
+# Frühstücksburrito mit Hack, Zwiebeln und Ei
 
 ## Infos
 - 6 Portionen
-- Zeit X
+- ~1 Stunde
   
 ## Zutaten
 - 6x Weizentortilla (~25cm)
