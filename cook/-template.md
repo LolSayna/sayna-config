@@ -16,5 +16,9 @@
 3. Anbraten ~X min, Stufe-X
 4. ...
 
+## Lagerung (optional)
+- wie lange im Kühlschrank?
+- einfrierbar?
+
 ## Ideen/Varianten
 - ???

@@ -1,4 +1,4 @@
-# Kartoffelgratin
+# Kartoffelgratin mit Käse
 
 ## Infos
 - Hauptgericht

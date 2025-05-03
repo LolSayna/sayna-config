@@ -7,10 +7,11 @@
   
 ## Zutaten
 - 125 g Mehl
-- 100  ml Milch
+- 100 ml Milch
 - 1.25 EL Zucker
 - 1x Ei
-- 1TL Backpulver
+- 1 TL Backpulver
+- 1 TL Öl
 - 0.05 g Salz
 
 ## Zubereitung
