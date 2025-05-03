@@ -1,6 +1,7 @@
 # Japanische Curry
 
 ## Infos
+- Hauptgericht
 - 6 Portionen
 - ??? Stunde
   

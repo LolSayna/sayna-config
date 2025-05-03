@@ -1,6 +1,7 @@
 # Kartoffelgratin
 
 ## Infos
+- Hauptgericht
 - 4 Portionen
 - 40 Minuten + 40 Minuten Ofen
   

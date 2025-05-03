@@ -1,6 +1,7 @@
-# NAME UND BESCHREIBUNG
+# NAME (+ BESCHREIBUNG)
 
 ## Infos
+- Basics, Hauptgerichte, Snacks, ???
 - ??? Portionen
 - ??? Minuten/Stunden
   
@@ -8,13 +9,12 @@
 - ???g ??? (Anmerkungen)
 - ???x ???
 - 
-
   
 ## Zubereitung
 1. A,B,C (einzelnd) schälen
 2. E+F (gemeinsam) würfeln
-3. Anbraten ~5 min
+3. Anbraten ~X min, Stufe-X
 4. ...
 
-## Ideen
-- Verbesserungs Ideen/Varianten
+## Ideen/Varianten
+- ???

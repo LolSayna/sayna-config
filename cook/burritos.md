@@ -1,6 +1,7 @@
 # Frühstücksburrito mit Hack, Zwiebeln und Ei
 
 ## Infos
+- Hauptgericht
 - 6 Portionen
 - ~1 Stunde
   
