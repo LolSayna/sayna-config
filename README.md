@@ -24,6 +24,7 @@ sudo apt install -y build-essential git micro
 # Install more utils
 sudo apt install -y wget tmux htop btop tree  wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld
 # meld: grafical diff compare
+# tesseract: text from image
 # Install npm 
 d
 sudo apt install nodejs npm
