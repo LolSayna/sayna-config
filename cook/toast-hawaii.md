@@ -2,15 +2,18 @@
 
 ## Infos
 - Snacks
-- 2 Portionen
-- 5 Minuten
+- 6 Portionen
+- 15 Minuten
   
 ## Zutaten
-- 4x Toast
-- 150 g gekochte Schinken
-- 300 g Ananas(scheiben) aus Dose
-- 250 g Gouda
+- 6x Toast
+- 100g gekochte Schinken
+- 272 g Ananas(scheiben) aus Dose
+- 150 g Gouda (oder Emmentaler)
+- ~45 g Butter
   
 ## Zubereitung
-1. Toast belegen mit Schinken, Ananas, Gouda
-2. Ofen XXX° Xmin
+1. Ofen auf 200 vorheizen
+1. Toast leicht toasten und buttern
+2. Mit Schinken, dann Ananas, dann Gouda
+2. ~8 min backen
