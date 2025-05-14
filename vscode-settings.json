@@ -27,5 +27,9 @@
     "workbench.editor.wrapTabs": true,
     "debug.onTaskErrors": "abort",
     "editor.minimap.enabled": false,
+    "cSpell.language": "en,de-de",
+    "cSpell.userWords": [
+        "Mareike"
+    ],
 
 }
