@@ -29,3 +29,4 @@
 ## Ideen
 - Paprika, Tomaten, (Mais) mit rein
 - Tomatensauße mit/oder Ei
+- [Bsp](https://www.youtube.com/watch?v=88WR2pkSwko), [Bsp](https://www.youtube.com/watch?v=eGz6DwnrzcA)
