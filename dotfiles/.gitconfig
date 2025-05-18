@@ -1,0 +1,5 @@
+[user]
+	email = mareike.burg@web.de
+	name = Mareike Burg
+[core]
+	editor = /home/sayna/neovim/squashfs-root/usr/bin/nvim
