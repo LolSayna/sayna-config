@@ -1,13 +1,9 @@
 # Linux applications
-
 ## Shells
 - bash vs **zfs** vs fish
 
+
 ## Terminal
-
-
-
-
 
 
 ## GUI
@@ -18,3 +14,9 @@
 - Firefox
 	- Librewolf (privacy focused, no bookmark sync)
 	- Zen Browser (different layout, tabs on left side)
+
+
+## Helper
+- curl wttr.in - weather forecast
+	- `curl "v2.wttr.in"` or `curl "wttr.in/?format=3"`
+
