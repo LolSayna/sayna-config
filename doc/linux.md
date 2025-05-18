@@ -1,5 +1,4 @@
-# Linux
-
+# Linux - OS level
 ## Distro
 - Debian [APT based] (ParrotOS, Raspbian)
   - Ubuntu (Mint, PopOS)
@@ -8,29 +7,38 @@
   - Fedora (ehemals stable version, now testing branch)
   - Rocky (open source fork of stable)
   - CentOS
-- NixOS
-- Arch [pacman](Manjaro/Gentoo/EndeavourOS)
+- NixOS [Nix]
+- Arch [pacman] (Manjaro/Gentoo/EndeavourOS)
 - (FreeBSD) != Linux
+
 
 ## Packetmanager
 - APT
 - RPM + yum/dnf(modern version of dnf))
 - pacman + Arch User Repository
 - zypper
-
-### Packetmanager Distro Unabhängig
+### Packetmanager distro independent
 - Appimages -> Insecure, but Portable + Independent
 - Flatpaks -> nur grafisch, enthalten alle nötigen Librarys, sicherer (no root)
 - Snap -> by Canonical(Ubuntu), has Autoupdate, like container
 - pip -> Python
     - pipx - ohne enviroments
- 
 
-## Desktop Enviorments
-TODO
+## Display
+- display server (foundation for gui): X/X11/x.org (old) vs Wayland (newer)
+- xwayland compatibility x layer for wayland
+### Desktop enviroments (bundle of gui programs)
+- budgie, gnome, (kde) plasma, mate, xfce, lxde
+### Display manager (login manager, needs window manager)
+- xdm (example)
+### Window manager(X)/Compositors(Wayland)
+- stacking (floating) vs tiling (no overlap, keyboard based) vs dynamic (mixed)
+- x/tiling: i3, dynamic: dwm
+- wayland/tiling: sway, dynamic: dwl, hyprland
 
-## Display Mananger
-TODO
+
+## Shells
+- bash vs **zfs** vs fish
 
 
 ## Init Prozesse

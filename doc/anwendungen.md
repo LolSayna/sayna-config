@@ -1,18 +1,37 @@
 # Linux applications
-## Shells
-- bash vs **zfs** vs fish
-
-
 ## Terminal
+### Core
+- cat, echo, ls, cd, cp, mv, sudo, clear
+- man (highlighting via less config in .zshrc), git, gcc/clang, time
+- curl - web requests, wget - file downloader
+- rysnc - file synchronisation
+	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
+- df -h (disk usage), ps -aux (processes)
+
+### Additional core (need to be installed)
+- tldr - command examples (tealdeer rust client)
+- tree - list files including folder structure
+- wikiman - offline wiki reader (no apt install, add each wiki)
+	- `wikiman -c TEXT` search and show source
+- w3m - terminal web browser
+- bat - cat extension
+- dysk - df extension (install via cargo)
+- top, htop, gtop, btop - system/tasks overview
+- fzf - fuzzyfinder
+
 ### Util
 - imageMagick - image converter
 	- `convert IN.png -resize 1920x1080 OUT.png`
 - ffmpeg - audio+video converter
 	- `ffmpeg -i IN.m4a -ar 16000 -ac 1 OUT.wav` good format for tts
-- tesseract - optical image recognition
+- tesseract - optical image recognition, image to text
 	- `tesseract -l deu IN.png OUT.txt`
+- wavemon - wifi signal analyzer
 - wttr.in - weather forecast
 	- `curl "v2.wttr.in"` or `curl "wttr.in/?format=3"`
+- yt-dlp - youtube downloader
+	- [Repo Link](https://github.com/yt-dlp/yt-dlp)
+	- usage: `yt-dlp FLAGS "URL"`, `-F` to show available formats
 
 
 ## GUI
@@ -28,7 +47,7 @@
 - meld - diff viewer
 - blender - 3d animation
 - gimp - image viewer/editor
-- speachnote - text to speach engine
+- speachnote - tts, text to speach engine
 - spek - graphical spectrum analyzer
-
+- vlc - video player
 

@@ -13,8 +13,6 @@ Networking + Firefox -> Sign In
 
 ## General Setup
 Only tested for Debian/Ubuntu 23.04, last edited on 22.04 Ubuntu Budgie 01.07.24.
-- htop/btop - System overview/utilization
-- wavemon - Analyze wifi networks
 ```bash
 # Update software repositories
 sudo apt update -y && sudo apt upgrade -y
@@ -22,9 +20,7 @@ sudo apt update -y && sudo apt upgrade -y
 # Install core utils
 sudo apt install -y build-essential git micro
 # Install more utils
-sudo apt install -y wget tmux htop btop tree  wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld
-# meld: grafical diff compare
-# tesseract: text from image
+sudo apt install -y wget tmux htop btop tree wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld
 # Install npm 
 d
 sudo apt install nodejs npm
@@ -248,12 +244,6 @@ LSP - Language Server Protocol
   - Pylance basiert auf Pyright
 
 
-# Youtube Download/Vod save
-## yt-dlp
-- [Repo Link](https://github.com/yt-dlp/yt-dlp)
-- usage: `yt-dlp FLAGS "URL"`
-- `-F` to show available formats
-
 # Remarks
 * Fonts: Nerdfonts includes 6 variants. Monospaced/Proportional/Regular(Mixed) -> choose Monospaced to prevent terminal issues. NL Suffix is no ligatures, so special charactesr that combine to or more charaters -> choose NL
   * Hatte Probleme mit JetBrainsFont -> choose RobotoMonoNerdFont insted
@@ -269,7 +259,6 @@ LSP - Language Server Protocol
 * Stow - symlink farm manager.
 * Instructions how to setup git ssh.
 * Sync Vscode settings and extensions.
-* gtop - maybe sudo apt install npm | sudo npm install gtop -g
 
 
 # Inspirations
