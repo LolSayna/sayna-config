@@ -1,7 +1,7 @@
 # Linux applications
 ## Terminal
 ### Core
-- cat, echo, ls, cd, cp, mv, sudo, clear
+- cat, echo, ls, cd, cp, mv, sudo, clear, less, sed, grep
 - man (highlighting via less config in .zshrc), git, gcc/clang, time
 - curl - web requests, wget - file downloader
 - rysnc - file synchronisation
@@ -9,6 +9,7 @@
 - df -h (disk usage), ps -aux (processes)
 
 ### Additional core (need to be installed)
+- tmux
 - tldr - command examples (tealdeer rust client)
 - tree - list files including folder structure
 - wikiman - offline wiki reader (no apt install, add each wiki)
@@ -18,6 +19,7 @@
 - dysk - df extension (install via cargo)
 - top, htop, gtop, btop - system/tasks overview
 - fzf - fuzzyfinder
+- hwinfo - hardware configuration
 
 ### Util
 - imageMagick - image converter
@@ -35,6 +37,8 @@
 
 
 ## GUI
+### Coding
+- VsCode (Code Server - remote hosten), extensions/settings/profiles todo
 ### Browser
 - Chrom/Chromium (Google), Ungoogled Chromium, Brave, and more
 	- QT Webengine (allows to embeed browser into QT app)

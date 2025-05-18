@@ -8,7 +8,9 @@
   - Rocky (open source fork of stable)
   - CentOS
 - NixOS [Nix]
-- Arch [pacman] (Manjaro/Gentoo/EndeavourOS)
+- Arch [pacman]
+- Manjaro/Gentoo
+- EndeavourOS ausprobieren?
 - (FreeBSD) != Linux
 
 
@@ -24,6 +26,7 @@
 - pip -> Python
     - pipx - ohne enviroments
 
+
 ## Display
 - display server (foundation for gui): X/X11/x.org (old) vs Wayland (newer)
 - xwayland compatibility x layer for wayland
@@ -35,14 +38,22 @@
 - stacking (floating) vs tiling (no overlap, keyboard based) vs dynamic (mixed)
 - x/tiling: i3, dynamic: dwm
 - wayland/tiling: sway, dynamic: dwl, hyprland
+### Further config
+- file manager
+- terminal
+- menu/app launcher
 
 
 ## Shells
-- bash vs **zfs** vs fish
-
+- bash vs **zsh** vs fish
+- tmux, alacritty
 
 ## Init Prozesse
 - SysVInit -> älter, use `service`
 - SystemD -> neuer, use `systemctl`
 
+## Networking
+- networkmanager
 
+## Bootloader
+- grub
