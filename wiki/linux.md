@@ -44,16 +44,19 @@
 - menu/app launcher
 
 
-## Shells
+## Components
+### Shells
 - bash vs **zsh** vs fish
 - tmux, alacritty
 
-## Init Prozesse
+### Init Prozesse
 - SysVInit -> älter, use `service`
 - SystemD -> neuer, use `systemctl`
 
-## Networking
-- networkmanager
+### Other
+- Networking (networkmanager)
+- Firewall (ufw)
+- Bootloader (grub)
+- Clipboard (xclip)
+- Screenshot (flameshot, maim/shotgun X11, grim wayland)
 
-## Bootloader
-- grub

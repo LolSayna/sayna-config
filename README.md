@@ -4,3 +4,4 @@ Also my wiki and cooking recipe book.
 
 ## Todos
 - fix new path for dotfiles (moved into dotfiles folder)
+- add XDG home config for dotfiles
