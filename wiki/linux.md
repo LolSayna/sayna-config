@@ -9,8 +9,8 @@
   - CentOS
 - NixOS [Nix]
 - Arch [pacman]
-- Manjaro/Gentoo
-- EndeavourOS ausprobieren?
+  - Manjaro/Gentoo
+  - EndeavourOS ausprobieren?
 - (FreeBSD) != Linux
 
 
@@ -31,7 +31,7 @@
 - display server (foundation for gui): X/X11/x.org (old) vs Wayland (newer)
 - xwayland compatibility x layer for wayland
 ### Desktop enviroments (bundle of gui programs)
-- budgie, gnome, (kde) plasma, mate, xfce, lxde
+- budgie, gnome, (kde) plasma, mate, xfce, lxqt/lxde, cinnamon
 ### Display manager (login manager, needs window manager)
 - xdm (example)
 ### Window manager(X)/Compositors(Wayland)
