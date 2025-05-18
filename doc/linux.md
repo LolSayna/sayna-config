@@ -38,8 +38,3 @@ TODO
 - SystemD -> neuer, use `systemctl`
 
 
-
-# Anwendungen
-## CLIs
-- bash vs zfs vs fish
-
