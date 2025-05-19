@@ -1,14 +1,22 @@
 # Linux applications
 ## Terminal
 ### Core
-- cat, echo, ls, cd, cp, scp mv, sudo, clear, less, sed, grep
-- man (highlighting via less config in .zshrc), git, gcc/clang, time
+- cat, echo, ls, cd, cp, mv, sudo, clear, less, sed, grep, time
+- unzip, tar -xf, gunzip
+- man (highlighting via less config in .zshrc)
+- git, gcc/clang, python3
 - curl - web requests, wget - file downloader
-- ssh - remote login
+- ssh, scp - remote login/copy
 	- `ssh-keygen` and `ssh-copy-id`
 - rysnc - file synchronisation
 	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
-- df -h (disk usage), ps -aux (processes)
+- df -h (disk usage), ps -aux (processes), sensors (temperatur)
+- journalctl, networkctl, ip
+
+### Editors
+- vi/vim/neovim
+- nano, micro
+- helix (vim-like, modern)
 
 ### Additional core (need to be installed)
 - tmux
@@ -23,6 +31,8 @@
 - fzf - fuzzyfinder
 - hwinfo - hardware configuration
 - hyperfine - benchmarking tool
+- neofetch - system information tool (deprecated)
+	- fastfetch (customizable), macchina (rust), hyFetch
 
 ### Util
 - imageMagick - image converter
@@ -39,6 +49,7 @@
 	- usage: `yt-dlp FLAGS "URL"`, `-F` to show available formats
 - pipes.sh - animated pipes screensafer
 - cmatrix - matrix green characters
+- phoronix test suit - benchmark set test suite
 
 
 ## GUI
