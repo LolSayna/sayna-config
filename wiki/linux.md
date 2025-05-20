@@ -36,16 +36,17 @@
 - xdm (example)
 ### Window manager(X)/Compositors(Wayland)
 - stacking (floating) vs tiling (no overlap, keyboard based) vs dynamic (mixed)
-- x/tiling: i3, dynamic: dwm
-- wayland/tiling: sway, dynamic: dwl, hyprland
-### Further config
-- file manager
-- terminal
-- menu/app launcher
+- x
+	- stacking: mutter (gnome), tiling: i3, dynamic: dwm
+- wayland
+	- stacking: mutter, tiling: sway, dynamic: dwl, hyprland
+### Composite manager
+- additon to X window managers, to add shadows/blurs/fading. Sometimes already included (e.g. mutter)
+- picom
 
 
 ## Components
-### Shells
+### Shells/Terminal
 - bash vs **zsh** vs fish
 - tmux, alacritty
 
@@ -59,4 +60,8 @@
 - Bootloader (grub)
 - Clipboard (xclip)
 - Screenshot (flameshot, maim/shotgun X11, grim wayland)
+- file manager (nemo)
+- menu/app launcher
+- statusbar
+- notify-send + dunst - Notification windows, [video](https://www.youtube.com/watch?v=cBx9P3bvDCk)
 

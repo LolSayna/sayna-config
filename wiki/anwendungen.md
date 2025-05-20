@@ -71,4 +71,6 @@
 - speachnote - tts, text to speach engine
 - spek - graphical spectrum analyzer
 - vlc - video player
+- mvp - video player, from terminal?
+
 
