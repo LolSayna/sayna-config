@@ -8,6 +8,9 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias nvim="~/neovim/squashfs-root/usr/bin/nvim"
 alias vim=nvim
 
+# [XDG base directory]
+export XDG_CONFIG_HOME = "$HOME/.config"
+
 # [nemo]
 # kann mir das nicht merken
 alias files=nemo
