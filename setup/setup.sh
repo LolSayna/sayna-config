@@ -18,7 +18,7 @@ mkdir -p ~/.config/alacritty
 if test -f ~/.config/alacritty/alacritty.toml; then
 	echo "alacritty config exists, not updated."
 else
-	cp -a ~/sayna-config/alacritty.toml ~/.config/alacritty/alacritty.toml
+	cp -a ~/sayna-config/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 	curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
 	echo "Added alacritty config."
 fi
@@ -28,7 +28,7 @@ mkdir -p ~/.config/gdb
 if test -f ~/.config/gdb/gdbinit; then
 	echo "gdb config exists, not updated."
 else
-	cp -a ~/sayna-config/gdbinit ~/.config/gdb/gdbinit
+	cp -a ~/sayna-config/dotfiles/gdbinit ~/.config/gdb/gdbinit
 	echo "Added gdb config."
 fi
 
@@ -42,7 +42,7 @@ fi
 if test -f ~/.p10k.zsh; then
 	echo "p10k config exists, not updated."
 else
-	cp ~/sayna-config/.p10k.zsh ~/.p10k.zsh
+	cp ~/sayna-config/dotfiles/.p10k.zsh ~/.p10k.zsh
 	echo "Added p10k config."
 fi
 
@@ -57,13 +57,13 @@ if test -f ~/.zshrc; then
 	echo "zshrc config exists, not updated."
 else
 	# Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
-	cp ~/sayna-config/.zshrc ~/.zshrc
+	cp ~/sayna-config/dotfiles/.zshrc ~/.zshrc
 	echo "Added zshrc config."
 fi
 if test -f ~/.zshrc.local; then
 	echo "zshrc.local config exists, not updated."
 else
-	cp ~/sayna-config/.zshrc.local ~/.zshrc.local
+	cp ~/sayna-config/dotfiles/.zshrc.local ~/.zshrc.local
 	echo "Added zshrc.local config."
 fi
 
@@ -83,7 +83,7 @@ fi
 if test -d ~/.config/nvim; then
 	echo "Layzvim config exists, not updated."
 else
-	cp -r ~/sayna-config/nvim ~/.config/
+	cp -r ~/sayna-config/dotfiles/nvim ~/.config/
 	echo "Installed Lazyvim config."
 fi
 
@@ -99,7 +99,7 @@ mkdir -p ~/.config/tmux/tmux.conf
 if test -f ~/.config/tmux/tmux.conf; then
 	echo "Tmux config exists, not updated."
 else
-	cp ~/sayna-config/tmux.conf ~/.config/tmux/tmux.conf
+	cp ~/sayna-config/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 	echo "Added Tmux config."
 fi
 
@@ -109,7 +109,7 @@ if test -f ~/sayna-config/vscode-settings.json; then
 	echo "VsCode config exists, not updated."
 else
 	# -a maintains permission, not sure if needed
-	cp -a ~/sayna-config/vscode-settings.json ~/.config/Code/User/settings.json
+	cp -a ~/sayna-config/dotfiles/vscode-settings.json ~/.config/Code/User/settings.json
 	echo "Added VsCode config."
 fi
 
