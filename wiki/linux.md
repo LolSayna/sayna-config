@@ -46,9 +46,18 @@
 
 
 ## Components
-### Shells/Terminal
+### Terminal
+#### Shell
 - bash vs **zsh** vs fish
-- tmux, alacritty
+#### Terminal emulator
+- gnome shell, st, **alacritty**
+#### Terminal Multiplexor
+- tmu
+#### Other
+- `A && B` Execute B if A successful, `A;B` execute A then B
+- Redirection (with file): `A > B` stdout of A to B, `A >> B` Append to B
+- Pipe (cmd to cmd): `A | B` connect stdout of A to stdin of B
+- issue with tmux - not ready message, but no fix gefunden
 
 ### Init Prozesse
 - SysVInit -> älter, use `service`

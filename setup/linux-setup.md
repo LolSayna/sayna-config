@@ -20,7 +20,7 @@ sudo apt update -y && sudo apt upgrade -y
 # Install core utils
 sudo apt install -y build-essential git micro
 # Install more utils
-sudo apt install -y wget tmux htop btop tree wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld
+sudo apt install -y wget tmux htop btop tree wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld ranger
 # Install npm 
 d
 sudo apt install nodejs npm

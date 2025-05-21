@@ -27,4 +27,5 @@
 - Git [Git book](https://git-scm.com/book/en/v2)
 - VHDL/Verilog (ModelSim/Questa Sim, Quartus Prime, [HDL Testing](https://www.edaplayground.com/))
 - ZeroMQ - easy communication library, between different languages, tcp based
+- [Coding Style Guide](https://suckless.org/coding_style/)
 
