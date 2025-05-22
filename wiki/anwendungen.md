@@ -77,6 +77,7 @@
 - Firefox
 	- Librewolf (privacy focused, no bookmark sync)
 	- Zen Browser (different layout, tabs on left side)
+- Stylus - Plugin that allows custom css for websites
 
 ### Util
 - keypass2 - keypass based password manager (todo terminal based alternative?)
