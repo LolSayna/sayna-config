@@ -6,6 +6,7 @@
 - ~20 Minuten/Stunden
   
 ## Zutaten
+- Nudeln (Penne), Käse (Parmesan/Mozarella)
 - 400g Tomaten (passata)
 - 1x Zwiebl
 - 3x Knoblauchzehe
