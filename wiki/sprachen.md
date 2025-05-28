@@ -23,6 +23,18 @@
 - Qemu (Virtual machine manager gui)
 - Virtual Box
 
+## File Formats
+### NTSC vs PAL
+- NTSC - US, 30/60 FPS, 768x480
+- PAL - Europa, 25/50 FPS, 768x576
+- SECAM - Frankreich, Russland
+### Video
+- MPEG-2 (.mpg, .mpeg, .m2v)- lossy video+audio compression, used for DVD-Video
+- MPEG-4 (.m4v) - gehört zu MP4
+
+### Audio
+
+
 ## Other
 - Git [Git book](https://git-scm.com/book/en/v2)
 - VHDL/Verilog (ModelSim/Questa Sim, Quartus Prime, [HDL Testing](https://www.edaplayground.com/))

@@ -14,6 +14,7 @@
 	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
 - df -h (disk usage), ps -aux (processes)/pgrep, sensors (temperatur), lsblock, du, pidof, ip, dmesg, mount/unmount, free
 - journalctl, networkctl, ip
+- bc - calculator
 
 ### Shell inbuild
 - cd
