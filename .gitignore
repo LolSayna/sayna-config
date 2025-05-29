@@ -1,2 +1,2 @@
-rust/target/*
-homepage/logs/*
+**/target
+**/homepage/logs/*
