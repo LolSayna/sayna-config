@@ -33,7 +33,8 @@
 ### Desktop enviroments (bundle of gui programs)
 - budgie, gnome, (kde) plasma, mate, xfce, lxqt/lxde, cinnamon
 ### Display manager (login manager, needs window manager)
-- xdm (example)
+- xdm (very minmal)
+- gdm3 (Gnome), kdm (KDE), LightDM (xfce)
 ### Window manager(X)/Compositors(Wayland)
 - stacking (floating) vs tiling (no overlap, keyboard based) vs dynamic (mixed)
 - x

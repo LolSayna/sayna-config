@@ -3,11 +3,15 @@
 - Type 1 (native): Hyper-V (Windows), KVM, Proxmox, Xen
 - Type 2 (hosted): LXC, QEMU, VirtualBox, VMWare
 
-### VirtualBox (Windows)
-- winget install -e --id Oracle.VirtualBox
+---
 
+### VirtualBox (Windows)
+- `winget install -e --id Oracle.VirtualBox`
+- VirtualBox Additions (Clipboard, Window Resizing, Shared Folder, Drag/Drop broken for me), check with Machine->Session Information -> Runtime Information
+- might need to switch Display->Graphics Controller (restart might work)
   
 
+---
 ## Container
 More lightwight, no drivers
 ### Docker

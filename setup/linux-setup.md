@@ -6,23 +6,25 @@ Linux .config folder and Terminal setup.
 - [x] neovim - Text Editor (NvChad)
 - [x] tmux - Terminal Multiplexer
 
-
-# Prerequisites
-## Initial Setup
-Networking + Firefox -> Sign In
-
-## General Setup
-Only tested for Debian/Ubuntu 23.04, last edited on 22.04 Ubuntu Budgie 01.07.24.
+---
+# Setup
+## Prerequisites
+Login+Networking working
 ```bash
+# Choose keyboard layout (Debian)
+sudo dpkg-reconfigure keyboard-configuration
 # Update software repositories
-sudo apt update -y && sudo apt upgrade -y
+sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+```
 
+## General Installation
+Last tested on 22.04 Ubuntu Budgie 01.07.24.
+```bash
 # Install core utils
 sudo apt install -y build-essential git micro
 # Install more utils
 sudo apt install -y wget tmux htop btop tree wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld ranger
-# Install npm 
-d
+# Install npm
 sudo apt install nodejs npm
 # Install terminal setup
 # Alacritty ppa
@@ -41,7 +43,10 @@ sudo apt install code # or code-insiders
 
 # Install ssh
 sudo apt install -y openssh-server
+```
 
+## Default Shell
+```bash
 # Make zsh default shell
 chsh -s $(which zsh)
 # Install LazyGit
@@ -53,24 +58,15 @@ sudo install lazygit -D -t /usr/local/bin/
 
 ## Github
 ```bash
-# Github
+# Config
 git config --global user.email "mareike.burg@web.de"
-git config --global user.name "Mareike Burg"
+git config --global user.name "Sayna" # or Mareike Burg
 git config --global core.editor "nvim"
+# SSH Key
 ssh-keygen -t ed25519
 ```
 
-## Fix remote Terminal issue
-Get ssh terminal compatibility / fix missing terminal \
-ON HOST:
-`infocmp alacritty > alacritty.terminfo`
-ON TARGET
-`tic -x ~/sayna-config/alacritty.terminfo`
-
-
-
-
-# My setup installation
+## Personal Config
 ```bash
 # Copy repository
 git clone https://github.com/LolSayna/sayna-config.git
@@ -92,9 +88,19 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 # Inside nvim run
 # old nvchad
 :MasonInstallALL
-
 ```
 
+## Remote Terminal Color Issues
+Get ssh terminal compatibility
+```bash
+# on host
+infocmp alacritty > alacritty.terminfo
+# on target
+tic -x ~/sayna-config/alacritty.terminfo
+```
+
+
+---
 # Shortcuts
 ## Neovim
 ### General
