@@ -18,37 +18,64 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
 ```
 
 ## General Installation
-Last tested on 22.04 Ubuntu Budgie 01.07.24.
+Last tested on 24.04 Ubuntu
 ```bash
 # Install core utils
-sudo apt install -y build-essential git micro
-# Install more utils
-sudo apt install -y wget tmux htop btop tree wavemon hwinfo mlocate firefox keepass2 fzf tldr vlc wireguard meld ranger
+sudo apt install -y build-essential gpg curl wget tree git tmux htop firefox keepass2 tldr wireguard 
+# Install more utils (neofetch outdated, still works)
+sudo apt install -y btop micro wavemon hwinfo plocate fzf vlc meld lm-sensors imagemagick ffmpeg zsh neofetch neovim
+# Even more stuff (not sure was ich davon alles brauche)
+sudo apt install -y ranger wikiman lynx yt-dlp spek openssh-server flatpak
+
+# Alacritty (via ppa)
+sudo add-apt-repository ppa:aslatter/ppa -y && sudo apt install -y alacritty 
+
+# VsCodium (via flatpak)
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install -y flathub com.vscodium.codium
+
+# Install Rust (with -y as parameter)
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+cargo install --locked dysk
+
 # Install npm
 sudo apt install nodejs npm
-# Install terminal setup
-# Alacritty ppa
-sudo add-apt-repository ppa:aslatter/ppa -y
-sudo apt install -y alacritty zsh codium neofetch neovim
-#Vscode
-sudo apt-get install wget gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
-rm -f packages.microsoft.gpg
-
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code # or code-insiders
-
-# Install ssh
-sudo apt install -y openssh-server
 ```
 
-## Default Shell
+## Config
 ```bash
-# Make zsh default shell
-chsh -s $(which zsh)
+# Generate SSH Key
+ssh-keygen -t ed25519
+
+# Git
+git config --global user.email "mareike.burg@web.de"
+git config --global user.name "Sayna" # or Mareike Burg
+git config --global core.editor "nvim"
+
+# Copy repository
+git clone https://github.com/LolSayna/sayna-config.git
+
+# Execute script (chmod +x setup.sh)
+./sayna-config/setup.sh
+
+# Zsh default shell (requires log out) (current `echo $SHELL`)
+chsh -s $(which zsh) 
+sudo chsh -s $(which zsh)
+
+# Remote Terminal Color Issues
+# on host
+infocmp alacritty > alacritty.terminfo
+# on target
+tic -x ~/sayna-config/alacritty.terminfo
+```
+
+## Save config
+```bash
+# Save current dotfiles to local repository (chmod +x setup.sh)
+./sayna-config/write.sh
+```
+
+## Lazygit (old)
+```bash
 # Install LazyGit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
@@ -56,199 +83,7 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit -D -t /usr/local/bin/
 ```
 
-## Github
-```bash
-# Config
-git config --global user.email "mareike.burg@web.de"
-git config --global user.name "Sayna" # or Mareike Burg
-git config --global core.editor "nvim"
-# SSH Key
-ssh-keygen -t ed25519
-```
-
-## Personal Config
-```bash
-# Copy repository
-git clone https://github.com/LolSayna/sayna-config.git
-
-# Execute script (chmod +x setup.sh)
-./sayna-config/setup.sh
-```
-```bash
-# Save current dotfiles to local repository (chmod +x setup.sh)
-./sayna-config/write.sh
-```
-```bash
-# Install Rust
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-
-# TODO get config folder via Github
-# ...
-
-# Inside nvim run
-# old nvchad
-:MasonInstallALL
-```
-
-## Remote Terminal Color Issues
-Get ssh terminal compatibility
-```bash
-# on host
-infocmp alacritty > alacritty.terminfo
-# on target
-tic -x ~/sayna-config/alacritty.terminfo
-```
-
-
 ---
-# Shortcuts
-## Neovim
-### General
-`:q - :q! - :wq` - Exit, Exit without saving, Exit Saving\
-`/ - n - N` - Search, Next / Next backwards\ 
-`u - CTRL R` - Undo, Redo\
-`dd` - Copy and Delete line\
-`x` - Delete char\
-`daw` - Delete Word\
-### Movement
-`h - j - k - l` - Movement\
-`100G - gg - G` - Move to 100, to start, to end\ 
-`w - e - 0 - $` - Until Beginning/End of next word, Start / End of line\
-`Page Up / Down` - Move one page\
-### Modes
-`ESC` - Leave Mode (Normal)\
-`i - a` - Enter Text Mode (Insert) before/after cursor\
-`o - O` - Instert new line below/above and Insert Mode\
-
-`v - V` - Visual Mode (Mark text) by char/line\
-`y - yw - yy` - Copy marked text, Copy word, Copy line\
-`p` - paste text\
-
-### LazyVim
-# TODO add config files to .write
-#### Setup CMDs inside Neovim
-`MasonInstall lua-langauge-server`
-#### General
-`space` - Leader Key\
-`:` - Command Line\
-`Leader c m` - Open Meson\
-`Leader f f` - Find Files\
-`Leader s g` - Search over all Files\
-`CTRL n` - Cylce autocomplete\
-`z a` - Fold Section\
-`K` - LSP Information about what is on cursor\
-`]/[ e/w/d` - Cycle Errors/Warnings/Diagnostics\
-`Leader u f` - Toogle format on save\
-#### Movement
-`SHIFT h/l` - Jump between open Windows\
-`Leader - / | ` - Split Horizontal / Vertical\
-`CTRL h/j/k/l ` - Jump between Splits\
-`CTRL Arrowkeys` - Adjust Split size\
-`s` - Jump to a word\
-`:split :vsplit` - Split editor into 2\
-#### Filetree
-`Leader e` - Open/Close Filetree\
-  `A` / `a` - Add Folder / File\
-  `r` / `d` - Rename / Delete\
-  `Enter` - Open\ 
-  `m` / `c` - Move / Copy to\
-`Backspace` - jump to parent dir\
-`H` - Toogle hidden files\
-#### Neogen
-`Leader c n` - Generate Docstring via neogen\
-#### Lazy Git
-TODO `Leader gg` - Start LazyGit
-
-
-### NvChad - only leagacy
-`Tab - SHIFT Tab` - Switch Buffers\
-`SPACE x` - Close buffer\
-
-`SPACE ff` - Find files (used to open Buffers)\
-`CTRL n` - Filetree\
-    `a` - add File\
-`CTRL h/l` - Move into/out Filetree\
-`SPACE th` - Set Theme\
-
-
-## ZSH
-`CTRL C` - Interrupt\
-`CTRL D` - Exit\
-`CTRL R` - Search previous commands\
-`CTRL L` - Clear screen
-
-## Alacritty
-`CTRL +` - Zoom in\
-`CTRL -` - Zoom out\
-`CTRL F` - Search Backwards\
-`CTRL V` - Paste
-
-`Mark with Mouse` - Copy\
-`CTRL Space` - Enter copy Mode\
-`v` - Start Selection\
-`y` - End Selection\
-
-`Alt v` - Select Word\
-`Shift v` - Select Line\
-`CTRL v` - Select Block
-
-## Tmux
-### Starting
-`tmux ls` - list active\
-`tmux new -s NAME` - create Session\
-`tmux a -t NAME` - attach to Session\
-### General
-`CTRL B` - Prefix\
-`Prefix r` - Reload config\
-`Prefix I` - Install tpm plugins\
-### Sessions
-`Prefix : 'new'` - New Session\
-`Prefix $` - Rename Session\
-`Prefix (/)` - Cycle Session\
-`Prefix d` - Detach Session\
-### Windows
-`Prefix w` - Preview Sessions + Windows\
-`Prefix c` - New Window\
-`Prefix ,` - Rename Window\
-`Prefix n/p` - Cycle Window\
-`Prefix &` - Close Window (or use `CTRL - d`)\
-### Panes
-`Prefix PgUp/PgDown` - Scroll\
-`Prefix %/"` - Split horizontal/vertical\
-`Prefix up/down/left/right` - Move Cursor\
-`CTRL h/j/k/l` - Move Cursor\
-`Prefix 'hold' up/down/left/right` - Resize Pane\
-`Prefix x` - Close Pane\
-`Prefix z` - Toogle Zoom\
-
-## Linux Basics
-### grep "SOME" PATH ///// cat *.txt | grep "SOME"
-`-r ` - Search through Directories
-`-v` - Invert
-`-i` - Case insensitve
-`-n ` - Show line number\
-`-C 3` - Print 3 lines before + after match\
-
-### find . -name "*.txt"
-`-exec grep -l "TEXT" {} +` - Find File by content 
-`-iname` - Case insensitve
-`-type f/d` - Files or Directories
-`-size +1G` - Files bigger then
-
-### fzf
-# ! does not find .* files
-Search a file on system
-`-m` + `TAB` - Search multiple Files
-`myf` + `mye` - Custom Alias in my zshrc
-
-
-# Langauge Support
-LSP - Language Server Protocol
-- Code Autocompletion
-- Syntax Highlighting
-- Python
-  - Pylance basiert auf Pyright
-
 
 # Remarks
 * Fonts: Nerdfonts includes 6 variants. Monospaced/Proportional/Regular(Mixed) -> choose Monospaced to prevent terminal issues. NL Suffix is no ligatures, so special charactesr that combine to or more charaters -> choose NL

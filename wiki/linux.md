@@ -45,6 +45,14 @@
 - additon to X window managers, to add shadows/blurs/fading. Sometimes already included (e.g. mutter)
 - picom
 
+## File systems
+- fat32 - old standard, max file size 4GB
+- exFAT - flash drives
+- ntfs - windows
+- btrfs
+- ext4
+- zfs
+
 
 ## Components
 ### Terminal
@@ -71,7 +79,7 @@
 - Clipboard (xclip)
 - Screenshot (flameshot, maim/shotgun X11, grim wayland)
 - file manager (nemo)
-- menu/app launcher
+- menu/app launcher  (demenu)
 - statusbar
 - notify-send + dunst - Notification windows, [video](https://www.youtube.com/watch?v=cBx9P3bvDCk)
 

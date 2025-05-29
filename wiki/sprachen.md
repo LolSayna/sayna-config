@@ -1,4 +1,11 @@
 # Programming languages
+## Langauge Support
+LSP - Language Server Protocol
+- Code Autocompletion
+- Syntax Highlighting
+- Python
+  - Pylance basiert auf Pyright
+
 ## Texts
 - Markdown
 - Latex (overleaf web)

@@ -12,9 +12,10 @@
 	- `ssh-keygen` and `ssh-copy-id`
 - rysnc - file synchronisation
 	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
-- df -h (disk usage), ps -aux (processes)/pgrep, sensors (temperatur), lsblock, du, pidof, ip, dmesg, mount/unmount, free
+- df -h (disk usage), ps -aux (processes)/pgrep, lsblock, du, pidof, ip, dmesg, mount/unmount, free
 - journalctl, networkctl, ip
 - bc - calculator
+- which(whereis) - find location of binaries (and man pages and more)
 
 ### Shell inbuild
 - cd
@@ -22,6 +23,7 @@
 - type - find out if cmd is buildin or core utils
 - fg/bg - move jobs to background/foreground, also with `cmd &`
 - jobs - list background tasks
+- where (zsh) - like which 
 
 
 ### Editors
@@ -42,10 +44,11 @@
 - top, htop, gtop, btop - system/tasks overview
 - fzf - fuzzyfinder
 - hwinfo - hardware configuration
-- hyperfine - benchmarking tool
 - neofetch - system information tool (deprecated)
 	- fastfetch (customizable), macchina (rust), hyFetch
 - ranger - file manger (vi keybindings)
+- locate(plocate) - find filename anywhere
+- sensors (temperatur)
 
 ### Util
 - imageMagick - image converter
@@ -63,10 +66,12 @@
 - pipes.sh - animated pipes screensafer
 - cmatrix - matrix green characters
 - phoronix test suit - benchmark set test suite
+- hyperfine - benchmarking tool
 - termusic/ncmpcpp - music player
 - rmpc - music player MPD client
 - mpd - music player daemon, server for audio players
 - terminal image viewer?
+- wireguard - vpn client
 
 ## GUI
 ### Coding
@@ -81,15 +86,18 @@
 - Stylus - Plugin that allows custom css for websites
 
 ### Util
-- keypass2 - keypass based password manager (todo terminal based alternative?)
+- keepass2 - keypass based password manager (todo terminal based alternative?)
 - meld - diff viewer
 #### Audio
 - spek - graphical spectrum analyzer
 - speachnote - tts, text to speach engine
+- audacity - audiorecording
 #### Image/Video
 - blender - 3d animation
 - gimp - image viewer/editor
+- inkscape - vector graphics editor
 - vlc - video player
 - mvp - video player, from terminal?
 - photoFilmStrip - slideshow creator
-
+- kdenlive - videoeditor
+- obs - videocapturing
