@@ -25,7 +25,10 @@
 - Snap -> by Canonical(Ubuntu), has Autoupdate, like container
 - pip -> Python
     - pipx - ohne enviroments
-
+### Other packets
+- install to `$XDG_DATA_HOME` or `$HOME/.local/share`
+- or `~/.local/bin` or `/usr/bin`
+- or `/opt`
 
 ## Display
 - display server (foundation for gui): X/X11/x.org (old) vs Wayland (newer)

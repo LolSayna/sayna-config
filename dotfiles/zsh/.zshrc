@@ -640,7 +640,7 @@ function xunfunction () {
 # modifications in ~/.zshrc.local
 function zrclocal () {
     xsource "/etc/zsh/zshrc.local"
-    xsource "${ZDOTDIR:-${HOME}}/.zshrc.local"
+    xsource "${ZDOTDIR}/.zshrc.local"
     return 0
 }
 

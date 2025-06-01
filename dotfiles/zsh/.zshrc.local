@@ -1,15 +1,18 @@
 neofetch
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [Extensions]
+source "$XDG_DATA_HOME/powerlevel10k/powerlevel10k.zsh-theme"
+source "$XDG_DATA_HOME/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# To customize prompt, run `p10k configure` or edit $ZDOTDIR/.p10k.zsh
+if test -f "$ZDOTDIR/.p10k.zsh"; then
+      source "$ZDOTDIR/.p10k.zsh"
+fi
 
 # [neovim]
 alias nvim="~/neovim/squashfs-root/usr/bin/nvim"
 alias vim=nvim
 
-# [XDG base directory]
-export XDG_CONFIG_HOME = "$HOME/.config"
 
 # [nemo]
 # kann mir das nicht merken
@@ -31,5 +34,3 @@ alias mye='nvim $(fzf --preview="cat {}")'
 export CPATH="/usr/local/lib/python3.10/dist-packages/graph_tool/include"
 export PATH="$PATH:/home/sayna/go/bin"
 export GOBIN="/home/sayna/go/bin"
-
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
