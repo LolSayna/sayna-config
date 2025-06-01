@@ -74,7 +74,6 @@ else
 fi
 
 # [Layzvim]
-# Install Lazyvim
 if test -d $XDG_CONFIG_HOME/nvim; then
 	echo "Layzvim config exists, not updated."
 else

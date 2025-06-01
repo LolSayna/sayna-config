@@ -85,6 +85,7 @@ tic -x ~/sayna-config/alacritty.terminfo
 # Push current config into repository (chmod +x overwrite.sh)
 ./sayna-config/setup/overwrite.sh
 
+
 ## Lazygit (old) TODO remove!
 ```bash
 # Install LazyGit
