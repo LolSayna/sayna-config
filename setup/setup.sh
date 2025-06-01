@@ -65,7 +65,7 @@ mkdir -p $XDG_CONFIG_HOME/tmux
 if test -f $XDG_CONFIG_HOME/tmux/tmux.conf; then
 	echo "Tmux config exists, not updated."
 else
-	cp $HERE/tmux.conf $XDG_CONFIG_HOME/tmux/
+	cp $HERE/tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf
 	mkdir -p ~/.config/tmux/plugins/catppuccin
 	git clone --depth=1 https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/tmux/plugins/tpm
 	git clone --depth=1 https://github.com/catppuccin/tmux.git $XDG_CONFIG_HOME/tmux/plugins/catppuccin

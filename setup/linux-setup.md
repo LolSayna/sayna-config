@@ -58,10 +58,10 @@ git config --global user.name "Sayna" # or Mareike Burg
 git config --global core.editor "nvim"
 
 # Copy repository
-git clone https://github.com/LolSayna/sayna-config.git
+git clone git@github.com:LolSayna/sayna-config.git
 
 # Execute script (chmod +x setup.sh)
-./sayna-config/setup.sh
+./sayna-config/setup/setup.sh
 
 # Zsh default shell (requires log out) (current `echo $SHELL`)
 chsh -s $(which zsh) 
@@ -74,11 +74,16 @@ infocmp alacritty > alacritty.terminfo
 tic -x ~/sayna-config/alacritty.terminfo
 ```
 
-## Save config
+## Write system config to repo
 ```bash
-# Save current dotfiles to local repository (chmod +x setup.sh)
-./sayna-config/write.sh
+# Save current dotfiles to repository (chmod +x write.sh)
+./sayna-config/setup/write.sh
 ```
+
+## Force repo to system config
+```bash
+# Push current config into repository (chmod +x overwrite.sh)
+./sayna-config/setup/overwrite.sh
 
 ## Lazygit (old) TODO remove!
 ```bash
