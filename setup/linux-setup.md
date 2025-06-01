@@ -21,7 +21,7 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
 Last tested on 24.04 Ubuntu
 ```bash
 # Install core utils
-sudo apt install -y build-essential gpg curl wget tree git tmux htop firefox keepass2 tldr wireguard 
+sudo apt install -y build-essential curl wget tree git tmux htop firefox keepass2 tldr wireguard 
 # Install more utils (neofetch outdated, still works)
 sudo apt install -y btop micro wavemon hwinfo plocate fzf vlc meld lm-sensors imagemagick ffmpeg zsh neofetch neovim
 # Even more stuff (not sure was ich davon alles brauche)
@@ -30,12 +30,18 @@ sudo apt install -y ranger wikiman lynx yt-dlp spek openssh-server flatpak
 # Alacritty (via ppa)
 sudo add-apt-repository ppa:aslatter/ppa -y && sudo apt install -y alacritty 
 
-# VsCodium (via flatpak)
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && flatpak install -y flathub com.vscodium.codium
-
 # Install Rust (with -y as parameter)
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
 cargo install --locked dysk
+
+# VsCode (from https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux)
+sudo apt install gpg apt-transport-https 
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+sudo apt update
+sudo apt install code
 
 # Install npm
 sudo apt install nodejs npm
@@ -74,7 +80,7 @@ tic -x ~/sayna-config/alacritty.terminfo
 ./sayna-config/write.sh
 ```
 
-## Lazygit (old)
+## Lazygit (old) TODO remove!
 ```bash
 # Install LazyGit
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')

@@ -1,7 +1,11 @@
 #!/bin/bash
 # Sayna linux setup install script
 
-# [FONTS]
+HERE=$(pwd)/dotfiles
+# must match .zshrc.local
+XDG_CONFIG_HOME=$HOME/.config
+
+# [fonts]
 # tried JetBrainsMono Nerd Font, now its RobotoMonoNerdFont
 if test -f ~/.local/share/fonts/RobotoMonoNerdFont-Regular.ttf; then
 	echo "Fonts already installed."
@@ -14,21 +18,21 @@ else
 fi
 
 # [alacritty]
-mkdir -p ~/.config/alacritty
-if test -f ~/.config/alacritty/alacritty.toml; then
-	echo "alacritty config exists, not updated."
+mkdir -p $XDG_CONFIG_HOME/alacritty
+if test -f $XDG_CONFIG_HOME/alacritty/alacritty.toml; then
+	echo "Alacritty config exists, not updated."
 else
-	cp -a ~/sayna-config/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
-	curl -LO --output-dir ~/.config/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
+	cp -a $HERE/alacritty.toml $XDG_CONFIG_HOME/alacritty/alacritty.toml
+	curl -LO --output-dir $XDG_CONFIG_HOME/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
 	echo "Added alacritty config."
 fi
 
 # [gdb]
-mkdir -p ~/.config/gdb
-if test -f ~/.config/gdb/gdbinit; then
+mkdir -p $XDG_CONFIG_HOME/gdb
+if test -f $XDG_CONFIG_HOME/gdb/gdbinit; then
 	echo "gdb config exists, not updated."
 else
-	cp -a ~/sayna-config/dotfiles/gdbinit ~/.config/gdb/gdbinit
+	cp -a $HERE/gdbinit $XDG_CONFIG_HOME/gdb/gdbinit
 	echo "Added gdb config."
 fi
 
@@ -42,7 +46,7 @@ fi
 if test -f ~/.p10k.zsh; then
 	echo "p10k config exists, not updated."
 else
-	cp ~/sayna-config/dotfiles/.p10k.zsh ~/.p10k.zsh
+	cp $HERE/.p10k.zsh ~/.p10k.zsh
 	echo "Added p10k config."
 fi
 
@@ -57,13 +61,13 @@ if test -f ~/.zshrc; then
 	echo "zshrc config exists, not updated."
 else
 	# Config zsh based on "wget -O .zshrc https://git.grml.org/f/grml-etc-core/etc/zsh/zshrc"
-	cp ~/sayna-config/dotfiles/.zshrc ~/.zshrc
+	cp $HERE/.zshrc ~/.zshrc
 	echo "Added zshrc config."
 fi
 if test -f ~/.zshrc.local; then
 	echo "zshrc.local config exists, not updated."
 else
-	cp ~/sayna-config/dotfiles/.zshrc.local ~/.zshrc.local
+	cp $HERE/.zshrc.local ~/.zshrc.local
 	echo "Added zshrc.local config."
 fi
 
@@ -80,36 +84,36 @@ else
 	mv squashfs-root ~/neovim
 fi
 # Install Lazyvim
-if test -d ~/.config/nvim; then
+if test -d $XDG_CONFIG_HOME/nvim; then
 	echo "Layzvim config exists, not updated."
 else
-	cp -r ~/sayna-config/dotfiles/nvim ~/.config/
+	cp -r $HERE/nvim $XDG_CONFIG_HOME/
 	echo "Installed Lazyvim config."
 fi
 
 # Install NvChad
-#if test -d ~/.config/nvim; then
+#if test -d $XDG_CONFIG_HOME/nvim; then
 #  echo "NvChard already installed."
 #else
-#  git clone -b v2.0 https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+#  git clone -b v2.0 https://github.com/NvChad/NvChad $XDG_CONFIG_HOME/nvim --depth 1
 #fi
 
 # [TMUX]
-mkdir -p ~/.config/tmux/tmux.conf
-if test -f ~/.config/tmux/tmux.conf; then
+mkdir -p $XDG_CONFIG_HOME/tmux/tmux.conf
+if test -f $XDG_CONFIG_HOME/tmux/tmux.conf; then
 	echo "Tmux config exists, not updated."
 else
-	cp ~/sayna-config/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
+	cp $HERE/tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf
 	echo "Added Tmux config."
 fi
 
 # [VSCODE]
-mkdir -p ~/.config/Code/User/
+mkdir -p $XDG_CONFIG_HOME/Code/User/
 if test -f ~/sayna-config/vscode-settings.json; then
 	echo "VsCode config exists, not updated."
 else
 	# -a maintains permission, not sure if needed
-	cp -a ~/sayna-config/dotfiles/vscode-settings.json ~/.config/Code/User/settings.json
+	cp -a $HERE/vscode-settings.json $XDG_CONFIG_HOME/Code/User/settings.json
 	echo "Added VsCode config."
 fi
 
