@@ -16,20 +16,42 @@
     },
     "chat.commandCenter.enabled": false,
     "[typst]": {
-        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
     },
     "[typst-code]": {
-        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
     },
     "task.problemMatchers.neverPrompt": {
         "shell": true
     },
     "workbench.editor.wrapTabs": true,
     "debug.onTaskErrors": "abort",
-    "editor.minimap.enabled": false,
     "cSpell.language": "en,de-de",
     "cSpell.userWords": [
         "Mareike"
     ],
+    "editor.minimap.enabled": false,
+    "[markdown]": {
+
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
 
 }

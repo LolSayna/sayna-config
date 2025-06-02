@@ -12,7 +12,7 @@
 	- `ssh-keygen` and `ssh-copy-id`
 - rysnc - file synchronisation
 	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
-- df -h (disk usage), ps -aux (processes)/pgrep, lsblock, du, pidof, ip, dmesg, mount/unmount, free
+- df -h (disk usage), ps -aux (processes)/pgrep, lscpu, lsblock, du, pidof, ip, dmesg, mount/unmount, free
 - journalctl, networkctl, ip
 - bc - calculator
 - which(whereis) - find location of binaries (and man pages and more)
@@ -49,6 +49,7 @@
 - ranger - file manger (vi keybindings)
 - locate(plocate) - find filename anywhere
 - sensors (temperatur)
+- stress
 
 ### Util
 - imageMagick - image converter
