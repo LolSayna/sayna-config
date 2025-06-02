@@ -23,6 +23,7 @@
         "args": "Ninja: Scheduler"
     },
     {
+        // fix lsp bug that typst does not find its bib file
         "key": "end",
         "command": "tinymist.pinMainToCurrent"
     }
