@@ -23,7 +23,7 @@ Last tested on 24.04 Ubuntu
 # Install core utils
 sudo apt install -y build-essential curl wget tree git tmux htop firefox keepass2 tldr wireguard 
 # Install more utils (neofetch outdated, still works)
-sudo apt install -y btop micro wavemon hwinfo plocate fzf vlc meld lm-sensors imagemagick ffmpeg zsh neofetch neovim
+sudo apt install -y btop micro wavemon hwinfo stress plocate fzf vlc meld lm-sensors imagemagick ffmpeg zsh neofetch neovim
 # Even more stuff (not sure was ich davon alles brauche)
 sudo apt install -y ranger wikiman lynx yt-dlp spek openssh-server flatpak
 
