@@ -14,7 +14,7 @@ paths=(
     "Tmux $CONF/tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf"
     "Code-Settings $CONF/code/settings.json $XDG_CONFIG_HOME/Code/User/settings.json"
     "Code-Keybindings $CONF/code/keybindings.json $XDG_CONFIG_HOME/Code/User/keybindings.json"
-    "Neovim $CONF/nvim/* $XDG_CONFIG_HOME/nvim/*"
+    "Neovim $CONF/nvim $XDG_CONFIG_HOME/nvim"
     "Gdbinit $CONF/gdbinit $XDG_CONFIG_HOME/gdb/gdbinit"
     )
 echo "Found ${#paths[@]} config files."
@@ -44,7 +44,12 @@ read_config() {
     done
 }
 overwrite() {
-    echo "Usage: $0 [-write] [-read] [-overwrite]"
+    for file in "${paths[@]}"
+    do
+        IFS=' ' read -r name source destination <<< "$file"
+        cp -r $source $destination
+        echo "Overwrite $name to $destination."
+    done
 }
 
 # [PARSER]
