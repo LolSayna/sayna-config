@@ -43,9 +43,27 @@ rm -f packages.microsoft.gpg
 sudo apt update
 sudo apt install code
 
+# Neovim (apt/flatpak old versions, so build from source)
+sudo apt-get install ninja-build gettext cmake curl build-essential
+# Clone into version 0.11.2, not pulling other branches or depth
+git clone --single-branch -b v0.11.2 --depth=1  https://github.com/neovim/neovim ~/Downloads/neovim
+cd ~/Downloads/neovim
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install   # installed to /usr/local
+cd && sudo rm -dr ~/Downloads/neovim
+
+# Install LazyGit
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
+cd ~/Downloads
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit -D -t /usr/local/bin/
+rm lazygit lazygit.tar.gz && cd
+
 # Install npm
 sudo apt install nodejs npm
 ```
+
 
 ## Config
 ```bash
@@ -86,15 +104,6 @@ tic -x ~/sayna-config/alacritty.terminfo
 ./sayna-config/setup/overwrite.sh
 
 
-## Lazygit (old) TODO remove!
-```bash
-# Install LazyGit
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | \grep -Po '"tag_name": *"v\K[^"]*')
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-tar xf lazygit.tar.gz lazygit
-sudo install lazygit -D -t /usr/local/bin/
-```
-
 ---
 
 # Remarks
@@ -102,8 +111,6 @@ sudo install lazygit -D -t /usr/local/bin/
   * Hatte Probleme mit JetBrainsFont -> choose RobotoMonoNerdFont insted
 * keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
-* SHOULD BE FIXED!:neovim install doenst work, installs file in wrong dir, script needs to be called from home. Doesnt find nvchad config
-* check $XDG_CONFIG_HOME and $EDITOR and sudoedit -> why does it take nano?
 
 # Future Features
 * Full custom zsh config (also file location to .config).
@@ -112,6 +119,7 @@ sudo install lazygit -D -t /usr/local/bin/
 * Stow - symlink farm manager.
 * Instructions how to setup git ssh.
 * Sync Vscode settings and extensions.
+* Reconsider what happens in manual setup vs setup.sh
 
 
 # Inspirations

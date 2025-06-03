@@ -15,7 +15,7 @@
 - df -h (disk usage), ps -aux (processes)/pgrep, lscpu, lsblock, du, pidof, ip, dmesg, mount/unmount, free
 - journalctl, networkctl, ip
 - bc - calculator
-- which(whereis) - find location of binaries (and man pages and more)
+- which/type (whereis) - find location of binaries (and man pages and more)
 
 ### Shell inbuild
 - cd
@@ -23,7 +23,8 @@
 - type - find out if cmd is buildin or core utils
 - fg/bg - move jobs to background/foreground, also with `cmd &`
 - jobs - list background tasks
-- where (zsh) - like which 
+- which - find location of binaries
+- where (only zsh!) - like which 
 
 
 ### Editors
