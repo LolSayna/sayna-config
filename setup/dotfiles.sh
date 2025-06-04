@@ -42,7 +42,9 @@ overwrite() {
     for file in "${paths[@]}"
     do
         IFS=' ' read -r name source destination <<< "$file"
-        mkdir -p $destination
+        if [ ! -e $destination ]; then
+            mkdir -p $destination
+        fi
         cp -r $source $destination
         echo "Overwrite $name to $destination ."
     done

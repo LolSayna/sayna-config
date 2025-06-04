@@ -90,6 +90,9 @@ sudo chsh -s $(which zsh)
 infocmp alacritty > alacritty.terminfo
 # on target
 tic -x ~/sayna-config/alacritty.terminfo
+
+# Tuxedo Budgie Lockscreen (add to startup apps)
+/home/sayna/sayna-config/setup/lockscreen_budgie.sh
 ```
 
 ## Write system config to repo
