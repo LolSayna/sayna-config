@@ -7,3 +7,4 @@ Also my wiki and cooking recipe book.
 - neovim testen vm
 - nvim config will net
 - remove write/setup, add install.sh
+- tmux not ready bug?

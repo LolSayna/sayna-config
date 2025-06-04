@@ -6,6 +6,7 @@ CONF="$HOME/sayna-config/dotfiles"
 # [PATHS]
 # NAME - SOURCE - DESTINATION
 paths=( 
+    # Files
     "Alacritty $CONF/alacritty.toml $XDG_CONFIG_HOME/alacritty/alacritty.toml"
     "Zshenv $CONF/.zshenv $HOME/.zshenv"
     "Zshrc $CONF/zsh/.zshrc $XDG_CONFIG_HOME/zsh/.zshrc"
@@ -14,8 +15,9 @@ paths=(
     "Tmux $CONF/tmux.conf $XDG_CONFIG_HOME/tmux/tmux.conf"
     "Code-Settings $CONF/code/settings.json $XDG_CONFIG_HOME/Code/User/settings.json"
     "Code-Keybindings $CONF/code/keybindings.json $XDG_CONFIG_HOME/Code/User/keybindings.json"
-    "Neovim $CONF/nvim $XDG_CONFIG_HOME/nvim"
-    "Gdbinit $CONF/gdbinit $XDG_CONFIG_HOME/gdb/gdbinit"
+    # Folders (copy files inside folder)
+    "Neovim $CONF/nvim/. $XDG_CONFIG_HOME/nvim/."
+    "Gdbinit $CONF/gdb/. $XDG_CONFIG_HOME/gdb/."    # only 1 file, but it has no file extension
     )
 echo "Found ${#paths[@]} config files."
 
@@ -30,25 +32,30 @@ write_config() {
         if test -e $destination; then
             echo "$name exists, not updated."
         else 
+            mkdir -p $destination
             cp -r $source $destination
-            echo "Wrote $name to $destination."
+            echo "Wrote $name to $destination ."
         fi
-    done
-}
-read_config() {
-    for file in "${paths[@]}"
-    do
-        IFS=' ' read -r name source destination <<< "$file"
-            cp -r $destination $source
-            echo "Read $name to $source."
     done
 }
 overwrite() {
     for file in "${paths[@]}"
     do
         IFS=' ' read -r name source destination <<< "$file"
+        mkdir -p $destination
         cp -r $source $destination
-        echo "Overwrite $name to $destination."
+        echo "Overwrite $name to $destination ."
+    done
+}
+read_config() {
+    for file in "${paths[@]}"
+    do
+        IFS=' ' read -r name source destination <<< "$file"
+        if [ ! -e $source ]; then
+            mkdir -p $source
+        fi
+        cp -r $destination $source
+        echo "Read $name to $source ."
     done
 }
 
