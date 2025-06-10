@@ -48,6 +48,7 @@ $XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins
 # Install Rust (with -y as parameter)
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
 cargo install --locked dysk
+cargo install --locked pastel
 
 # VsCode (from https://code.visualstudio.com/docs/setup/linux#_install-vs-code-on-linux)
 sudo apt install gpg apt-transport-https 

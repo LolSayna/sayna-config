@@ -51,6 +51,7 @@
 - locate(plocate) - find filename anywhere
 - sensors (temperatur)
 - stress
+- caligula - disk imaging tool (more user friendly, less breaking risk)
 
 ### Util
 - imageMagick - image converter
@@ -66,6 +67,8 @@
 	- [Repo Link](https://github.com/yt-dlp/yt-dlp)
 	- usage: `yt-dlp FLAGS "URL"`, `-F` to show available formats
 - pipes.sh - animated pipes screensafer
+- pastel - cli color manipulation/generation
+- astroterm - terminal based star map
 - cmatrix - matrix green characters
 - phoronix test suit - benchmark set test suite
 - hyperfine - benchmarking tool
