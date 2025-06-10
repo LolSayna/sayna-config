@@ -16,7 +16,7 @@
 
 ## Packetmanager
 - APT
-- RPM + yum/dnf(modern version of dnf))
+- RPM + yum/dnf(modern version of dnf)
 - pacman + Arch User Repository
 - zypper
 ### Packetmanager distro independent
@@ -41,9 +41,9 @@
 ### Window manager(X)/Compositors(Wayland)
 - stacking (floating) vs tiling (no overlap, keyboard based) vs dynamic (mixed)
 - x
-	- stacking: mutter (gnome), tiling: i3, dynamic: dwm
+	- stacking: mutter (gnome)| tiling: i3| dynamic: dwm
 - wayland
-	- stacking: mutter, tiling: sway, dynamic: dwl, hyprland
+	- stacking: mutter| tiling: sway, niri (rust, scrollable)| dynamic: dwl, hyprland
 ### Composite manager
 - additon to X window managers, to add shadows/blurs/fading. Sometimes already included (e.g. mutter)
 - picom

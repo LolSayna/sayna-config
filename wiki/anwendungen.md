@@ -90,6 +90,7 @@
 ### Util
 - keepass2 - keypass based password manager (todo terminal based alternative?)
 - meld - diff viewer
+- sweetHome3D - interior design software
 #### Audio
 - spek - graphical spectrum analyzer
 - speachnote - tts, text to speach engine
