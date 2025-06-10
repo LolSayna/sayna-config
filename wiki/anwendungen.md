@@ -16,6 +16,7 @@
 - journalctl, networkctl, ip
 - bc - calculator
 - which/type (whereis) - find location of binaries (and man pages and more)
+- systemd-analyze blame - get boot time stats
 
 ### Shell inbuild
 - cd
@@ -52,6 +53,8 @@
 - sensors (temperatur)
 - stress
 - caligula - disk imaging tool (more user friendly, less breaking risk)
+- iperf3 - network speed benchmark
+- nmtui - networkmanager cli
 
 ### Util
 - imageMagick - image converter
