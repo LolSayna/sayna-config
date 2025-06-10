@@ -28,7 +28,22 @@ sudo apt install -y btop micro wavemon hwinfo stress plocate fzf vlc meld lm-sen
 sudo apt install -y ranger wikiman lynx yt-dlp spek openssh-server flatpak
 
 # Alacritty (via ppa)
-sudo add-apt-repository ppa:aslatter/ppa -y && sudo apt install -y alacritty 
+mkdir -p $XDG_CONFIG_HOME/alacritty
+sudo add-apt-repository ppa:aslatter/ppa -y && sudo apt install -y alacritty
+curl -LO --output-dir $XDG_CONFIG_HOME/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
+	
+# Zsh
+mkdir -p $XDG_CONFIG_HOME/zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k $XDG_DATA_HOME/powerlevel10k
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions $XDG_DATA_HOME/zsh-autosuggestions
+	
+# Tmux
+mkdir -p $XDG_CONFIG_HOME/
+mkdir -p ~/.config/tmux/plugins/catppuccin
+git clone --depth=1 https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/tmux/plugins/tpm
+git clone --depth=1 https://github.com/catppuccin/tmux.git $XDG_CONFIG_HOME/tmux/plugins/catppuccin
+$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins
+
 
 # Install Rust (with -y as parameter)
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
@@ -62,6 +77,14 @@ rm lazygit lazygit.tar.gz && cd
 
 # Install npm
 sudo apt install nodejs npm
+
+# Fonts
+# tried JetBrainsMono Nerd Font, now its RobotoMonoNerdFont
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/RobotoMono.zip -O $HOME/Downloads/RobotoMono.zip
+unzip $HOME/Downloads/RobotoMono.zip -d $HOME/Downloads/RobotoMono
+mkdir -p $XDG_DATA_HOME/fonts
+cp $HOME/Downloads/RobotoMono/RobotoMonoNerdFont{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} $XDG_DATA_HOME/fonts
+rm -dr $HOME/Downloads/RobotoMono*
 ```
 
 
@@ -79,7 +102,7 @@ git config --global core.editor "nvim"
 git clone git@github.com:LolSayna/sayna-config.git
 
 # Execute script (chmod +x setup.sh)
-./sayna-config/setup/setup.sh
+./sayna-config/setup/dotfiles.sh -write
 
 # Zsh default shell (requires log out) (current `echo $SHELL`)
 chsh -s $(which zsh) 
@@ -95,18 +118,6 @@ tic -x ~/sayna-config/alacritty.terminfo
 /home/sayna/sayna-config/setup/lockscreen_budgie.sh
 ```
 
-## Write system config to repo
-```bash
-# Save current dotfiles to repository (chmod +x write.sh)
-./sayna-config/setup/write.sh
-```
-
-## Force repo to system config
-```bash
-# Push current config into repository (chmod +x overwrite.sh)
-./sayna-config/setup/overwrite.sh
-
-
 ---
 
 # Remarks
@@ -114,6 +125,7 @@ tic -x ~/sayna-config/alacritty.terminfo
   * Hatte Probleme mit JetBrainsFont -> choose RobotoMonoNerdFont insted
 * keepass2 vs keepassxc, keepass2 not newest version, but in apt for debian.
 * Alacritty version, debian apt only has 0.11 which uses old yml config files, 0.13 is current.
+* issue with tmux - not ready message, but no fix gefunden
 
 # Future Features
 * Full custom zsh config (also file location to .config).

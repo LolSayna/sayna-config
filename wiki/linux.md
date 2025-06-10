@@ -64,12 +64,11 @@
 #### Terminal emulator
 - gnome shell, st, **alacritty**
 #### Terminal Multiplexor
-- tmu
+- tmux
 #### Other
 - `A && B` Execute B if A successful, `A;B` execute A then B
 - Redirection (with file): `A > B` stdout of A to B, `A >> B` Append to B
 - Pipe (cmd to cmd): `A | B` connect stdout of A to stdin of B
-- issue with tmux - not ready message, but no fix gefunden
 
 ### Init Prozesse
 - SysVInit -> älter, use `service`
@@ -85,4 +84,5 @@
 - menu/app launcher  (demenu)
 - statusbar
 - notify-send + dunst - Notification windows, [video](https://www.youtube.com/watch?v=cBx9P3bvDCk)
+- `/etc/skel` - template folder for new users home directory
 
