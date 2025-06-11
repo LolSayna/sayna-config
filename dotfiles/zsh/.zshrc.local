@@ -1,3 +1,6 @@
+# run reload run
+# `source ~/.config/zsh/.zshrc.local`
+
 neofetch
 
 # [Extensions]
@@ -8,6 +11,10 @@ source "$XDG_DATA_HOME/zsh-autosuggestions/zsh-autosuggestions.zsh"
 if test -f "$ZDOTDIR/.p10k.zsh"; then
       source "$ZDOTDIR/.p10k.zsh"
 fi
+
+# [Bigger zsh history include]
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
 
 # [neovim]
 alias vim=nvim
