@@ -23,8 +23,10 @@
 - Appimages -> Insecure, but Portable + Independent
 - Flatpaks -> nur grafisch, enthalten alle nötigen Librarys, sicherer (no root)
 - Snap -> by Canonical(Ubuntu), has Autoupdate, like container
-- pip -> Python
-    - pipx - ohne enviroments
+- Python -> pip/pipx
+- Rust -> cargo
+- Nix -> nixshell
+
 ### Other packets
 - install to `$XDG_DATA_HOME` or `$HOME/.local/share`
 - or `~/.local/bin` or `/usr/bin`

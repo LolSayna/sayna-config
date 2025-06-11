@@ -86,6 +86,13 @@
 - mpd - music player daemon, server for audio players
 - terminal image viewer?
 - wireguard - vpn client
+- minicom - serial reader
+	- `CTRL-a-w` toggle line wrap, `CTRL-a-u` add carriage return
+- qemu - virtualization
+	- debugging: `monitor info {registers,tlb,menu}`
+- gdb - debugger
+	- `p/x NAME` - print in hex
+	- `x/10 0x123` - print memory at 0x123
 
 ## GUI
 ### Coding
