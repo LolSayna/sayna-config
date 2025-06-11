@@ -1,31 +1,37 @@
 # Linux applications
 ## Terminal
 ### Core
-- ls (`-lha`), cat, less, echo, stat, file, diff, clear, history, pwd
-- sudo, cp, touch, mkdir, mv, exec, rm, kill(one pid)/pkill(one process)/killall(one type of processes), chown, chmod, sleep, ln, dd
+- less, file, diff, clear
+- sudo, exec, pkill(one process)/killall(one type of processes)
 - find, se/awkd, grep, locate, time, wc
 - unzip, tar -xf, gunzip
-- man (highlighting via less config in .zshrc), `uname -r` (kernel version), `cat /etc/*release` distro
+- man (highlighting via less config in .zshrc), , `cat /etc/*release` distro
 - git, gcc/clang, python3, column, xargs
 - curl - web requests, wget - file downloader
 - ssh, scp - remote login/copy
 	- `ssh-keygen` and `ssh-copy-id`
 - rysnc - file synchronisation
 	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
-- df -h (disk usage), ps -aux (processes)/pgrep, lscpu, lsblock, du, pidof, ip, dmesg, mount/unmount, free
-- journalctl, networkctl, ip
+- ps -aux (processes)/pgrep, lscpu, lsblock, pidof, ip, dmesg, mount/unmount, free
+- journalctl, networkctl
 - bc - calculator
-- which/type (whereis) - find location of binaries (and man pages and more)
+- whereis - find location of binaries (and man pages and more)
 - systemd-analyze blame - get boot time stats
 
-### Shell inbuild
-- cd
+### GNU Coreutils (list of short programs to make os complete,  mostly adheares to POSIX)
+- ls (`-lha`), cat, echo/printf(more formattting) (also shell buildin), cut
+- date, id, df -h (disk usage), du, stat, pwd, tty, uname (`-a`), uptime, who, wc
+- chmod, chown, cgrp, ln, cp, mv, rm, mkdir, touch, tee (redirect output)
+- chroot, dd, sleep, kill (by pid), test (enables if for bash), yes, seq+numfmt, env (run program in enviroment)
+
+### Shell inbuild (by bash, zsh, or multiple shells)
+- cd, history, echo/printf(more formattting) (also GNU)
 - alias - cmd replacment with pattern
 - type - find out if cmd is buildin or core utils
 - fg/bg - move jobs to background/foreground, also with `cmd &`
 - jobs - list background tasks
 - which - find location of binaries
-- where (only zsh!) - like which 
+- where(only zsh), type, which - get information about cmds 
 
 
 ### Editors
