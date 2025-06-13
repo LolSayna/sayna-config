@@ -99,6 +99,8 @@ SweetHome3D-7.5/SweetHome3D
 ```bash
 # Generate SSH Key
 ssh-keygen -t ed25519
+# Use ssh key
+git config --global core.sshCommand 'ssh -i ~/.ssh/NAME'
 
 # Git
 git config --global user.email "mareike.burg@web.de"
