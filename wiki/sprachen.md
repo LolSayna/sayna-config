@@ -30,7 +30,9 @@ LSP - Language Server Protocol
 - Code Autocompletion
 - Syntax Highlighting
 - Python
-  - Pylance basiert auf Pyright
+  - Pylance - vscode language server: (intelliSense, diagnostics) basiert auf Pyright (type checking tool)
+  - Pylint - static code checking
+  - autopep8 - format code on save
 ### OS
 Synchronisation
 - Threads/Prozesse zweiseitg
@@ -46,6 +48,9 @@ Deskriptor - Struktur für Speichersegment
 - LDT - prozessgebunden (Deskriptortabelle)
 
 ### C Basics
+- Good for systems programming -> OS, embedded
+- Different standards: ~1990 ANSI C, 1999 C99, C11, C17
+- Extension C++ which adds object oriented programming
 - Compiling: .c -> .o -> .ld -> .elf -> .bin
 - Memory layout
   - text (program code)
@@ -54,6 +59,24 @@ Deskriptor - Struktur für Speichersegment
     - dynamic: stack, heap
 - Dereferenzieren *: Return Wert an dieser Adresse
 - Referenz &: Return Adresse der Variable
+<details>
+<summary>Hello World C & Functions</summary>
+
+```C
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    printf("Hallo du!\n");
+    return 0;
+}
+```
+#### Functions
+- IO: printf, scanf -> until whitespace, fgets -> full line string
+- math.h - floor
+- string.h - strcpy
+- time.h - time(NULL) as seed for srand()
+- Files: “FILE”, fopen, fprintf, fclose,fgets
+</details>
 
 ## Programming languagess
 ### Texts
@@ -83,6 +106,17 @@ Deskriptor - Struktur für Speichersegment
   - pipx: isolating pip
   - venv: virtual enviroments installed by pip
   - virtualenv: extension of venv
+##### VENV SETUP
+```bash
+sudo apt install python3-venv python3-pip
+python3 -m venv venv
+source venv/bin/activate
+# do stuff like
+pip install numpy
+# save list of packages
+pip freeze > requirements.txt
+deactivate
+```
 
 ### Container
 - Docker
