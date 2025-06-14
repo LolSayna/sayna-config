@@ -17,3 +17,5 @@
 
 ## Ideen/Varianten
 - Halbe Zwiebel schneiden und zuerst anbraten, dann Ei dazu
+- Kleinen schluck Milch einrühren+
+- ~50g Schinkenwürfel mit anbraten
