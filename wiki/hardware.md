@@ -1,6 +1,7 @@
 # PC Buying Guides
 
 ## CPU
+[Single-Threaded Performance Overview](https://cdn.mos.cms.futurecdn.net/XUq9Uh9x2UTT97fTGZMbci.png) from [Tom's Hardware](https://www.tomshardware.com/reviews/cpu-hierarchy,4312.html)
 ### Intel - old Naming
 - [List of Intel processors](https://en.wikipedia.org/wiki/List_of_Intel_processors)
 - [Intel Naming Guide](https://www.intel.com/content/www/us/en/processors/processor-numbers.html)
@@ -33,6 +34,7 @@
 
 
 ## GPU
+[Generational Performance Overview](https://cdn.mos.cms.futurecdn.net/3BUQTn5dZgQi7zL8Xs4WUL.png) from [Tom's Hardware](https://www.tomshardware.com/reviews/gpu-hierarchy,4388.html)
 ### Nvida
 - Produktlinien: GTX/RTX
 - Generation 1000/2000/26XX/3000/4000/5000 (2025)

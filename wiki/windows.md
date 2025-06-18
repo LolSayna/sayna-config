@@ -9,19 +9,20 @@
 
 ### Additional
 #### Stats
-- Hwmonitor or Hwinfo - System Information
+- Hwmonitor or *Hwinfo* - System Information
 - CpuZ - Cpu Stats
 - GpuZ - Gpu Stats
-- Crystal disk info - Disk Stats
-- Western Digital Dashboard - Disk Stats
-- HD Tune - Disk Stats
-- windirstats or treesizefree - Manage free disk space
+- *Crystal disk info* or Western Digital Dashboard or Disk Stats or HD Tune - Disk Stats
+- Windirstats or Treesizefree - Manage free disk space
 - USB device tree viewer - Usb devices
+#### Stresstest
+- OCCT - generel stresstest
+- Furmark - GPU stresstest
 #### Apps
 - 7zip - Compression (not actually needed)
 - SoundSwitch - switches audio devices (cli, hotkey, ...)
 - Rufus - Flash usb drive
-- ventoy - Multiboot usb drive
+- Ventoy - Multiboot usb drive
 - Thunderbidr - Email
 
 ---
