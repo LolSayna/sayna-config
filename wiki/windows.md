@@ -18,6 +18,9 @@
 #### Stresstest
 - OCCT - generel stresstest
 - Furmark - GPU stresstest
+- MSI Afterburner - GPU Overclock
+- Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
+
 #### Apps
 - 7zip - Compression (not actually needed)
 - SoundSwitch - switches audio devices (cli, hotkey, ...)
