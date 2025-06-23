@@ -44,6 +44,9 @@ git clone --depth=1 https://github.com/tmux-plugins/tpm $XDG_CONFIG_HOME/tmux/pl
 git clone --depth=1 https://github.com/catppuccin/tmux.git $XDG_CONFIG_HOME/tmux/plugins/catppuccin
 $XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins
 
+# Install fzf WIP
+git clone --depth 1 https://github.com/junegunn/fzf.git $XDG_DATA_HOME/fzf
+$XDG_DATA_HOME/fzf/install
 
 # Install Rust (with -y as parameter)
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
@@ -124,7 +127,15 @@ infocmp alacritty > alacritty.terminfo
 tic -x ~/sayna-config/alacritty.terminfo
 
 # Tuxedo Budgie Lockscreen (add to startup apps)
-/home/sayna/sayna-config/setup/lockscreen_budgie.sh
+# Old version, no longer working
+# /home/sayna/sayna-config/setup/lockscreen_budgie.sh
+
+# xscreensaver, install with
+sudo apt-get install xscreensaver-data xscreensaver-data-extra
+# Configure with
+xscreensaver-demo 
+# Run this on startup
+sh -c "sleep 10 && xscreensaver -no-splash &"
 ```
 
 ---
