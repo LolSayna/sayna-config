@@ -27,6 +27,9 @@
 - Rufus - Flash usb drive
 - Ventoy - Multiboot usb drive
 - Thunderbidr - Email
+- simple-http-server - local file host/share
+- ventoy - multiboot usb iso
+    - netboot.xyz - netboot iso, rescue systems
 
 ---
 ## Setup

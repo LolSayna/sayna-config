@@ -48,7 +48,9 @@
 - 3.0 - 5 Gbit/s
 ### Power
 - USB 1.0 - 3.2: 5V, 0.1-3 A, 0.5-15W
-- USB-PD: 5V + different Voltages, 5 A, 100/240W
+- USB-PD (Power Devlivery): different voltage rails, not all supported everywhere
+  - 5V+9V+15V+20+(12V), 5 A, 100 (SPR)/240W (EPR)
+- PPS (Programable Power Supply): variable adjustable voltages
 ### Stecker
 - Typ-A: rechteckig
 - Typ-B: fast quadratische
