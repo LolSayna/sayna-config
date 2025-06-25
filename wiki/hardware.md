@@ -40,3 +40,27 @@
 - Generation 1000/2000/26XX/3000/4000/5000 (2025)
 
   
+
+## USB
+### Data
+- USB 1.0 - 4v2: 1.5 MBit/s - 80 Gbit/s
+- 2.0 - 480 Mbit/s
+- 3.0 - 5 Gbit/s
+### Power
+- USB 1.0 - 3.2: 5V, 0.1-3 A, 0.5-15W
+- USB-PD: 5V + different Voltages, 5 A, 100/240W
+### Stecker
+- Typ-A: rechteckig
+- Typ-B: fast quadratische
+- Micro-B/Mini-B: abgerundetes Trapez
+- Micro-B: doppelte
+- Typ-C: ovale
+### Kabel
+- [Resistance Video](https://www.youtube.com/watch?v=vKJWwBXRPuI&list=WL&index=5)
+- Either 60W, 100W/240W (with E-marker chip)
+- USB 1/2: 4 Adern, 2x Daten, 1x Ground, 1x 5V
+- USB 3: 9 Adern
+- USB 3.1/Typ-C: 2x 12 Adern
+### Thunderbolt
+- initial mac only, own connector
+- Thunderbolt 3/4: 100 W, DisplayPort, USB 3.1/4, Typ-C Connector, PCI 3.0 Lane
