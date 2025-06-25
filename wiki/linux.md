@@ -60,6 +60,14 @@
 
 
 ## Components
+### Gnome config
+Either via gsettings or dconf, both modify the same config file in the backend.
+- `dconf read /org/gnome/desktop/screensaver/idle-activation-enabled`
+- `dconf write /org/gnome/desktop/screensaver/idle-activation-enabled false`
+- `gsettings list-schemas | grep screensaver`
+- `gsettings get org.gnome.desktop.screensaver idle-activation-enabled`
+- `gsettings set org.gnome.desktop.screensaver idle-activation-enabled false`
+
 ### Terminal
 #### Shell
 - bash vs **zsh** vs fish
