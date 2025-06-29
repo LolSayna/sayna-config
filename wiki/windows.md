@@ -30,6 +30,7 @@
 - simple-http-server - local file host/share
 - ventoy - multiboot usb iso
     - netboot.xyz - netboot iso, rescue systems
+- LibreOffice
 
 ---
 ## Setup
@@ -44,7 +45,7 @@
 - Winget packetmanager (alternative: chocolaty [extern])
 - `winget -e -id` TODO ausprobieren
 - `winget install Mozilla.Thunderbird Oracle.VirtualBox Microsoft.VisualStudioCode`
-- `winget install AntoineAflalo.SoundSwitch Apple.iTunes`
+- `winget install AntoineAflalo.SoundSwitch Apple.iTunes TheDocumentFoundation.LibreOffice`
 
 ### Update
 1. Windows + Grafiktreiber updaten + Reboot (Bios, Chipset Driver?)

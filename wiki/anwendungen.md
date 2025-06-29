@@ -19,6 +19,7 @@
 - systemd-analyze blame - get boot time stats
 - cron/crontab - automation of reoccuring tasks (alternative: systemd Timer Units)
 - xrandr - resize and rotate monitor settings (X Window)
+- jq - json parser
 
 ### GNU Coreutils (list of short programs to make os complete,  mostly adheares to POSIX)
 - ls (`-lha`), cat, echo/printf(more formattting) (also shell buildin), cut
