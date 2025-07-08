@@ -33,6 +33,8 @@
 - Basilikum/Petersillie
 - 2 EL Zitronensaft in Brühe
 - Mozarella dazu
+- Mais, Erbsen, Möhren, Paprika, Zwiebeln, Gewürzgurken
+- https://www.effilee.de/rezept/nudelsalat-a-ecf16f0c-0005-0011-0000-000010164030
 
 ### Fleischwurst
 - Fleischwurst

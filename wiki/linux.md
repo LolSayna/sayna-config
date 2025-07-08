@@ -95,4 +95,4 @@ Either via gsettings or dconf, both modify the same config file in the backend.
 - statusbar
 - notify-send + dunst - Notification windows, [video](https://www.youtube.com/watch?v=cBx9P3bvDCk)
 - `/etc/skel` - template folder for new users home directory
-
+- [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
