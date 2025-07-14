@@ -89,6 +89,10 @@ unzip $HOME/Downloads/RobotoMono.zip -d $HOME/Downloads/RobotoMono
 mkdir -p $XDG_DATA_HOME/fonts
 cp $HOME/Downloads/RobotoMono/RobotoMonoNerdFont{-Regular.ttf,-Bold.ttf,-Italic.ttf,-BoldItalic.ttf} $XDG_DATA_HOME/fonts
 rm -dr $HOME/Downloads/RobotoMono*
+# Microsoft fonts, including Trebuchet MS
+sudo apt install -y msttcorefonts
+# clear cache
+fc-cache -f -v
 
 # Install Sweet Home 3D - Interior design application 
 wget https://sourceforge.net/projects/sweethome3d/files/SweetHome3D/SweetHome3D-7.5/SweetHome3D-7.5-linux-x64.tgz

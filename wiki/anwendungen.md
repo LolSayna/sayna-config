@@ -20,6 +20,7 @@
 - cron/crontab - automation of reoccuring tasks (alternative: systemd Timer Units)
 - xrandr - resize and rotate monitor settings (X Window)
 - jq - json parser
+- fc-list - list installed fonts
 
 ### GNU Coreutils (list of short programs to make os complete,  mostly adheares to POSIX)
 - ls (`-lha`), cat, echo/printf(more formattting) (also shell buildin), cut
@@ -79,6 +80,9 @@
 	- [Repo Link](https://github.com/yt-dlp/yt-dlp)
 	- usage: `yt-dlp FLAGS "URL"`, `-F` to show available formats
 - pipes.sh - animated pipes screensafer
+- asciiquarium - terminal animated aquarium
+- lolcat - cat with random colors
+- hollywood/rust-stakeholder - do random stuff
 - pastel - cli color manipulation/generation
 - astroterm - terminal based star map
 - cmatrix - matrix green characters
