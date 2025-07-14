@@ -45,7 +45,7 @@
 - Winget packetmanager (alternative: chocolaty [extern])
 - `winget -e -id` TODO ausprobieren
 - `winget install Mozilla.Thunderbird Oracle.VirtualBox Microsoft.VisualStudioCode`
-- `winget install AntoineAflalo.SoundSwitch Apple.iTunes TheDocumentFoundation.LibreOffice`
+- `winget install AntoineAflalo.SoundSwitch Apple.iTunes TheDocumentFoundation.LibreOffice DigitalScholar.Zotero`
 
 ### Update
 1. Windows + Grafiktreiber updaten + Reboot (Bios, Chipset Driver?)
