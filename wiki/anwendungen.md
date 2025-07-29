@@ -12,7 +12,7 @@
 	- `ssh-keygen` and `ssh-copy-id`
 - rysnc - file synchronisation
 	- `-r` recursive, `P` progress bar + partial copy, `a` archive/keep permission, `v` verbose, `h` human format
-- ps -aux (processes)/pgrep, lscpu, lsblock, pidof, ip, dmesg, mount/unmount, free
+- ps -aux (processes)/pgrep, lscpu, pidof, ip, dmesg, mount/unmount, free
 - journalctl, networkctl
 - bc - calculator
 - whereis - find location of binaries (and man pages and more)
@@ -21,6 +21,9 @@
 - xrandr - resize and rotate monitor settings (X Window)
 - jq - json parser
 - fc-list - list installed fonts
+
+### Util-Linux
+- lslbk - list block devices, e.g. disks/usb-drives
 
 ### GNU Coreutils (list of short programs to make os complete,  mostly adheares to POSIX)
 - ls (`-lha`), cat, echo/printf(more formattting) (also shell buildin), cut
@@ -65,6 +68,8 @@
 - caligula - disk imaging tool (more user friendly, less breaking risk)
 - iperf3 - network speed benchmark
 - nmtui - networkmanager cli
+- fuser - finds user who holds a file open
+- lsof - list open files, finds all "files" of a user/find all processes of a file
 
 ### Util
 - imageMagick - image converter

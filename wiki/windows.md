@@ -20,6 +20,7 @@
 - Furmark - GPU stresstest
 - MSI Afterburner - GPU Overclock
 - Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
+- Cinebench - CPU, with score comparison
 
 #### Apps
 - 7zip - Compression (not actually needed)
