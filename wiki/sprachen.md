@@ -51,7 +51,6 @@ Deskriptor - Struktur für Speichersegment
 - Good for systems programming -> OS, embedded
 - Different standards: ~1990 ANSI C, 1999 C99, C11, C17
 - Extension C++ which adds object oriented programming
-- Compiling: .c -> .o -> .ld -> .elf -> .bin
 - Memory layout
   - text (program code)
   - data
@@ -59,8 +58,30 @@ Deskriptor - Struktur für Speichersegment
     - dynamic: stack, heap
 - Dereferenzieren *: Return Wert an dieser Adresse
 - Referenz &: Return Adresse der Variable
+
 <details>
-<summary>Hello World C & Functions</summary>
+<summary>Compilation process</summary>
+
+- Source Code File: *.c ( *.cpp *.rs *.go)
+- GCC - GNU Compiler Collection
+  - Pre-Processing: removing comments, extending macros, replacing include files with its conntents - *.i
+  - Compiler: assembly language, human readable (or intermediate representation) - *.s
+  - Assembler: convert assebmly into maschine code - *.o
+  - Linker: merge different code sources into one file
+    - static linking: copy code from library into final executable
+    - dynamic linking: insert reference to libraries, that are precompiled into a dynamically shared library (*.so *.dll)
+- Executable (os/platform dependend) *.bin *.exe
+---
+- [Good video](https://youtu.be/XJC5WB2Bwrc?si=bJv5a821upb2GJKQ)
+- ld: gnu linking tool
+- bin: raw executable
+- exe: windows executable
+- a.out: legacy executable format
+- elf: executable with additional information like symbol tables, memory locations, debug info, ...
+</details>
+
+<details>
+<summary>Hello World C</summary>
 
 ```C
 #include <stdio.h>
@@ -70,7 +91,12 @@ int main() {
     return 0;
 }
 ```
-#### Functions
+</details>
+
+
+<details>
+<summary>Functions</summary>
+
 - IO: printf, scanf -> until whitespace, fgets -> full line string
 - math.h - floor
 - string.h - strcpy
