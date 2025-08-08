@@ -54,7 +54,7 @@ Deskriptor - Struktur für Speichersegment
 - Memory layout
   - text (program code)
   - data
-    - static:> initalized, bss(uninit)
+    - static: initalized, bss(uninit)
     - dynamic: stack, heap
 - Dereferenzieren *: Return Wert an dieser Adresse
 - Referenz &: Return Adresse der Variable
@@ -65,10 +65,11 @@ Deskriptor - Struktur für Speichersegment
 - Source Code File: *.c ( *.cpp *.rs *.go)
 - GCC - GNU Compiler Collection
   - Pre-Processing: removing comments, extending macros, replacing include files with its conntents - *.i
+  - (LLVM IR optional) - intermediate format, creates Abstract Syntax Tree - *.ll
   - Compiler: assembly language, human readable (or intermediate representation) - *.s
   - Assembler: convert assebmly into maschine code - *.o
   - Linker: merge different code sources into one file
-    - static linking: copy code from library into final executable
+    - static linking: copy code from library into final executable (takes *.o, or archived variant *.a)
     - dynamic linking: insert reference to libraries, that are precompiled into a dynamically shared library (*.so *.dll)
 - Executable (os/platform dependend) *.bin *.exe
 ---
