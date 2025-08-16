@@ -19,3 +19,5 @@
 
 ## Ideen/Varianten
 - mit Ketchup oder ???
+- mit Zwiebelnstückchen, aber erst spät mitanbranten
+- mit Jalapenos (eingelegt oder frisch?) servieren

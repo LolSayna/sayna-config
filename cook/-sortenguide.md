@@ -5,6 +5,11 @@ Welche Käse Arten gibt es und wofür eignen sie sich
 - Emmentaler
 - Gruyere
 
+# Paprikas
+- Paprika - groß, nicht scharf
+- Peperoni - mittelscharf
+- Chillis - klein, schärfer
+- Jalapeno - spezielle Chillis, kleiner, eher grün
 
 
 # Sahnearten
