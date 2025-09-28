@@ -40,6 +40,8 @@
 - Generation 1000/2000/26XX/3000/4000/5000 (2025)
 
   
+## Mainboard/Motherboard
+![Mainboard sizes](media/mainboard-sizes.png)
 
 ## USB
 ### Data
