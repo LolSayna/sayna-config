@@ -11,4 +11,4 @@ Also my wiki and cooking recipe book.
 
 - ncdu vs dysk --si vs df --s -h
 
-- delete .zsh files in home folder
+- update dotfiles.sh to fix issue with creating folders

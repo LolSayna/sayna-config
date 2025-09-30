@@ -1,4 +1,6 @@
 #!/bin/bash
+# TODO: currently bugged and creates $HOME/.zshenv/.zshenv -> should split folder from file name
+
 # Install script for my dotfiles
 
 CONF="$HOME/sayna-config/dotfiles"
