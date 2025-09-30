@@ -50,15 +50,6 @@
 - additon to X window managers, to add shadows/blurs/fading. Sometimes already included (e.g. mutter)
 - picom
 
-## File systems
-- fat32 - old standard, max file size 4GB
-- exFAT - flash drives
-- ntfs - windows
-- btrfs
-- ext4
-- zfs
-
-
 ## Components
 ### Gnome config
 Either via gsettings or dconf, both modify the same config file in the backend.

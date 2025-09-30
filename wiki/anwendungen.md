@@ -23,13 +23,17 @@
 - fc-list - list installed fonts
 
 ### Util-Linux
-- lslbk - list block devices, e.g. disks/usb-drives
+- lsblk - list block devices, e.g. disks/usb-drives
+- fdisk - modify disk partition table; sfdisk for script usage
+- fsck - check/repair file system
+- hexdump/hd - display contents in hex, decimal, ascii, ...
 
 ### GNU Coreutils (list of short programs to make os complete,  mostly adheares to POSIX)
 - ls (`-lha`), cat, echo/printf(more formattting) (also shell buildin), cut
-- date, id, df -h (disk usage), du, stat, pwd, tty, uname (`-a`), uptime, who, wc
+- date, id, df -h (disk space), du, stat, pwd, tty, uname (`-a`), uptime, who, wc
 - chmod, chown, cgrp, ln, cp, mv, rm, mkdir, touch, tee (redirect output)
 - chroot, dd, sleep, kill (by pid), test (enables if for bash), yes, seq+numfmt, env (run program in enviroment)
+- dd - convert/copy file
 
 ### Shell inbuild (by bash, zsh, or multiple shells)
 - cd, history, echo/printf(more formattting) (also GNU)
@@ -55,7 +59,7 @@
 - w3m - terminal web browser
 - lynx - text mode web browser
 - bat - cat extension
-- dysk - df extension (install via cargo)
+- dysk - disk usage, df extension (install via cargo)
 - top, htop, gtop, btop - system/tasks overview
 - fzf - fuzzyfinder
 - hwinfo - hardware configuration
@@ -105,6 +109,7 @@
 - gdb - debugger
 	- `p/x NAME` - print in hex
 	- `x/10 0x123` - print memory at 0x123
+- xxd - hexdump or reverse for binary
 
 ## GUI
 ### Coding
@@ -123,6 +128,7 @@
 - meld - diff viewer
 - sweetHome3D - interior design software
 - zotero - bibliography tool
+- (gnome) Disk Usage Analyzer - disk usage
 #### Audio
 - spek - graphical spectrum analyzer
 - speachnote - tts, text to speach engine
