@@ -129,6 +129,7 @@
 - sweetHome3D - interior design software
 - zotero - bibliography tool
 - (gnome) Disk Usage Analyzer - disk usage
+- ausweisapp2 - german online id app via smartphone; apt version outdated, used flatpak (09-2025)
 #### Audio
 - spek - graphical spectrum analyzer
 - speachnote - tts, text to speach engine

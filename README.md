@@ -10,3 +10,5 @@ Also my wiki and cooking recipe book.
 - markmap https://markmap.js.org/repl
 
 - ncdu vs dysk --si vs df --s -h
+
+- delete .zsh files in home folder
