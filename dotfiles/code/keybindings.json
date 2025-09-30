@@ -26,6 +26,52 @@
         // fix lsp bug that typst does not find its bib file
         "key": "end",
         "command": "tinymist.pinMainToCurrent"
-    }
-      
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "ltex.checkCurrentDocument"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "ltex.clearDiagnosticsInCurrentDocument"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+[Period]",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quit"
+    },
+    // {
+    //     "key": "ctrl+alt+p",
+    //     "command": "editor.action.codeAction",
+    //     "args": {
+    //         "kind": "quickfix.ltex.acceptSuggestions"
+    //     }
+    // },
 ]

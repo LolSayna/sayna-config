@@ -19,6 +19,9 @@ SAVEHIST=$HISTSIZE
 # [neovim]
 alias vim=nvim
 
+# [nix/direnv]
+# this load a nix flake, when a `.envrc` with `use flake` exists in a folder with a nix flake
+eval "$(direnv hook zsh)"
 
 # [nemo]
 # kann mir das nicht merken
@@ -35,8 +38,21 @@ alias files=nemo
 # based on https://www.youtube.com/watch?v=oTNRvnQLLLs could replace cat with bat
 alias myf='fzf --preview="cat {}"'
 alias mye='nvim $(fzf --preview="cat {}")'
+export PATH="$XDG_DATA_HOME/fzf/bin:$PATH"
 
 # [for master thesis - ARA project]
 export CPATH="/usr/local/lib/python3.10/dist-packages/graph_tool/include"
 export PATH="$PATH:/home/sayna/go/bin"
 export GOBIN="/home/sayna/go/bin"
+alias kg="flatpak run org.kde.kgraphviewer"
+
+# [for trampoline rtos]
+trampoline_path="/home/sayna/Desktop/sra/trampoline/"
+export PATH=$PATH:$trampoline_path"goil/makefile-unix"
+export GOIL_TEMPLATES=$trampoline_path"goil/templates"
+export VIPER_PATH=$trampoline_path"viper"
+
+#alias parrot="cd ~/Desktop/sra/parrot/build"
+alias parrot="cd ~/Desktop/sra/master/parrot/build"
+#alias ara="cd ~/Desktop/sra/parrot/subprojects/ara/test/mareike_benchmark"
+alias ara="cd ~/Desktop/sra/master/parrot/subprojects/ara/test/xen-eval"

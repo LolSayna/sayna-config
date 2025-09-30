@@ -7,7 +7,6 @@
     "mesonbuild.downloadLanguageServer": true,
     "rust-analyzer.check.allTargets": false,
     "rust-analyzer.cargo.target": "build/i686-rstubs-kernel.json",
-    "workbench.colorTheme": "Default Dark+",
     "git.confirmSync": false,
     "RainbowBrackets.depreciation-notice": false,
     "vscode-neovim.neovimExecutablePaths.linux": "/home/sayna/neovim/squashfs-root/usr/bin/nvim",
@@ -40,7 +39,6 @@
     "cSpell.userWords": [
         "Mareike"
     ],
-    "editor.minimap.enabled": false,
     "[markdown]": {
 
         "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -53,5 +51,31 @@
             "other": "on"
         }
     },
+    "files.associations": {
+        "*.pxi": "python"
+    },
+    "editor.minimap.enabled": false,
+    "ltex.completionEnabled": true,
+    "ltex.enabled": [
+        "bibtex",
+        // "context",
+        // "context.tex",
+        // "html",
+        // "latex",
+        // "markdown",
+        // "mdx",
+        "typst",
+        // "asciidoc",
+        // "neorg",
+        // "org",
+        // "quarto",
+        // "restructuredtext",
+        // "rsweave"
+    ],
+    "ltex.additionalRules.motherTongue": "de-DE",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
 
 }
