@@ -9,7 +9,10 @@
 - ???g ??? (Anmerkungen)
 - ???x ???
 - 
-  
+
+## Ideen/Varianten
+- ???
+
 ## Zubereitung
 1. A,B,C (einzelnd) schälen
 2. E+F (gemeinsam) würfeln
@@ -19,6 +22,3 @@
 ## Lagerung (optional)
 - wie lange im Kühlschrank?
 - einfrierbar?
-
-## Ideen/Varianten
-- ???

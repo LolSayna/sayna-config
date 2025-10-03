@@ -2,16 +2,16 @@
 
 ## Infos
 - Hauptgericht
-- 6 Portionen
+- 5 Portionen
 - ??? Stunde
   
 ## Zutaten
 - 450g Fleisch (Huhn geschnetzeltes)
-- ??? Zwiebeln 450g
-- 3x Kartoffeln 150g
-- 2x Karotten 125g
+- 350g Zwiebeln
+- 150g Kartoffeln 
+- 100g Karotten
 - Golden Curry Stücke
-- ??? Reis
+- ~100g pro Person Reis
   
 ## Zubereitung
 1. Zwiebeln, Kartoffeln, Karotten schälen + würfeln
@@ -20,7 +20,7 @@
 4. Wasser dazu ~15 min köcheln lassen (kurz aufkochen)
 5. Curry dazu und 5 minuten ohne Hitze
 6. Mit Reis servieren
-7. Im Kühlschrank lagern und im Topf bei mittlere Hitze erwärmen
+7. Im Kühlschrank lagern und 15min bei Stufe 3 im Topf erwärmen
 
 ## Ideen
 - Rindfleisch probieren
