@@ -4,6 +4,7 @@
 - Hauptgerichte
 - 2 Portionen
 - 30 Minuten
+- [Rewe Rezept](https://www.rewe.de/rezepte/schweizer-roesti-rohe-kartoffeln/)
   
 ## Zutaten
 - 500 g Kartoffeln (festkochend)

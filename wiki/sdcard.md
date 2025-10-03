@@ -68,3 +68,4 @@ specifications in detail paywalled, [Simplified Specifications](https://www.sdca
 ### Benchmark
 - `sudo dd if=/dev/mmcblk0 of=sd-card-copy.img bs=1M status=progress` 86 MB/s continuous (does a full backup of the card)
 - Gnome disks: 85 MB/s read, 49 MB/s write, 0.30 ms average access time
+- todo: [Diagnostics](https://askubuntu.com/questions/69932/is-there-an-sd-card-diagnostic-utility)
