@@ -97,6 +97,7 @@
 - cmatrix - matrix green characters
 - phoronix test suit - benchmark set test suite
 - hyperfine - benchmarking tool
+- unixbench - general unix benchmark set
 - termusic/ncmpcpp - music player
 - rmpc - music player MPD client
 - mpd - music player daemon, server for audio players
