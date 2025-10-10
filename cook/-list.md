@@ -1,3 +1,10 @@
+# KochIdeen
+- Kartoffelauflauf
+- Advanced Bratkartoffeln (kurz mit anbraten von Zwiebeln + Paprika/Zucini, am ende in Pfanne), zusammen mit Nürnbergern oder (warmen) Bockwürstchen, Senf?
+- Gemüßesuppe (Karotte)
+- (pürierte) Karottencremesuppe, Ofenkarotten als Alternative zu gekochten Karotten; braune sauce
+- morawitzky schinkenfleischwurst
+- 
 # Snacks
 - Banane, Apfel, Birne, Ananas
 - natur Joghurt
