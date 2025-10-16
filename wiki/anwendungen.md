@@ -138,6 +138,7 @@
 #### Image/Video
 - blender - 3d animation
 - gimp - image viewer/editor
+- nsxiv - minimal image viewer (on 22.04 Ubuntu via nix, status bar missing info?)
 - inkscape - vector graphics editor
 - vlc - video player
 - mvp - video player, from terminal?

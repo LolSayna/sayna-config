@@ -4,8 +4,6 @@ Also my wiki and cooking recipe book.
 
 ## Todos
 
-- [f3](https://de.wikipedia.org/wiki/F3_Fight_Flash_Fraud), badblocks, dd
-
 - Uart vs Serial Peripheral Interface (SPI)
 - markmap https://markmap.js.org/repl
 
@@ -18,3 +16,6 @@ Also my wiki and cooking recipe book.
 - update dotfiles.sh to fix issue with creating folders
 
 - keepass2 can write without permissions -> neues PW setup
+
+- Typst
+    - #set text(0.9em) vs #show: text.with(size: 0.9em) vs #show text: set text(size: 0.9em)

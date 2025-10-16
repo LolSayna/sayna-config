@@ -1,7 +1,7 @@
 # Nix
 There are 2 version of nix commands: old versions with `nix-CMD` and `nix CMD`.
 
-There are different sources for nix inputs: the official nixpkgs links to [nixpkgs-unstable](https://github.com/NixOS/nixpkgs/tree/nixpkgs-unstable) OR alternativs are nixos-25.05 OR custom ones like luhsra/srapkgs ([see here for shortnames](https://github.com/NixOS/nixpkgs/tree/nixpkgs-unstable))
+There are different sources for nix inputs: the official nixpkgs links to [nixpkgs-unstable](https://github.com/NixOS/nixpkgs/tree/nixpkgs-unstable) OR alternativs are nixos-25.05 OR custom ones like luhsra/srapkgs ([see here for shortnames](https://github.com/NixOS/nixpkgs/tree/nixpkgs-unstable)); to search older packages [use this](https://lazamar.co.uk/nix-versions/)
 
 TODO: unterschied release-25.05 vs nixos-25.05 vs nixpkgs-25.05-darwin (gibt es nur mit Mac suffix? oder nixpkgs-unstable)
 
