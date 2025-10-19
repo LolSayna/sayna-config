@@ -66,6 +66,16 @@ specifications in detail paywalled, [Simplified Specifications](https://www.sdca
 ---
 
 ### Benchmark
+- `df -h` for capacity in GiBi (df -H for SI e.g. the advertised value)
 - `sudo dd if=/dev/mmcblk0 of=sd-card-copy.img bs=1M status=progress` 86 MB/s continuous (does a full backup of the card)
-- Gnome disks: 85 MB/s read, 49 MB/s write, 0.30 ms average access time
-- todo: [Diagnostics](https://askubuntu.com/questions/69932/is-there-an-sd-card-diagnostic-utility)
+- to check capacity use `dd if=/dev/urandom of=rnd_data bs=1024 count=32768000` to create a 32GB file [source](https://ccollins.wordpress.com/2016/01/18/testing-sd-cards-with-linux/)
+- capacity check with f3: `sudo f3probe --time-ops /dev/X` use `lsblk` to find block device (not mount point)
+- Gnome disks (default): 
+    - SD-Card slot laptop: 90 MB/s read, 48 MB/s write, 0.30 ms average access time
+    - SD-Card Adapter: 17 MB/s read, 15 MB/s write, 0.72ms
+    - USB-3.0 stick: 230 MB/s read, 154 MB/s write, 0.54ms average access time
+    - USB-3.0 stick 2.0 port: 40 MB/s read, 39MB/s write, 0.63ms
+- [f3](https://github.com/AltraMayor/f3) (install via apt)
+    - `f3write /media/sayna/3866-3262 -p 1 -e 3`: sd 47.52 MB/s, usb 181.60 MB/s
+    - `f3read /media/sayna/Sayna\ SanDisk -p 1 -e 3`: sd 88.35 MB/s, usb 244.60 MB/same
+    

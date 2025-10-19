@@ -1,4 +1,9 @@
-# TODO
+# KochIdeen
+- Kartoffelauflauf
+- Advanced Bratkartoffeln (kurz mit anbraten von Zwiebeln + Paprika/Zucini, am ende in Pfanne), zusammen mit Nürnbergern oder (warmen) Bockwürstchen, Senf?
+- Gemüßesuppe (Karotte)
+- (pürierte) Karottencremesuppe, Ofenkarotten als Alternative zu gekochten Karotten; braune sauce
+- morawitzky schinkenfleischwurst
 - [Shakshuka](https://www.spiegel.de/start/guenstiges-oster-rezept-shakshuka-pfanne-zum-eierverstecken-a-6d3164ca-8378-4bbd-abe8-79f003ef7fe6)
 - Hefezöpfe selber backen
 - [Cheesestack Sandwich](https://www.youtube.com/watch?v=cNWk4nIz6lw)

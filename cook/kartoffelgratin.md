@@ -4,6 +4,7 @@
 - Hauptgericht
 - 4 Portionen
 - 40 Minuten + 40 Minuten Ofen
+- 3 Tage im Kühlschrank, Wochen einfrierbar
   
 ## Zutaten
 - 800g Kartoffeln (festkochend)

@@ -12,6 +12,7 @@
   - Manjaro/Gentoo
   - EndeavourOS ausprobieren?
 - (FreeBSD) != Linux
+- KISS Linux - minimal distro with own package manager, discontinued
 
 
 ## Packetmanager
