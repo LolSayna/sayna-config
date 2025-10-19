@@ -1,3 +1,10 @@
+# TODO
+- [Shakshuka](https://www.spiegel.de/start/guenstiges-oster-rezept-shakshuka-pfanne-zum-eierverstecken-a-6d3164ca-8378-4bbd-abe8-79f003ef7fe6)
+- Hefezöpfe selber backen
+- [Cheesestack Sandwich](https://www.youtube.com/watch?v=cNWk4nIz6lw)
+- [Schinkenhörnchen](https://www.rewe.de/rezepte/schinkenhoernchen/)
+
+
 # Snacks
 - Banane, Apfel, Birne, Ananas
 - natur Joghurt
@@ -18,9 +25,6 @@
 - Ei (Rühr, Spiegel, weich, hart)
 - Pancakes
 
-- TODO: Irgendwas?, Potato Hash: https://www.youtube.com/watch?v=dLairfd8bZU
-- [Shakshuka](https://www.spiegel.de/start/guenstiges-oster-rezept-shakshuka-pfanne-zum-eierverstecken-a-6d3164ca-8378-4bbd-abe8-79f003ef7fe6)
-- Hefezöpfe selber backen
 
 # Hauptmahlzeit
 - Suppe (Nudelsuppe, Tomaten)
@@ -46,7 +50,6 @@ https://www.youtube.com/watch?v=tG--c6srwag
 - Tomatenreis, buntes Reisfleisch
 - Dampfnudeln, Gorgonzola Nudeln
 - Apfelauflauf, pikaten Käsebrot, Klösse, Braten -> Kochbuch
-- [Cheesestack Sandwich](https://www.youtube.com/watch?v=cNWk4nIz6lw)
 
 
 # Drinks
