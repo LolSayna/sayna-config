@@ -44,6 +44,7 @@
 ![Mainboard sizes](media/mainboard-sizes.png)
 
 ## USB
+For Speed also see filesystems.md
 ### Data
 - USB 1.0 - 4v2: 1.5 MBit/s - 80 Gbit/s
 - 2.0 - 480 Mbit/s

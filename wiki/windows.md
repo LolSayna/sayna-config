@@ -1,12 +1,12 @@
 # Windows
----
 ## Anwendungen
 ### Windows
 - Windows Update/Defender
 - Nvida Geforce Treiber
 - Datenträgerbereinung/Disk Cleanup - Clean temporäry files
 - Datenträgerverwaltung/Disk management - Disk partitioning
-
+    - diskpart - Advanced CLI Disk partitioning
+- TaskManager
 ---
 
 ### Install
@@ -19,6 +19,7 @@
 #### Creative
 - VLC, shotcut, ffmpeg, handbreak, makemkv - Video
 - Gimp, Inkspace - Png, SVG
+- Blender - Animation
 - Prusaslicer - 3D printing
 - **Okular**, Acrobat? (use Firefox) - PDFs
 - Zotero - literature management
@@ -29,7 +30,6 @@
 - Virtualbox
 - Adrunio IDE
 - Git (mingw?), C, Python, HxD Hex Editor
-- Rufus - Flash usb drive
 - Ventoy - Multiboot usb drive
     - netboot.xyz - netboot iso, rescue systems
 
@@ -50,24 +50,30 @@
 - Anki - flipcards
 - AusweisApp
 - Epic Pen - draw on screen
-- R-Undelete - disk restore tool
 
-#### Monitoring
-- Hwmonitor or **Hwinfo** - System Information
-- CpuZ - Cpu Stats
-- GpuZ - Gpu Stats
-- **Crystal disk info** or Western Digital Dashboard or Disk Stats or HD Tune - Disk Stats
-- Windirstats or Treesizefree - Manage free disk space
-- USB device tree viewer - Usb devices
-- openhardwaremonitor
+#### Sysadmin
+`winget install -e TechPowerUp.GPU-Z CPUID.CPU-Z CPUID.HWMonitor CrystalDewWorld.CrystalDiskInfo WinDirStat.WinDirStat Rufus.Rufus`
+- CPU-Z - Cpu stats
+- GPU-Z - Gpu stats
+- Hwmonitor - sensors (Hwinfo: bigger, openhardwaremonitor: deprecated)
+- CrystalDiskInfo - disk health/stats (Western Digital Dashboard: deprecated, HD Tune: paid)
+- WinDirStat - Manage free disk space (TreeSize: paid)
+- Rufus - Flash Usb drive, Installation Media; (start from terminal: rufus)
+
+#### Sysadmin Utils
+- [USB device tree viewer](https://www.uwe-sieber.de/usbtreeview_e.html) - list USB devices 
+- [R-Undelete](https://www.r-undelete.com/de/) (paid) - file recovery tool, looks a bit sketchy
+
+---
 
 #### Stresstest
+`winget install -e CrystalDewWorld.CrystalDiskMark`
 - OCCT - generel stresstest
 - Furmark - GPU stresstest
 - MSI Afterburner - GPU Overclock
 - Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
 - Cinebench - CPU, with score comparison
-- Crystal disk mark - Disk benchmark
+- CrystalDiskMark - Disk benchmark (DiskSpd: cli, IOZone: lowlevel/OS-indepen)
 
 ---
 ## Setup
@@ -78,9 +84,26 @@
 - Memory Speed
 - Fancurves
 
+### Install 
+3 Methods (2025-10 Win11):
+- Install media via MediaCreationTool (currently broken for Win10 xD)
+- Inplace Upgrade
+- Iso Download (also possible directly from Rufus)
+    - also includes different configurations: online acc byepass, local acc, decline tracking, disable bitlocker
+
+Optionally install drivers to stick.
+
+---
+
+### Post-Install
+1. Check all drivers in device manager
+1. Check startup apps
+1. Uninstall bloat apps
+1. Disable online search (with regedit?)
+
 ### Initial Install
-- Winget packetmanager (alternative: chocolaty [extern])
-- `winget -e -id` TODO ausprobieren
+- Winget packetmanager (external alternative: chocolaty)
+- `winget search NAME` and `winget install -e --id NAME` and `winget uninstall -e --id NAME`
 - `winget install Mozilla.Thunderbird Oracle.VirtualBox Microsoft.VisualStudioCode`
 - `winget install AntoineAflalo.SoundSwitch Apple.iTunes TheDocumentFoundation.LibreOffice DigitalScholar.Zotero`
 - For MA: winget install ezwinports.make Typst.Typst
