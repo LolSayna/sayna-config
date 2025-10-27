@@ -1,4 +1,9 @@
 # Windows
+
+## Winget
+- Winget packetmanager (external alternative: chocolaty)
+- `winget search NAME` and `winget install -e --id NAME` and `winget uninstall -e --id NAME`
+
 ## Anwendungen
 ### Windows
 - Windows Update/Defender
@@ -11,30 +16,40 @@
 
 ### Install
 #### Core
-- Firefox, Keepass2, Googledrive, (Nextcloud?)
+`winget install -e Mozilla.Firefox DominikReichl.KeePass Google.GoogleDrive Mozilla.Thunderbird WireGuard.WireGuard Spotify.Spotify`
+- Firefox, Keepass2, Googledrive, (todo: Nextcloud?)
 - Thunderbird - Email
 - Wireguard - VPN
-- Spotify, League displays, Logitech software, (Corsair Tastatur?)
+- Spotify
+
+Optional:
+- League displays
+- Peripherals: Logitech software, (Corsair Tastatur?)
 
 #### Creative
-- VLC, shotcut, ffmpeg, handbreak, makemkv - Video
-- Gimp, Inkspace - Png, SVG
+`winget install -e VideoLAN.VLC Meltytech.Shotcut GIMP.GIMP.3 Inkscape.Inkscape BlenderFoundation.Blender Prusa3D.PrusaSlicer KDE.Okular DigitalScholar.Zotero TheDocumentFoundation.LibreOffice`
+- VLC, shotcut - Video
+- (ffmpeg, handbreak, makemkv - Video)
+- Gimp, Inkscape - Png, SVG
 - Blender - Animation
 - Prusaslicer - 3D printing
-- **Okular**, Acrobat? (use Firefox) - PDFs
+- **Okular**, (Acrobat?) (use Firefox) - PDFs
 - Zotero - literature management
 - LibreOffice - Office
 
 #### Programmieren
+`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox`
 - Notepad++, Vscode
 - Virtualbox
-- Adrunio IDE
+- (Adrunio IDE)
 - Git (mingw?), C, Python, HxD Hex Editor
 - Ventoy - Multiboot usb drive
     - netboot.xyz - netboot iso, rescue systems
 
+`winget install -e ezwinports.make Typst.Typst`
+
 #### Games
-`winget install -e ElectronicArts.EADesktop`
+`winget install -e Valve.Steam Discord.Discord Blizzard.BattleNet EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
 - Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
 - Curseforge, TechnicLauncher, FTB APP
@@ -95,18 +110,20 @@ Optionally install drivers to stick.
 ---
 
 ### Post-Install
+1. Windows update (multiple times)
 1. Check all drivers in device manager
 1. Check startup apps
 1. Uninstall bloat apps
 1. Disable online search (with regedit?)
+1. Logins: Browser, Cloud + Passwords, Mail, VPN; use winget
 
-### Winget
-- Winget packetmanager (external alternative: chocolaty)
-- `winget search NAME` and `winget install -e --id NAME` and `winget uninstall -e --id NAME`
-- `winget install Mozilla.Thunderbird Oracle.VirtualBox Microsoft.VisualStudioCode`
-- `winget install AntoineAflalo.SoundSwitch Apple.iTunes TheDocumentFoundation.LibreOffice DigitalScholar.Zotero`
-- For MA: winget install ezwinports.make Typst.Typst
 
-### Update
+### Normal Update
 1. Windows + Grafiktreiber updaten + Reboot (Bios, Chipset Driver?)
 2. Discord + Firefox + Steam
+
+
+### Wipe
+1. Save Documents, Images, Videos, Music, Desktop files
+1. Essential projects/program data, VMs, passwords/accounts
+1. List used programs
