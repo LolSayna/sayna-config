@@ -49,7 +49,7 @@ Optional:
 `winget install -e ezwinports.make Typst.Typst`
 
 #### Games
-`winget install -e Valve.Steam Discord.Discord Blizzard.BattleNet EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
+`winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio` and TODO: `winget install -e Blizzard.BattleNet`
 - Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
 - Curseforge, TechnicLauncher, FTB APP
