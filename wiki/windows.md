@@ -12,7 +12,7 @@
 ### Install
 #### Core
 - Firefox, Keepass2, Googledrive, (Nextcloud?)
-- Thunderbird- Email
+- Thunderbird - Email
 - Wireguard - VPN
 - Spotify, League displays, Logitech software, (Corsair Tastatur?)
 
@@ -34,11 +34,10 @@
     - netboot.xyz - netboot iso, rescue systems
 
 #### Games
-- Steam, Battlenet, Epic, Ubisoft, (GOG online)
+`winget install -e ElectronicArts.EADesktop`
+- Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
 - Curseforge, TechnicLauncher, FTB APP
-
-#### Gaming
 - Discord, Ts3
 - Obs, Logitech Caputre, Outplayed/InsightsCapture/Overwolf
 
@@ -101,7 +100,7 @@ Optionally install drivers to stick.
 1. Uninstall bloat apps
 1. Disable online search (with regedit?)
 
-### Initial Install
+### Winget
 - Winget packetmanager (external alternative: chocolaty)
 - `winget search NAME` and `winget install -e --id NAME` and `winget uninstall -e --id NAME`
 - `winget install Mozilla.Thunderbird Oracle.VirtualBox Microsoft.VisualStudioCode`
@@ -110,4 +109,4 @@ Optionally install drivers to stick.
 
 ### Update
 1. Windows + Grafiktreiber updaten + Reboot (Bios, Chipset Driver?)
-2. Discord + Firefox + Steam + Epic + Battlenet
+2. Discord + Firefox + Steam
