@@ -24,10 +24,11 @@
 
 Optional:
 - League displays
+- Nvidia app (no winget)
 - Peripherals: Logitech software, (Corsair Tastatur?)
 
 #### Creative
-`winget install -e VideoLAN.VLC Meltytech.Shotcut GIMP.GIMP.3 Inkscape.Inkscape BlenderFoundation.Blender Prusa3D.PrusaSlicer KDE.Okular DigitalScholar.Zotero TheDocumentFoundation.LibreOffice`
+`winget install -e VideoLAN.VLC Meltytech.Shotcut GIMP.GIMP.3 Inkscape.Inkscape BlenderFoundation.Blender Prusa3D.PrusaSlicer KDE.Okular DigitalScholar.Zotero Oracle.JavaRuntimeEnvironment TheDocumentFoundation.LibreOffice`
 - VLC, shotcut - Video
 - (ffmpeg, handbreak, makemkv - Video)
 - Gimp, Inkscape - Png, SVG
@@ -49,7 +50,9 @@ Optional:
 `winget install -e ezwinports.make Typst.Typst`
 
 #### Games
-`winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio` and TODO: `winget install -e Blizzard.BattleNet`
+`winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
+
+Battlenet requires installpath: `winget install -e Blizzard.BattleNet`
 - Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
 - Curseforge, TechnicLauncher, FTB APP
@@ -111,10 +114,11 @@ Optionally install drivers to stick.
 
 ### Post-Install
 1. Windows update (multiple times)
-1. Check all drivers in device manager
+1. Check all drivers in device manager, install nvidia app
 1. Check startup apps
 1. Uninstall bloat apps
-1. Disable online search (with regedit?)
+1. (Disable online search) now default
+1. Disable mouse acceleration, check monitor refresh rate
 1. Logins: Browser, Cloud + Passwords, Mail, VPN; use winget
 
 
