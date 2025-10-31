@@ -39,7 +39,7 @@ Optional:
 - LibreOffice - Office
 
 #### Programmieren
-`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox`
+`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox MHNexus.HxD`
 - Notepad++, Vscode
 - Virtualbox
 - (Adrunio IDE)
@@ -50,12 +50,12 @@ Optional:
 `winget install -e ezwinports.make Typst.Typst`
 
 #### Games
-`winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
+`winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect Mojang.MinecraftLauncher TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
 
 Battlenet requires installpath: `winget install -e Blizzard.BattleNet`
 - Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
-- Curseforge, TechnicLauncher, FTB APP
+- Minecraft, Curseforge, TechnicLauncher, FTB APP
 - Discord, Ts3
 - Obs, Logitech Caputre, Outplayed/InsightsCapture/Overwolf
 
@@ -129,5 +129,5 @@ Optionally install drivers to stick.
 
 ### Wipe
 1. Save Documents, Images, Videos, Music, Desktop files
-1. Essential projects/program data, VMs, passwords/accounts
+1. Essential projects/program data, VMs, passwords/accounts, recordings
 1. List used programs
