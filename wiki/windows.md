@@ -28,7 +28,7 @@ Optional:
 - Peripherals: Logitech software, (Corsair Tastatur?)
 
 #### Creative
-`winget install -e VideoLAN.VLC Meltytech.Shotcut GIMP.GIMP.3 Inkscape.Inkscape BlenderFoundation.Blender Prusa3D.PrusaSlicer KDE.Okular DigitalScholar.Zotero Oracle.JavaRuntimeEnvironment TheDocumentFoundation.LibreOffice`
+`winget install -e VideoLAN.VLC Meltytech.Shotcut GIMP.GIMP.3 Inkscape.Inkscape BlenderFoundation.Blender Prusa3D.PrusaSlicer KDE.Okular DigitalScholar.Zotero Oracle.JavaRuntimeEnvironment TheDocumentFoundation.LibreOffice Gyan.FFmpeg GuinpinSoft.MakeMKV HandBrake.HandBrake HandBrake.HandBrake.CLI`
 - VLC, shotcut - Video
 - (ffmpeg, handbreak, makemkv - Video)
 - Gimp, Inkscape - Png, SVG
