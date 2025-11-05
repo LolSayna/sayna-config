@@ -39,11 +39,12 @@ Optional:
 - LibreOffice - Office
 
 #### Programmieren
-`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox MHNexus.HxD`
+`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox MHNexus.HxD Microsoft.WindowsTerminal`
 - Notepad++, Vscode
 - Virtualbox
 - (Adrunio IDE)
 - Git (mingw?), C, Python, HxD Hex Editor
+- Windows Terminal
 - Ventoy - Multiboot usb drive
     - netboot.xyz - netboot iso, rescue systems
 
