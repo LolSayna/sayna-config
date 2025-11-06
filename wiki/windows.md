@@ -3,6 +3,7 @@
 ## Winget
 - Winget packetmanager (external alternative: chocolaty)
 - `winget search NAME` and `winget install -e --id NAME` and `winget uninstall -e --id NAME`
+- For broken installs use: `appwiz.cpl` (old control panel)
 
 ## Anwendungen
 ### Windows
@@ -119,8 +120,11 @@ Optionally install drivers to stick.
 1. Check startup apps
 1. Uninstall bloat apps
 1. (Disable online search) now default
-1. Disable mouse acceleration, check monitor refresh rate
+1. Disable mouse acceleration, check monitor refresh rate, energy settings
 1. Logins: Browser, Cloud + Passwords, Mail, VPN; use winget
+1. Setup ssh: `ssh-keygen` && `cat .ssh\NAME.pub`
+    - `git config --global user.email "mareike.burg@web.de"`
+    - `git config --global user.name "Sayna"` # or Mareike Burg
 
 
 ### Normal Update
