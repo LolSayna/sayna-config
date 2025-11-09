@@ -39,7 +39,6 @@ Gnome disks (default Ubuntu):
 CrystalDiskMark (3x 1GiB in MB/s read/write):
 | Name              | Full Name      | SEQ 1M Q8 T1 | SEQ 1M Q1 T1 | 4K Q32 T1 | RND 4K Q1 T1
 | :-:               | :-:                           | :-:       | :-:       | :-:       | :-:
-| M2 SSD            | Samsung SSD 970 EVO Plus 1TB  | 3579/3068 | 3018/2919 | 589/476   | 54/201       
 | M2 SSD            | Samsung SSD 970 EVO Plus 1TB  | 3579/3068 | 3018/2919 | 589/476   | 54/201
 | old SSD           | Crucial_CT120M500SSD1 120GB   | 530/127   | 489/131   | 271/121   | 26/102
 | old HDD full      | WDC WD10EZEX-00RKKA0 1TB      | 176/172   | 178/173   | 2.43/2.25 | 0.74/1.93

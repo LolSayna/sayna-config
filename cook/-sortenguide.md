@@ -23,3 +23,27 @@ Je nach Fettgehalt:
 - Sonnenblumenöl -> besser zum Braten
 - Bratöl -> Sonnenblumenöl
 - Salatöl???
+
+## Nudeln
+Tomatensauce
+Al arrabiata: scharf
+Amatriciana: speck
+Bolognese: hackfleisch, Sojaschnetzel+Karotten
+
+Zwiebeln/Knobi/Klein-Karotten anbraten, Sojahack 10 min aufquellen, kurz anbraten, Tomaten rein und aufkochen. Salz, Pfeffer, Basilikum (getrocknet)
+
+Carbonara: schinken, käse, sahne
+Alfrdo: käsig + parmesan
+Gorgonzola?
+Pesto (rosso)
+Ratatouille: gemischtem gemüse
+Aglio e olio (knoblauch+öl)
+
+Kokus curry, wildschwinragut
+ Nudelsalat
+Überpacken: Käse, ei, speck
+
+
+Lange: Spaghetti, tagliatelle, longuine, bucatini
+Röhren: penne, paccheri, tubetti
+Formen: farfalle, fusilli

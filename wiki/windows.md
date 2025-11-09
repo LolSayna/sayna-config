@@ -54,7 +54,8 @@ Optional:
 #### Games
 `winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect Mojang.MinecraftLauncher TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
 
-Battlenet requires installpath: `winget install -e Blizzard.BattleNet`
+Winget Battlenet is broken (requires installpath)
+
 - Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
 - Minecraft, Curseforge, TechnicLauncher, FTB APP
@@ -78,20 +79,23 @@ Battlenet requires installpath: `winget install -e Blizzard.BattleNet`
 - CrystalDiskInfo - disk health/stats (Western Digital Dashboard: deprecated, HD Tune: paid)
 - WinDirStat - Manage free disk space (TreeSize: paid)
 - Rufus - Flash Usb drive, Installation Media; (start from terminal: rufus)
+- [Startuptimer](https://startuptimer.com/#download) - measure boottime
 
 #### Sysadmin Utils
 - [USB device tree viewer](https://www.uwe-sieber.de/usbtreeview_e.html) - list USB devices 
 - [R-Undelete](https://www.r-undelete.com/de/) (paid) - file recovery tool, looks a bit sketchy
-
+- PhotoRec - open source data recovery
 ---
 
 #### Stresstest
-`winget install -e CrystalDewWorld.CrystalDiskMark`
+`winget install -e CrystalDewWorld.CrystalDiskMark PrimateLabs.Geekbench.6`
 - OCCT - generel stresstest
 - Furmark - GPU stresstest
 - MSI Afterburner - GPU Overclock
 - Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
 - Cinebench - CPU, with score comparison
+- 
+- Geekbecnh6 - Cross-platform single core
 - CrystalDiskMark - Disk benchmark (DiskSpd: cli, IOZone: lowlevel/OS-indepen)
 
 ---
@@ -120,7 +124,7 @@ Optionally install drivers to stick.
 1. Check startup apps
 1. Uninstall bloat apps
 1. (Disable online search) now default
-1. Disable mouse acceleration, check monitor refresh rate, energy settings
+1. Disable mouse acceleration, check monitor refresh rate, energy settings, dark mode
 1. Logins: Browser, Cloud + Passwords, Mail, VPN; use winget
 1. Setup ssh: `ssh-keygen` && `cat .ssh\NAME.pub`
     - `git config --global user.email "mareike.burg@web.de"`
