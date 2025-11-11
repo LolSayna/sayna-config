@@ -4,11 +4,14 @@
 - Winget packetmanager (external alternative: chocolaty)
 - `winget search NAME` and `winget install -e --id NAME` and `winget uninstall -e --id NAME`
 - For broken installs use: `appwiz.cpl` (old control panel)
+- Update (upgrade): `winget upgrade --all`
+- GUI + Interface: `MartiCliment.UniGetUI`
 
 ## Anwendungen
 ### Windows
 - Windows Update/Defender
 - Nvida Geforce Treiber
+- Systemsteurung/Control-Panel/`appwiz.cpl` - older windows settings
 - Datenträgerbereinung/Disk Cleanup - Clean temporäry files
 - Datenträgerverwaltung/Disk management - Disk partitioning
     - diskpart - Advanced CLI Disk partitioning
@@ -22,20 +25,18 @@
 - Thunderbird - Email
 - Wireguard - VPN
 - Spotify
-
-Optional:
-- League displays
 - Nvidia app (no winget)
+- League displays (no winget)
 - Peripherals: Logitech software, (Corsair Tastatur?)
 
 #### Creative
 `winget install -e VideoLAN.VLC Meltytech.Shotcut GIMP.GIMP.3 Inkscape.Inkscape BlenderFoundation.Blender Prusa3D.PrusaSlicer KDE.Okular DigitalScholar.Zotero Oracle.JavaRuntimeEnvironment TheDocumentFoundation.LibreOffice Gyan.FFmpeg GuinpinSoft.MakeMKV HandBrake.HandBrake HandBrake.HandBrake.CLI`
 - VLC, shotcut - Video
-- (ffmpeg, handbreak, makemkv - Video)
+- ffmpeg, handbreak, makemkv - Video
 - Gimp, Inkscape - Png, SVG
 - Blender - Animation
 - Prusaslicer - 3D printing
-- **Okular**, (Acrobat?) (use Firefox) - PDFs
+- Okular - PDFs (Alternative: Acrobat, Firefox)
 - Zotero - literature management
 - LibreOffice - Office
 
@@ -44,23 +45,20 @@ Optional:
 - Notepad++, Vscode
 - Virtualbox
 - (Adrunio IDE)
-- Git (mingw?), C, Python, HxD Hex Editor
+- Git, C, Python, HxD Hex Editor
 - Windows Terminal
-- Ventoy - Multiboot usb drive
-    - netboot.xyz - netboot iso, rescue systems
 
-`winget install -e ezwinports.make Typst.Typst`
+For MA: `winget install -e ezwinports.make Typst.Typst`
 
 #### Games
 `winget install -e Valve.Steam Discord.Discord EpicGames.EpicGamesLauncher ElectronicArts.EADesktop Ubisoft.Connect Mojang.MinecraftLauncher TeamSpeakSystems.TeamSpeakClient OBSProject.OBSStudio`
-
-Winget Battlenet is broken (requires installpath)
-
 - Steam, Battlenet, Epic, Ubisoft, EA App (Origin), (GOG online)
 - League, Valorant
 - Minecraft, Curseforge, TechnicLauncher, FTB APP
 - Discord, Ts3
 - Obs, Logitech Caputre, Outplayed/InsightsCapture/Overwolf
+
+Winget Battlenet is broken (requires installpath)
 
 #### Utils
 - 7zip - Compression (not actually needed)
@@ -72,31 +70,36 @@ Winget Battlenet is broken (requires installpath)
 - Epic Pen - draw on screen
 
 #### Sysadmin
-`winget install -e TechPowerUp.GPU-Z CPUID.CPU-Z CPUID.HWMonitor CrystalDewWorld.CrystalDiskInfo WinDirStat.WinDirStat Rufus.Rufus`
+`winget install -e TechPowerUp.GPU-Z CPUID.CPU-Z CPUID.HWMonitor CrystalDewWorld.CrystalDiskInfo WinDirStat.WinDirStat Rufus.Rufus Ookla.Speedtest.CLI`
 - CPU-Z - Cpu stats
 - GPU-Z - Gpu stats
 - Hwmonitor - sensors (Hwinfo: bigger, openhardwaremonitor: deprecated)
 - CrystalDiskInfo - disk health/stats (Western Digital Dashboard: deprecated, HD Tune: paid)
 - WinDirStat - Manage free disk space (TreeSize: paid)
-- Rufus - Flash Usb drive, Installation Media; (start from terminal: rufus)
-- [Startuptimer](https://startuptimer.com/#download) - measure boottime
-
-#### Sysadmin Utils
+- Speedtest Cli - Internet speed
+- iPerf3 `ar51an.iPerf3`/Ntttcp `Microsoft.Ntttcp`- network performance (TODO: fritzbox only iperf2, ntttcp not tested)
 - [USB device tree viewer](https://www.uwe-sieber.de/usbtreeview_e.html) - list USB devices 
+- Rufus - Flash Usb drive, Installation Media; (start from terminal: rufus)
+- Ventoy - Multiboot usb drive
+    - netboot.xyz - netboot iso, rescue systems
 - [R-Undelete](https://www.r-undelete.com/de/) (paid) - file recovery tool, looks a bit sketchy
 - PhotoRec - open source data recovery
 ---
 
-#### Stresstest
-`winget install -e CrystalDewWorld.CrystalDiskMark PrimateLabs.Geekbench.6`
-- OCCT - generel stresstest
-- Furmark - GPU stresstest
-- MSI Afterburner - GPU Overclock
-- Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
-- Cinebench - CPU, with score comparison
-- 
-- Geekbecnh6 - Cross-platform single core
+#### Stresstest+Benchmark
+`winget install -e CrystalDewWorld.CrystalDiskMark PrimateLabs.Geekbench.6 OCBase.OCCT.Personal `
+- [Startuptimer](https://startuptimer.com/#download) - measure boottime
+- Geekbench6 - Cross-platform CPU/GPU benchmark
 - CrystalDiskMark - Disk benchmark (DiskSpd: cli, IOZone: lowlevel/OS-indepen)
+- Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
+- MSI Afterburner - GPU Overclock
+- OCCT (only starts via terminal) - System stresstest + monitoring + (benchmark)
+
+Alternatives:
+- Prime95 `mersenne.prime95` - CPU stresstest
+- Furmark (only starts via terminal) `Geeks3D.FurMark.2`- GPU stresstest, part of MSI Kombustor
+- Cinebench (only starts via terminal) `Maxon.CinebenchR23` (R23, 2024 version) - Benchmarking, with score comparison
+- Phoronix Test Suite (no winget) - Different benchmarks (GPU: Blender, GLmark2; CPU: smallpt, (High Performance) Linpack (Clusted) HPL/HPCC; Diskspeed: IOzone)
 
 ---
 ## Setup
