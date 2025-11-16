@@ -21,7 +21,8 @@
 ### Install
 #### Core
 `winget install -e Mozilla.Firefox DominikReichl.KeePass Google.GoogleDrive Mozilla.Thunderbird WireGuard.WireGuard Spotify.Spotify`
-- Firefox, Keepass2, Googledrive, (todo: Nextcloud?)
+- Firefox: ublockorigin ([ai filter list](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)) 
+- Keepass2, Googledrive, (todo: Nextcloud?)
 - Thunderbird - Email
 - Wireguard - VPN
 - Spotify
@@ -76,8 +77,7 @@ Winget Battlenet is broken (requires installpath)
 - Hwmonitor - sensors (Hwinfo: bigger, openhardwaremonitor: deprecated)
 - CrystalDiskInfo - disk health/stats (Western Digital Dashboard: deprecated, HD Tune: paid)
 - WinDirStat - Manage free disk space (TreeSize: paid)
-- Speedtest Cli - Internet speed
-- iPerf3 `ar51an.iPerf3`/Ntttcp `Microsoft.Ntttcp`- network performance (TODO: fritzbox only iperf2, ntttcp not tested)
+- Speedtest Cli - Internet speed (run in terminal with: `speedtest`)
 - [USB device tree viewer](https://www.uwe-sieber.de/usbtreeview_e.html) - list USB devices 
 - Rufus - Flash Usb drive, Installation Media; (start from terminal: rufus)
 - Ventoy - Multiboot usb drive
@@ -91,6 +91,9 @@ Winget Battlenet is broken (requires installpath)
 - [Startuptimer](https://startuptimer.com/#download) - measure boottime
 - Geekbench6 - Cross-platform CPU/GPU benchmark
 - CrystalDiskMark - Disk benchmark (DiskSpd: cli, IOZone: lowlevel/OS-indepen)
+- iPerf - Network performance (Alternative: Ntttcp - Microsoft Open Source Server/Client)
+    - [iPerf2](https://sourceforge.net/projects/iperf2/postdownload) - needed to test [fritzbox](https://www.computerwoche.de/article/2860438/tempo-im-netzwerk-messen.html), Goto: Hilfe und Info -> FritzBox Support -> Durchsatzmessungen `.\iperf-2.2.1-win64.exe -c <IP> -p 4711`; [expected speeds](https://www.antary.de/2018/11/29/netzwerkdurchsatz-der-fritzbox-mit-integriertem-iperf-testen/)
+    - iPerf3 `ar51an.iPerf3`, Docker-`networkstatic/iperf3` - [NAS](https://www.wundertech.net/run-a-speed-test-on-a-synology-nas-with-iperf3/)
 - Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
 - MSI Afterburner - GPU Overclock
 - OCCT (only starts via terminal) - System stresstest + monitoring + (benchmark)
@@ -98,6 +101,7 @@ Winget Battlenet is broken (requires installpath)
 Alternatives:
 - Prime95 `mersenne.prime95` - CPU stresstest
 - Furmark (only starts via terminal) `Geeks3D.FurMark.2`- GPU stresstest, part of MSI Kombustor
+- [Gravitymark](https://gravitymark.tellusim.com/) - GPU Benchmark (Windows&Linux)
 - Cinebench (only starts via terminal) `Maxon.CinebenchR23` (R23, 2024 version) - Benchmarking, with score comparison
 - Phoronix Test Suite (no winget) - Different benchmarks (GPU: Blender, GLmark2; CPU: smallpt, (High Performance) Linpack (Clusted) HPL/HPCC; Diskspeed: IOzone)
 
