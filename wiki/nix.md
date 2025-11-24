@@ -15,7 +15,10 @@ Install nix package manager via shell script [OfficalPage](https://nixos.org/dow
 - Add packages to user environment: `nix-env -i NAME`
 - Cleanup: `nix-store --gc`
 
-
+## Profiles
+- `nix profile "add nixpkgs#NAME"` to install nix packges systemwide (i think better then nix-env)
+- unfree packages requrie `--impureInst` and `export NIXPKGS_ALLOW_UNFREE=1`
+- `nix profile {list, remove, upgrade}`
 
 ## Flakes
 To use flakes append to all cmds: `--experimental-features 'nix-command flakes'` or append `experimental-features = nix-command flakes` to `~/.config/nix/nix.conf`
