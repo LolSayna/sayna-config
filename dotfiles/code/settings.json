@@ -6,7 +6,8 @@
     "terminal.integrated.fontFamily": "'JetBrainsMonoNL Nerd Font Mono'",
     "mesonbuild.downloadLanguageServer": true,
     "rust-analyzer.check.allTargets": false,
-    "rust-analyzer.cargo.target": "build/i686-rstubs-kernel.json",
+    // For BSB/BST
+    // "rust-analyzer.cargo.target": "build/i686-rstubs-kernel.json",
     "git.confirmSync": false,
     "RainbowBrackets.depreciation-notice": false,
     "vscode-neovim.neovimExecutablePaths.linux": "/home/sayna/neovim/squashfs-root/usr/bin/nvim",
@@ -77,5 +78,7 @@
         "diffEditor.ignoreTrimWhitespace": false
     },
     "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "ltex.language": "de",
 
 }

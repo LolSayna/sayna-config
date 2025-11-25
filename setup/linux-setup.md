@@ -183,3 +183,13 @@ sh -c "sleep 10 && xscreensaver -no-splash &"
   * [Blog](http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 
 [nice config](https://youtu.be/ud7YxC33Z3w?si=qkZo4V6Iu0uvEXoc)
+
+## Neovim
+Refractor of Vim (which extends vi). Alternatives (helix, emacs, nano/micro).
+- `~/.config/nvim` either in vimscript or [lua](https://neovim.io/doc/user/lua-guide.html)
+- [Options](https://neovim.io/doc/user/options.html)
+- [Plugin-List](https://github.com/rockerBOO/awesome-neovim)
+- Guide: [BasicSetup](https://youtu.be/zkOEdhfwXok?si=7zVXSu8Cd-wk2L1v)
+- Plugin manager
+  - lazy.vim
+  - vim-plug

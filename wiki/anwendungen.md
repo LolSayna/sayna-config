@@ -70,7 +70,7 @@
 - sensors (temperatur)
 - stress
 - caligula - disk imaging tool (more user friendly, less breaking risk)
-- iperf3 - network speed benchmark
+- iperf3 - network speed benchmark client/server
 - nmtui - networkmanager cli
 - fuser - finds user who holds a file open
 - lsof - list open files, finds all "files" of a user/find all processes of a file
@@ -111,6 +111,8 @@
 	- `p/x NAME` - print in hex
 	- `x/10 0x123` - print memory at 0x123
 - xxd - hexdump or reverse for binary
+- speedtest - speedtest.net official cli
+	- apt version different, `nixpkgs#ookla-speedtest`
 
 ## GUI
 ### Coding
