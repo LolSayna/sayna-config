@@ -48,6 +48,7 @@
 - (Adrunio IDE)
 - Git, C, Python, HxD Hex Editor
 - Windows Terminal
+- Rust: possible with winget (some issues), using rust-init.exe has current issue with linker, to fix use gnu toolchain instead: `rustup toolchain install stable-x86_64-pc-windows-gnu && rustup default stable-x86_64-pc-windows-gnu`
 
 For MA: `winget install -e ezwinports.make Typst.Typst`
 
@@ -87,13 +88,13 @@ Winget Battlenet is broken (requires installpath)
 ---
 
 #### Stresstest+Benchmark
-`winget install -e CrystalDewWorld.CrystalDiskMark PrimateLabs.Geekbench.6 OCBase.OCCT.Personal `
+`winget install -e CrystalDewWorld.CrystalDiskMark PrimateLabs.Geekbench.6 OCBase.OCCT.Personal ar51an.iPerf3`
 - [Startuptimer](https://startuptimer.com/#download) - measure boottime
 - Geekbench6 - Cross-platform CPU/GPU benchmark
 - CrystalDiskMark - Disk benchmark (DiskSpd: cli, IOZone: lowlevel/OS-indepen)
 - iPerf - Network performance (Alternative: Ntttcp - Microsoft Open Source Server/Client)
-    - [iPerf2](https://sourceforge.net/projects/iperf2/postdownload) - needed to test [fritzbox](https://www.computerwoche.de/article/2860438/tempo-im-netzwerk-messen.html), Goto: Hilfe und Info -> FritzBox Support -> Durchsatzmessungen `.\iperf-2.2.1-win64.exe -c <IP> -p 4711`; [expected speeds](https://www.antary.de/2018/11/29/netzwerkdurchsatz-der-fritzbox-mit-integriertem-iperf-testen/)
-    - iPerf3 `ar51an.iPerf3`, Docker-`networkstatic/iperf3` - [NAS](https://www.wundertech.net/run-a-speed-test-on-a-synology-nas-with-iperf3/)
+    - [iPerf2](https://sourceforge.net/projects/iperf2) - needed to test [fritzbox](https://www.computerwoche.de/article/2860438/tempo-im-netzwerk-messen.html), Goto: Hilfe und Info -> FritzBox Support -> Durchsatzmessungen `.\iperf-2.2.1-win64.exe -c <IP> -p 4711`; [expected speeds](https://www.antary.de/2018/11/29/netzwerkdurchsatz-der-fritzbox-mit-integriertem-iperf-testen/)
+    - iPerf3 `ar51an.iPerf3`, Docker-`networkstatic/iperf3` - [NAS](https://www.wundertech.net/run-a-speed-test-on-a-synology-nas-with-iperf3/), `ìperf3 -s`/`iperf3 -c <IP>` try `-R`, `-u`
 - Intel Extreme Tuning Utility (Intel XTU)  - Intel CPU Overclocking
 - MSI Afterburner - GPU Overclock
 - OCCT (only starts via terminal) - System stresstest + monitoring + (benchmark)
@@ -108,11 +109,11 @@ Alternatives:
 ---
 ## Setup
 ### Bios
-- XMP Ram overclocking
-- resizable Bar	Gaming performance
-- enable CSM for displayport
-- Memory Speed
-- Fancurves
+- XMP Ram overclocking (Memory Speed)
+- check PCIe lanes/slot/speeds
+- Fancurves, Overclocking (sometimes auto settings)
+- enable CSM for legacy systems (issue with displayport)
+- resizable Bar	Gaming performance (newer systems), also called `above 4G decoding`
 
 ### Install 
 3 Methods (2025-10 Win11):

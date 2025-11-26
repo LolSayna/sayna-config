@@ -8,7 +8,9 @@
 - Hefezöpfe selber backen
 - [Cheesestack Sandwich](https://www.youtube.com/watch?v=cNWk4nIz6lw)
 - [Schinkenhörnchen](https://www.rewe.de/rezepte/schinkenhoernchen/)
-
+- [Rührei Reiskocher](https://www.reishunger.de/rezepte/rezept/3628/ruhrei-mit-reis-und-feta-aus-dem-reiskocher)
+- [Tomatenreis](https://www.reishunger.de/rezepte/rezept/3603/tomaten-feta-reis-aus-dem-mini-reiskocher)
+- Brokoli + Karrote aus dem Reiskocher gedünstet, mit Fischstäbchen und Sirachia
 
 # Snacks
 - Banane, Apfel, Birne, Ananas
