@@ -128,11 +128,13 @@
 
 ### Util
 - keepass2 - keypass based password manager (todo terminal based alternative?)
+- tuxedo control center - for my laptop
 - meld - diff viewer
 - sweetHome3D - interior design software
 - zotero - bibliography tool
 - (gnome) Disk Usage Analyzer - disk usage
 - ausweisapp2 - german online id app via smartphone; apt version outdated, used flatpak (09-2025)
+- xdot/kgraphviewer - view dot graph files
 #### Audio
 - spek - graphical spectrum analyzer
 - speachnote - tts, text to speach engine
@@ -147,3 +149,4 @@
 - photoFilmStrip - slideshow creator
 - kdenlive - videoeditor
 - obs - videocapturing
+- xournal++ - hand drawing documents
