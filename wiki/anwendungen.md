@@ -117,6 +117,7 @@
 ## GUI
 ### Coding
 - VsCode (Code Server - remote hosten), extensions/settings/profiles todo
+- Raspberry pi imager - pi sd cards
 ### Browser
 - Chrom/Chromium (Google), Ungoogled Chromium, Brave, and more
 	- QT Webengine (allows to embeed browser into QT app)
@@ -129,12 +130,15 @@
 ### Util
 - keepass2 - keypass based password manager (todo terminal based alternative?)
 - tuxedo control center - for my laptop
+- thunderbird - mail
+- libreoffice - office
 - meld - diff viewer
 - sweetHome3D - interior design software
 - zotero - bibliography tool
 - (gnome) Disk Usage Analyzer - disk usage
 - ausweisapp2 - german online id app via smartphone; apt version outdated, used flatpak (09-2025)
 - xdot/kgraphviewer - view dot graph files
+- prusaslicer - 3d printing
 #### Audio
 - spek - graphical spectrum analyzer
 - speachnote - tts, text to speach engine
