@@ -1,37 +1,41 @@
 # My custom Linux config
 Linux .config folder and Terminal setup.
 
-- [x] alacritty - Terminal Emulator
-- [x] zsh - Shell (p10k)
-- [x] neovim - Text Editor (NvChad)
-- [x] tmux - Terminal Multiplexer
-
 ---
 # Setup
 ## Prerequisites
-Login+Networking working
+Grub+Login+Networking working
 ```bash
 # Choose keyboard layout (Debian)
 sudo dpkg-reconfigure keyboard-configuration
+
+# Login Firefox, Google, Git
+
 # Update software repositories
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
+
+# Tuxedo control center for my laptop
 ```
 
 ## General Installation
 Last tested on 24.04 Ubuntu
 ```bash
-# Install core utils
-sudo apt install -y build-essential curl wget tree git tmux htop firefox keepass2 tldr wireguard 
+# Install Core
+sudo apt install -y build-essential curl wget tree git tmux htop firefox keepass2 zsh
 # Install more utils (neofetch outdated, still works)
-sudo apt install -y btop micro wavemon hwinfo stress plocate fzf vlc meld lm-sensors imagemagick ffmpeg zsh neofetch neovim
+sudo apt install -y btop hwinfo stress plocate fzf lm-sensors imagemagick ffmpeg neovim tldr wireguard
+# Gui's
+sudo apt install -y meld vlc
 # Even more stuff (not sure was ich davon alles brauche)
-sudo apt install -y ranger wikiman lynx yt-dlp spek openssh-server flatpak
+sudo apt install -y ranger wikiman lynx yt-dlp spek openssh-server flatpak wavemon
 
 # Alacritty (via ppa)
 mkdir -p $XDG_CONFIG_HOME/alacritty
 sudo add-apt-repository ppa:aslatter/ppa -y && sudo apt install -y alacritty
 curl -LO --output-dir $XDG_CONFIG_HOME/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
-	
+
+# Neofetch, Keepass, Element, Libreoffice, Discord, Steam, Gimp, Python/Rust, Geany, kgraphviwer/xdot, meld, occular
+
 # Zsh
 mkdir -p $XDG_CONFIG_HOME/zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k $XDG_DATA_HOME/powerlevel10k

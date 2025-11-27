@@ -22,6 +22,9 @@ Also my wiki and cooking recipe book.
     - #set text(0.9em) vs #show: text.with(size: 0.9em) vs #show text: set text(size: 0.9em)
 
 
+## Linux Laptop
+- Baseline Debian 13-Kde
+
 ## RP5-Server-Project
 - [ ] https reverse proxy, [idea?](https://deployn.de/en/blog/gitea-docker/), own urls for each project
 - [ ] gitea ssh fixen (aktuell geht nur https weil port nicht korrekt geforwarded?)
