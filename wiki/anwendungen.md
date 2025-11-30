@@ -116,6 +116,7 @@
 
 ## GUI
 ### Coding
+- Alacritty - Terminal
 - VsCode (Code Server - remote hosten), extensions/settings/profiles todo
 - Raspberry pi imager - pi sd cards
 ### Browser

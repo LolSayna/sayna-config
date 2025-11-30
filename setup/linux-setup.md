@@ -35,6 +35,7 @@ sudo add-apt-repository ppa:aslatter/ppa -y && sudo apt install -y alacritty
 curl -LO --output-dir $XDG_CONFIG_HOME/alacritty https://github.com/catppuccin/alacritty/raw/main/catppuccin-mocha.toml
 
 # Neofetch, Keepass, Element, Libreoffice, Discord, Steam, Gimp, Python/Rust, Geany, kgraphviwer/xdot, meld, occular
+# set  $XDG_CONFIG_HOME/DATA for installation, setup nix config
 
 # Zsh
 mkdir -p $XDG_CONFIG_HOME/zsh
