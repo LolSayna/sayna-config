@@ -42,7 +42,7 @@
 - LibreOffice - Office
 
 #### Programmieren
-`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox MHNexus.HxD Microsoft.WindowsTerminal`
+`winget install -e Git.Git Microsoft.VisualStudioCode Notepad++.Notepad++ Oracle.VirtualBox MHNexus.HxD Microsoft.WindowsTerminal Python.Python.3.14`
 - Notepad++, Vscode
 - Virtualbox
 - (Adrunio IDE)
