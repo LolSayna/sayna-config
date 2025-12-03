@@ -63,12 +63,14 @@ For MA: `winget install -e ezwinports.make Typst.Typst`
 Winget Battlenet is broken (requires installpath)
 
 #### Utils
+``winget install -e OpenWhisperSystems.Signal`
 - 7zip - Compression (not actually needed)
 - SoundSwitch - switches audio devices (cli, hotkey, ...)
 - simple-http-server - local file host/share
 - Electrum - crypto wallet
 - Anki - flipcards
 - AusweisApp
+- Signal - Messager
 - Epic Pen - draw on screen
 
 #### Sysadmin
