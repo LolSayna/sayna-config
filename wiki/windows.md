@@ -146,6 +146,6 @@ Optionally install drivers to stick.
 
 ### Wipe
 1. Save Documents, Images, Videos, Music, Desktop files
-1. Essential projects/program data, VMs, passwords/accounts, recordings, ssh-keys
-1. Zotero
+1. Essential projects/program data, VMs, passwords/accounts, recordings
+1. Zotero, Wireguard/Ssh keys
 1. List used programs

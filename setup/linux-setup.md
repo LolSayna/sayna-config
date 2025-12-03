@@ -15,6 +15,10 @@ sudo dpkg-reconfigure keyboard-configuration
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
 
 # Tuxedo control center for my laptop
+# https://github.com/tuxedocomputers/tuxedo-control-center/issues/453
+sudo apt install linux-headers-$(uname -r)
+sudo apt install tuxedo-control-center
+# reboot
 ```
 
 ## General Installation
