@@ -24,6 +24,8 @@ Also my wiki and cooking recipe book.
 
 ## Linux Laptop
 - Baseline Debian 13-Kde
+- [ ] add color to md to signal all config file locations
+- [ ] vscode config dotfiles (incl terminal font!)
 
 ## RP5-Server-Project
 - [ ] https reverse proxy, [idea?](https://deployn.de/en/blog/gitea-docker/), own urls for each project
